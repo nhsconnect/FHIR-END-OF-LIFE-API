@@ -27,7 +27,7 @@ github_editme_path: /edit/develop/
 #twitter_username: twitter_username
 #twitter_site_hashtags: twitter_site_hashtags
 
-fhir_profile_baseurl: https://fhir.nhs.uk/StructureDefinition/
+fhir_profile_baseurl: https://fhir.nhs.uk/STU3/StructureDefinition/
 
 nhsd:
   dds_link: https://nhsconnect.github.io/NHS-FHIR-DDS/Generated/

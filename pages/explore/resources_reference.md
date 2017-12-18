@@ -13,7 +13,7 @@ summary: "Developer Cheat Sheet shortcuts for the <br/>technical build of Visito
 
 | Profile | ValueSets |
 | :--------- |:-------- |
-[PEC Observation 1](https://fhir.nhs.uk/STU3/StructureDefinition/pec-observation-1) | [PEC-ExemptionType-1](https://fhir.nhs.uk/STU3/ValueSet/ValueSet-PEC-ExemptionType-1.xml) <br /> 
+[PEC Observation 1](https://fhir.nhs.uk/STU3/StructureDefinition/pec-observation-1) | [PEC-ExemptionType-1](https://fhir.nhs.uk/STU3/ValueSet/PEC-ExemptionType-1) <br /> 
 
 
 ## 2. Identifiers ##
