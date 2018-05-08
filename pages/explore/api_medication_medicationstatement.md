@@ -8,7 +8,7 @@ summary: A record of a medication that is being consumed by a patient. A Medicat
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Medication Statement" page="CareConnect-MedicationStatement-1" fhirlink="[MedicationStatement](https://www.hl7.org/fhir/DSTU2/medicationstatement.html)" content="Bristol Connecting Care POC" userlink="engage_poc_bristolcc.html" %}
+{% include custom/fhir.STU3.reference.html resource="Medication Statement" page="CareConnect-MedicationStatement-1" fhirname="MedicationStatement" fhirlink="medicationstatement.html" content="Bristol Connecting Care POC" userlink="engage_poc_bristolcc.html" %}
 
 ## 1. Read ##
 
@@ -28,7 +28,7 @@ Fetches a bundle of all `MedicationStatement` resources for the specified patien
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="MedicationStatement"     link="https://www.hl7.org/fhir/DSTU2/medicationstatement.html#search" %}
+{% include custom/search.parameters.html resource="MedicationStatement" link="medicationstatement.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -39,11 +39,11 @@ Fetches a bundle of all `MedicationStatement` resources for the specified patien
     <th style="width:30%;">Path</th>
 </tr>
 <tr>
-    <td><code class="highlighter-rouge">effectivedate</code></td>
+    <td><code class="highlighter-rouge">effective</code></td>
     <td><code class="highlighter-rouge">date</code></td>
     <td>Date when patient was taking (or not taking) the medication</td>
     <td>SHOULD</td>
-    <td>MedicationStatement.effective[x]</td>
+    <td>MedicationStatement.effective</td>
 </tr>
 <tr>
     <td><code class="highlighter-rouge">patient</code></td>
@@ -68,7 +68,7 @@ Systems SHOULD support the following search combinations:
 
 -->
 
-{% include custom/search.date.plus.html para="2.1.1." content="MedicationStatement" name="effectivedate" %}
+{% include custom/search.date.plus.html para="2.1.1." content="MedicationStatement" name="effective" %}
 
 {% include custom/search.patient.html para="2.1.2" content="MedicationStatement" %}
 
@@ -76,18 +76,24 @@ Systems SHOULD support the following search combinations:
 
 {% include custom/search.response.html resource="MedicationStatement" %}
 
+
 ## 3. Example ##
 
 ### 3.1 Request Query ###
 
-Return all MedciationStatement resources for Patient with a NHS Number of 9876543210, the format of the response body will be xml. Replace 'baseUrl' with the actual base Url of the FHIR Server.
+<h3 id="32-response-headers">3.1 cURL</h3>
 
-#### 3.1.1. cURL ####
+Return all MedicationStatement resources with an id of 1, the format of the response body will be xml. The Reference Implementation is hosted at '{{ site.fhir_ref_impl }}'.
 
-{% include custom/embedcurl.html title="Search MedicationStatement" command="curl -H 'Accept: application/xml+fhir' -H 'Authorization: BEARER [token]' -X GET  '[baseUrl]/MedicationStatement?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|9876543210'" %}
+{% include custom/embedcurl.html title="Search Patient" command="curl -X GET -H 'Accept: application/xml+fhir' -H 'Authorisation: BEARER [token]' -v 'http://yellow.testlab.nhs.uk/careconnect-ri/STU3/MedicationStatement?patient=1'" %}
 
-{% include custom/search.response.headers.html resource="MedicationStatement" %}
+<h3 id="32-response-headers">3.2 Explore the Response</h3>
 
-#### 3.2.2 Http Body ####
-
-<script src="https://gist.github.com/KevinMayfield/9ab94408ef84f46606dbdf236cb9e272.js"></script>
+Explore the response in XML & JSON on the Reference Implementation below
+<div class="language-http highlighter-rouge">
+<pre class="highlight">
+<p style="font-size: 110%;">Reference Implementation</p>
+XML <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=MedicationStatement&param.0.0=&param.0.1=1&param.0.name=patient&param.0.type=reference&resource-search-limit=&encoding=xml">Patient id search RI viewer</a>
+JSON <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=MedicationStatement&param.0.0=&param.0.1=1&param.0.name=patient&param.0.type=reference&resource-search-limit=&encoding=json">Patient id search RI viewer</a>
+</pre>
+</div>

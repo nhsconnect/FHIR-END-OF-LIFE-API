@@ -8,7 +8,7 @@ summary: This resource is primarily used for the identification and definition o
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Medication" page="CareConnect-Medication-1" fhirlink="[Medication](https://www.hl7.org/fhir/DSTU2/medication.html)" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Medication" page="CareConnect-Medication-1" fhirname="Medication" fhirlink="medication.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## 1. Read ##
 
@@ -27,7 +27,7 @@ Search Medication resources. Returns a bundle of all `Medication` resources for 
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Medication"     link="https://www.hl7.org/fhir/DSTU2/medication.html#search" %}
+{% include custom/search.parameters.html resource="Medication" link="medication.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -41,7 +41,7 @@ Search Medication resources. Returns a bundle of all `Medication` resources for 
     <td><code class="highlighter-rouge">code</code></td>
     <td><code class="highlighter-rouge">token</code></td>
     <td>Codes that identify this medication</td>
-    <td>MAY</td>
+    <td>SHALL</td>
     <td>Medication.code</td>
 </tr>
 </table>
@@ -50,18 +50,24 @@ Search Medication resources. Returns a bundle of all `Medication` resources for 
 
 {% include custom/search.response.html resource="Medication" %}
 
+
 ## 3. Example ##
 
-### 3.1 Request Operation ###
+### 3.1 Request Query ###
 
-Return Medication resource with a logical id of 48496. Replace 'baseUrl' with the actual base Url of the FHIR Server.
+<h3 id="32-response-headers">3.1 cURL</h3>
 
-#### 3.1.1. cURL ####
+Return all Medication resources with an SNOMED CT code of 320141001, the format of the response body will be xml. The Reference Implementation is hosted at '{{ site.fhir_ref_impl }}'.
 
-{% include custom/embedcurl.html title="Get Medication" command="curl -H 'Accept: application/xml+fhir' -H 'Authorization: BEARER [token]' -X GET  '[baseUrl]/Medication/48496'" %}
+{% include custom/embedcurl.html title="Search Medication" command="curl -X GET -H 'Accept: application/xml+fhir' -H 'Authorisation: BEARER [token]' -v 'http://yellow.testlab.nhs.uk/careconnect-ri/STU3/Medication?code=320141001'" %}
 
-{% include custom/search.response.headers.html resource="Immunization" %}
+<h3 id="32-response-headers">3.2 Explore the Response</h3>
 
-#### 3.2.2 Http Body ####
-
-<script src="https://gist.github.com/KevinMayfield/b2dce41df4ffb395eef568f7769fd086.js"></script>
+Explore the response in XML & JSON on the Reference Implementation below
+<div class="language-http highlighter-rouge">
+<pre class="highlight">
+<p style="font-size: 110%;">Reference Implementation</p>
+XML <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&encoding=xml&pretty=true&resource=Medication&param.0.qualifier=&param.0.0=&param.0.1=320141001&param.0.name=code&param.0.type=token&resource-search-limit=&encoding=xml">Mediciation code search RI viewer</a>
+JSON <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&encoding=xml&pretty=true&resource=Medication&param.0.qualifier=&param.0.0=&param.0.1=320141001&param.0.name=code&param.0.type=token&resource-search-limit=&encoding=json">Medication code search RI viewer</a>
+</pre>
+</div>

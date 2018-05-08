@@ -9,7 +9,7 @@ summary: Measurements and simple assertions made about a patient, device or othe
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Observation" page="CareConnect-Observation-1" fhirlink="[Observation](https://www.hl7.org/fhir/DSTU2/observation.html)" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.reference.html resource="Observation" page="CareConnect-Observation-1" fhirname="Observation" fhirlink="observation.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## 1. Read ##
 
@@ -29,7 +29,7 @@ Fetches a bundle of all `Observation` resources for the specified patient.
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Observation"     link="https://www.hl7.org/fhir/DSTU2/observation.html#search" %}
+{% include custom/search.parameters.html resource="Observation" link="observation.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -93,18 +93,23 @@ Systems SHOULD support the following search combinations:
 
 {% include custom/search.response.html resource="Observation" %}
 
+
 ## 3. Example ##
 
-### 3.1. Request Query ###
+<h3 id="32-response-headers">3.1 cURL</h3>
 
-Return all Observation resources for Patient with NHS Number of 9876543210, the format of the response body will be xml. Replace 'baseUrl' with the actual base Url of the FHIR Server.
+Return all Observation resources for Patient with an id of 1002, the format of the response body will be xml. Replace 'baseUrl' with the actual base Url of the FHIR Server.
 
-#### 3.1.1. cURL ####
+{% include custom/embedcurl.html title="Search Observation" command="curl -X GET -H 'Accept: application/xml+fhir' -H 'Authorisation: BEARER [token]' -v 'http://yellow.testlab.nhs.uk/careconnect-ri/STU3/Observation?patient=1002'" %}
 
-{% include custom/embedcurl.html title="Search Observation" command="curl -H 'Accept: application/xml+fhir' -H 'Authorization: BEARER [token]' -X GET  '[baseUrl]/Observation?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|9876543210'" %}
 
- {% include custom/search.response.headers.html resource="Observation" %}
+<h3 id="32-response-headers">3.2 Explore the Response</h3>
 
-#### 3.2.2. Http Body ###
-
-<script src="https://gist.github.com/KevinMayfield/699d645252f12fb1e48ad5b61d9f6daa.js"></script>
+Explore the response in XML & JSON on the Reference Implementation below
+<div class="language-http highlighter-rouge">
+<pre class="highlight">
+<p style="font-size: 110%;">Reference Implementation</p>
+XML <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=Observation&param.0.0=&param.0.1=1002&param.0.name=patient&param.0.type=reference&sort_by=&sort_direction=&resource-search-limit=&encoding=xml">Patient id search RI viewer</a>
+JSON <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=Observation&param.0.0=&param.0.1=1002&param.0.name=patient&param.0.type=reference&sort_by=&sort_direction=&resource-search-limit=&encoding=json">Patient id search RI viewer</a>
+</pre>
+</div>

@@ -1,6 +1,6 @@
 ---
 title: Case Studies
-keywords: case studies, usecase, user stories, epics, scenarios, business analysis, technical architecture, context
+keywords: case studies, usecase, user stories, epics, scenarios, business analaysis, technical architecture, context
 tags: [foundations,use_case,user stories, epics, scenarios]
 sidebar: engage_sidebar
 permalink: engage_case_studies.html
@@ -35,4 +35,4 @@ This case study demonstrates the application of the [Care Connect Engagement Pro
 
 {% include important.html content="Please write up your own Case Studies of Care Connect Profiles you have used in the wild. If possible please use the Care Connect Adoption profile. " %}
 
-{% include custom/contribute.html content="Get in touch with careconnect@interopen.org to help with Case Studies of Care Connect Profiles"%}
+{% include custom/contribute.html content="Get in touch with to help with Case Studies of Care Connect Profiles"%}

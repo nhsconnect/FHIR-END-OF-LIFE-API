@@ -15,7 +15,7 @@ summary: "Guidance on FHIR Medication resources and DM+D"
 
 {% include custom/usecase.html content="[Bristol Connecting Care](engage_poc_bristolcc.html)" %}
 
-The Medication profiles and relationships with other profiles are shown below:
+The Care Connect Medication profiles and relationships with other profiles are shown below:
 
 <p style="text-align:center;"><img src="images/engage/casestudies/bristolcc/ERD.png" alt="Entity Relationship Diagram showing the applied profiles." title="Entity Relationship Diagram showing the applied profiles." style="width:75%"></p>
 <br><br>

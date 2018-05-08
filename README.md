@@ -1,4 +1,4 @@
-# Medications API
+# CareConnectAPI
 
 <p align="center">
   <a href="https://v4-alpha.getbootstrap.com">
@@ -7,10 +7,10 @@
     <img src="images/logo.png" height=72>
   </a>
 
-  <h3 align="center">Medications API</h3>
+  <h3 align="center">CareConnect API</h3>
 
   <p align="center">
-    Implementation Guide for creating APIs
+    Implementation Guide for creating CareConnect APIs
     <br>
     <a href="#"><strong>Visit the APIs &raquo;</strong></a>
   </p>

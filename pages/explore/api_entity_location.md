@@ -8,7 +8,7 @@ summary: Details and position information for a physical place where services ar
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Location" page="CareConnect-Location-1" fhirlink="[Location](https://www.hl7.org/fhir/DSTU2/location.html)" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Location" page="CareConnect-Location-1" fhirname="Location" fhirlink="location.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## 1. Read ##
 
@@ -27,7 +27,7 @@ Fetches a bundle of all `Location` resources for the specified search criteria.
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Location"     link="https://www.hl7.org/fhir/DSTU2/location.html#search" %}
+{% include custom/search.parameters.html resource="Location" link="location.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -59,18 +59,23 @@ Fetches a bundle of all `Location` resources for the specified search criteria.
 
 {% include custom/search.response.html resource="Location" %}
 
+
 ## 3. Example ##
 
-### 3.1 Request Query ###
+<h3 id="32-response-headers">3.1 cURL</h3>
 
 Return all Location resources with a Trust Site code of RTG08, the format of the response body will be xml. Replace 'baseUrl' with the actual base Url of the FHIR Server.
 
-#### 3.1.1. cURL ####
+{% include custom/embedcurl.html title="Search Location" command="curl -X GET -H 'Accept: application/xml+fhir' -H 'Authorisation: BEARER [token]' -v 'http://yellow.testlab.nhs.uk/careconnect-ri/STU3/Location?identifier=RTG08'" %}
 
-{% include custom/embedcurl.html title="Search Location" command="curl -H 'Accept: application/xml+fhir' -H 'Authorization: BEARER [token]' -X GET  '[baseUrl]/Location?identifier=https://fhir.nhs.uk/Id/ods-site-code|RTG08'" %}
 
-{% include custom/search.response.headers.html resource="Location" %}
+<h3 id="32-response-headers">3.2 Explore the Response</h3>
 
-#### 3.2.2. Http Body ####
-
-<script src="https://gist.github.com/KevinMayfield/715d6af0bef6c5b0365ded1f06b68b57.js"></script>
+Explore the response in XML & JSON on the Reference Implementation below
+<div class="language-http highlighter-rouge">
+<pre class="highlight">
+<p style="font-size: 110%;">Reference Implementation</p>
+XML <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=Location&param.0.qualifier=&param.0.0=&param.0.1=RTG08&param.0.name=identifier&param.0.type=token&resource-search-limit=&encoding=xml">ODS Code search RI viewer</a>
+JSON <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=Location&param.0.qualifier=&param.0.0=&param.0.1=RTG08&param.0.name=identifier&param.0.type=token&resource-search-limit=&encoding=json">ODS Code search RI viewer</a>
+</pre>
+</div>

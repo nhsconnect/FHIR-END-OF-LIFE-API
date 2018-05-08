@@ -9,7 +9,7 @@ summary: Demographics and other administrative information about an individual r
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Patient" page="CareConnect-Patient-1" fhirlink="[Patient](https://www.hl7.org/fhir/DSTU2/patient.html)" content="Bristol Connecting Care POC" userlink="engage_poc_bristolcc.html" %}
+{% include custom/fhir.STU3.reference.html resource="Patient" page="CareConnect-Patient-1" fhirname="Patient" fhirlink="patient.html" content="[DSTU2] Bristol Connecting Care POC" userlink="engage_poc_bristolcc.html" %}
 
 ## 1. Read ##
 
@@ -29,33 +29,7 @@ Fetches a bundle of all `Patient` resources for the specified patient or search 
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Patient"     link="https://www.hl7.org/fhir/DSTU2/patient.html#search" %}
-
-<!--
-<table style="min-width:100%;width:100%">
-<tr id="clinical">
-    <th style="width:15%;">Name</th>
-    <th style="width:10%;">Type</th>
-    <th style="width:40%;">Description</th>
-    <th style="width:5%;">Conformance</th>
-    <th style="width:30%;">Path</th>
-</tr>
-<tr>
-    <td><code class="highlighter-rouge"></code></td>
-    <td><code class="highlighter-rouge"></code></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td><code class="highlighter-rouge"></code></td>
-    <td><code class="highlighter-rouge"></code></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-</table>
--->
+{% include custom/search.parameters.html resource="Patient" link="patient.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -66,7 +40,7 @@ Fetches a bundle of all `Patient` resources for the specified patient or search 
 <th style="width:30%;">Path</th>
 </tr>
 <tr>
-<td><code class="highlighter-rouge">adddress-postcode</code></td>
+<td><code class="highlighter-rouge">adddress-postalcode</code></td>
 <td><code class="highlighter-rouge">string</code></td>
 <td>A postalCode specified in an address</td>
 <td>MAY</td>
@@ -145,7 +119,7 @@ Client systems SHALL provide at least two parameters of differing types, unless 
 | `telecom` | `token` | The value in any kind of telecom details of the patient |  | Patient.telecom |
 -->
 
-{% include custom/search.nopat.string.html para="2.1.1." resource="Patient" content="address-postcode"  example="NG10%201ZZ" text1="Post Code" text2="NG10 1ZZ" %}
+{% include custom/search.nopat.string.html para="2.1.1." resource="Patient" content="address-postalcode"  example="NG10%201ZZ" text1="Post Code" text2="NG10 1ZZ" %}
 
 {% include custom/search.nopat.date.plus.html para="2.1.2." content="Patient" name="birthdate" %}
 
@@ -169,14 +143,19 @@ Client systems SHALL provide at least two parameters of differing types, unless 
 
 ### 3.1 Request Query ###
 
-Return all Patient resources with a NHS Number 9876543210, the format of the response body will be xml. Replace 'baseUrl' with the actual base Url of the FHIR Server.
+<h3 id="32-response-headers">3.1 cURL</h3>
 
-#### 3.1.1. cURL ####
+Return all Patient resources with a NHS Number 9876543210, the format of the response body will be xml. The Reference Implementation is hosted at '{{ site.fhir_ref_impl }}'.
 
-{% include custom/embedcurl.html title="Search Patient" command="curl -X GET -H 'Accept: application/xml+fhir' -H 'Authorization: BEARER [token]' -v '[baseUrl]/Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9876543210'" %}
+{% include custom/embedcurl.html title="Search Patient" command="curl -X GET -H 'Accept: application/xml+fhir' -H 'Authorisation: BEARER [token]' -v 'http://yellow.testlab.nhs.uk/careconnect-ri/STU3/Patient?identifier=https://fhir.nhs.uk/Id/nhs-number%7C9876543210'" %}
 
-{% include custom/search.response.headers.html resource="Patient"  %}
+<h3 id="32-response-headers">3.2 Explore the Response</h3>
 
-#### 3.2.2 Http Body ####
-
-<script src="https://gist.github.com/KevinMayfield/93fcc2d0568c92477bafa1fd7ba753f1.js"></script>
+Explore the response in XML & JSON on the Reference Implementation below
+<div class="language-http highlighter-rouge">
+<pre class="highlight">
+<p style="font-size: 110%;">Reference Implementation</p>
+XML <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=Patient&param.0.qualifier=&param.0.0=https%3A%2F%2Ffhir.nhs.uk%2FId%2Fnhs-number&param.0.1=9876543210&param.0.name=identifier&param.0.type=token&sort_by=&sort_direction=&resource-search-limit=&encoding=xml">Patient NHS number search RI viewer</a>
+JSON <a target="_blank" href="{{ site.fhir_ref_impl }}search?serverId=home&pretty=true&resource=Patient&param.0.qualifier=&param.0.0=https%3A%2F%2Ffhir.nhs.uk%2FId%2Fnhs-number&param.0.1=9876543210&param.0.name=identifier&param.0.type=token&sort_by=&sort_direction=&resource-search-limit=&encoding=json">Patient NHS number search RI viewer</a>
+</pre>
+</div>
