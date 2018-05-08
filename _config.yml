@@ -2,10 +2,10 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Care Connect API | FHIR&reg;
+topnav_title: FHIR END OF LIFE API | FHIR&reg;
 # this appears on the top navigation bar next to the home button
 
-site_title: Care Connect
+site_title: FHIR END OF LIFE API
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: INTEROPen and NHS Digital
