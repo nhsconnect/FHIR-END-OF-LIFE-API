@@ -71,6 +71,23 @@ The FHIR Care Connect profile API's described in the Explore section of this imp
 This section looks at the Care Connect profile API's covered within this implementation guide.
 
 
+<ul>
+<li>Consent	- Consent Resource, Practitioner, Practitioner Role</li>
+<li>CPR Status - Flag Resource, Encounter Resource</li>
+<li>Other Docs	- Document Reference</li>
+<li>Problems and Interventions - Conditions (Problem), Practitioner</li>
+<li>Prognosis - Flag Resource, Encounter Resource</li>
+<li>Preferences	- Care Connect under Patient</li>
+<li>Communication - Care Connect under Patient</li>
+<li>Contacts - Care Contact	under Patient</li>
+<li>LPA Lasting Power of Attorney -	Care Connect under a Patient (LPA)</li>
+<li>Disability - Care Connect List</li>
+<li>Functional Status</li>
+</ul>
+
+
+
+
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
 <th style="width:33%;">Clinical</th>
@@ -83,24 +100,24 @@ This section looks at the Care Connect profile API's covered within this impleme
 <th>Medications</th>
 </tr>
 <tr>
-<td><a href="api_clinical_allergyintolerance.html">AllergyIntolerance</a></td>
+<td></td>
 <td><a href="api_diagnostics_observation.html">Observation</a></td>
-<td><a href="api_medication_medication.html">Medication</a></td>
+<td></td>
 </tr>
 <tr>
 <td><a href="api_clinical_condition.html">Condition</a> (Problem)</td>
 <td>&nbsp;</td>
-<td><a href="api_medication_medicationorder.html">MedicationOrder</a></td>
+<td></td>
 </tr>
 <tr>
-<td><a href="api_clinical_procedure.html">Procedure</a></td>
+<td></td>
 <td>&nbsp;</td>
-<td><a href="api_medication_medicationstatement.html">MedicationStatement</a></td>
+<td></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><a href="api_medication_immunization.html">Immunization</a></td>
+<td>&nbsp;</td>
 </tr>
 </table>
 
@@ -131,6 +148,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 <td>&nbsp;</td>
 </tr>
 </table>
+
 
 
 <table style="min-width:100%;width:100%">

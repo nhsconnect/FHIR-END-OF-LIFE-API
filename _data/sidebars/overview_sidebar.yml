@@ -12,12 +12,6 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-    - title: API Journey
-      url: /overview_api_journey.html
-      output: web
-    - title: Provide APIs
-      url: /overview_api_provide.html
-      output: web
     - title: Guide Versioning
       url: /overview_guide_versioning.html
       output: web
