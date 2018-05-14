@@ -70,23 +70,81 @@ The FHIR Care Connect profile API's described in the Explore section of this imp
 ## 3. Resource API's ##
 This section looks at the Care Connect profile API's covered within this implementation guide.
 
+### Care Connect existing API's ###
+<table style="min-width:100%;width:100%">
+<tr id="clinical">
+<th style="width:33%;">EOL Requirement</th>
+<th style="width:33%;">FHIR Resource(s)</th>
+<th style="width:33%;">&nbsp;</th>
+</tr>
+<tr id="clinical">
+<td>Communication</td>
+<td>Care Connect under Patient</td>
+<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1">NHS communication preferences</a></td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Care Connect under Patient</td>
+<td>Patient.contact</td>
+</tr>
+<tr>
+<td>LPA Lasting Power of Attorney</td>
+<td>Care Connect under a Patient (LPA)</td>
+<td>TBC</td>
+</tr>
+<tr>
+<td>Disability</td>
+<td>Care Connect List</td>
+<td>TBC</td>
+</tr>
+</table>
 
-<ul>
-<li>Consent	- Consent Resource, Practitioner, Practitioner Role</li>
-<li>CPR Status - Flag Resource, Encounter Resource</li>
-<li>Other Docs	- Document Reference</li>
-<li>Problems and Interventions - Conditions (Problem), Practitioner</li>
-<li>Prognosis - Flag Resource, Encounter Resource</li>
-<li>Preferences	- Care Connect under Patient</li>
-<li>Communication - Care Connect under Patient</li>
-<li>Contacts - Care Contact	under Patient</li>
-<li>LPA Lasting Power of Attorney -	Care Connect under a Patient (LPA)</li>
-<li>Disability - Care Connect List</li>
-<li>Functional Status</li>
-</ul>
+### End of Life Care API's ###
 
+<table style="min-width:100%;width:100%">
+<tr id="clinical">
+<th style="width:33%;">EOL Requirement</th>
+<th style="width:33%;">FHIR Resource(s)</th>
+<th style="width:33%;">&nbsp;</th>
+</tr>
+<tr id="clinical">
+<td>Consent</td>
+<td>Consent Resource, Practitioner, Practitioner Role</td>
+<td>TBC, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">Care Connect Practioner</a>, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">Care Connect Practioner Role</a></td>
+</tr>
+<tr>
+<td>CPR Status</td>
+<td>Flag Resource, Encounter Resource</td>
+<td>TBC, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">Care Connect Encounter</a></td>
+</tr>
+<tr>
+<td>Other Docs</td>
+<td>Document Reference</td>
+<td>TBC</td>
+</tr>
+<tr>
+<td>Problems and Interventions</td>
+<td>Conditions (Problem), Practitioner, Practioner Role</td>
+<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1">Care Connect Condition</a>, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">Care Connect Practioner</a>, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">Care Connect Practioner Role</a></td>
+</tr>
+<tr>
+<td>Prognosis</td>
+<td>Flag Resource, Encounter Resource</td>
+<td>TBC, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">Care Connect Encounter</a></td>
+</tr>
+<tr>
+<td>Advance Treatment Preferences</td>
+<td>Location Resource</td>
+<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1">Care Connect Location</a></td>
+</tr>
+<tr>
+<td>Functional Status</td>
+<td>&nbsp;</td>
+<td>TBC</td>
+</tr>
+</table>
 
-
+### FHIR Resource(s) ###
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -97,79 +155,71 @@ This section looks at the Care Connect profile API's covered within this impleme
 <tr id="clinicald">
 <th>Summary</th>
 <th>Diagnostics</th>
-<th>Medications</th>
-</tr>
-<tr>
-<td></td>
-<td><a href="api_diagnostics_observation.html">Observation</a></td>
-<td></td>
+<th></th>
 </tr>
 <tr>
 <td><a href="api_clinical_condition.html">Condition</a> (Problem)</td>
-<td>&nbsp;</td>
+<td><a href="api_diagnostics_observation.html">Observation</a></td>
 <td></td>
-</tr>
-<tr>
-<td></td>
-<td>&nbsp;</td>
-<td></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 </table>
 
 <table style="min-width:100%;width:100%">
 <tr id="base">
-<th style="width:33%;">Base</th>
-<th style="width:33%;">&nbsp;</th>
-<th style="width:33%;">&nbsp;</th>
+<th style="width:25%;">Base</th>
+<th style="width:25%;">&nbsp;</th>
+<th style="width:25%;">&nbsp;</th>
+<th style="width:25%;">&nbsp;</th>
 </tr>
 <tr id="based">
 <th>Individuals</th>
 <th>Entities</th>
 <th>Workflow</th>
+<th>Management</th>
 </tr>
 <tr>
 <td><a href="api_entity_patient.html">Patient</a></td>
 <td><a href="api_entity_organisation.html">Organization</a></td>
-<td><a href="api_workflow_encounter.html">Encounter</a></td><td></td>
+<td><a href="api_workflow_encounter.html">Encounter</a></td>
+<td><a href="api_base_management_flag.html">Flag</a></td>
 </tr>
 <tr>
 <td><a href="api_entity_practitioner.html">Practitioner</a></td>
 <td><a href="api_entity_location.html">Location</a></td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td><a href="api_entity_practitioner_role.html">PractitionerRole</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 </table>
 
-
-
 <table style="min-width:100%;width:100%">
 <tr id="conformance">
-<th style="width:33%;">Foundation</th>
-<th style="width:33%;"></th>
-<th style="width:33%;"></th>
+<th style="width:25%;">Foundation</th>
+<th style="width:25%;"></th>
+<th style="width:25%;"></th>
+<th style="width:25%;"></th>
 </tr>
 <tr id="conformanced">
 <th>Capability</th>
 <th>Terminology</th>
-<th>&nbsp;</th>
+<th>Security</th>
+<th>Documents</th>
 </tr>
 <tr>
 <td><a href="api_foundation_capability.html">Capability Statement</a></td>
 <td><a href="api_foundation_valueset.html">ValueSet</a></td>
-<td>&nbsp;</td>
+<td><a href="api_foundation_consent.html">Consent</a></td>
+<td><a href="api_foundation_documents_documentreference.html">Document Reference</a></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="api_foundation_codesystem.html">CodeSystem</a> (example)</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 </table>
