@@ -115,7 +115,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 <tr>
 <td>CPR Status</td>
 <td>Flag Resource, Encounter Resource</td>
-<td>TBC, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">Care Connect Encounter</a></td>
+<td><a href="api_workflow_flag_cpr_status.html">CPR Status - Flag</a>, <a href="api_workflow_encounter_cpr_status.html">CPR Status - Encounter</a></td>
 </tr>
 <tr>
 <td>Other Docs</td>
