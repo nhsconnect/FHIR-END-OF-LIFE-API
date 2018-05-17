@@ -9,9 +9,10 @@ summary: A record of a healthcare consumer’s policy choices, which permits or 
 
 {% include custom/search.warnbanner.html %}
 
+{% include custom/fhir.reference.html resource="" page="" fhirname="ValueSet" fhirlink="valueset.html" content="-" userlink="-" %}
 
-{% include custom/fhir.reference.html resource="Localhost Consent" page="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Consent-1" fhirname="Consent" fhirlink="consent.html" content="-" userlink="-" %}
-
+## Localhost Profile link ##
+<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Consent-1" target="_blank">Localhost Consent</a>
 
 ## 1. Read ##
 

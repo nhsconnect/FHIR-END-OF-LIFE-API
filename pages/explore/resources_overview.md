@@ -80,12 +80,12 @@ This section looks at the Care Connect profile API's covered within this impleme
 <tr id="clinical">
 <td>Communication</td>
 <td>Care Connect under Patient</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1">NHS communication preferences</a></td>
+<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
 </tr>
 <tr>
 <td>Contacts</td>
 <td>Care Connect under Patient</td>
-<td>Patient.contact</td>
+<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
 </tr>
 <tr>
 <td>LPA Lasting Power of Attorney</td>
