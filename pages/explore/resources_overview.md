@@ -97,6 +97,11 @@ This section looks at the Care Connect profile API's covered within this impleme
 <td>Care Connect List</td>
 <td>TBC</td>
 </tr>
+<tr>
+<td>Functional Status</td>
+<td>&nbsp;</td>
+<td>TBC</td>
+</tr>
 </table>
 
 ### End of Life Care API's ###
@@ -110,37 +115,32 @@ This section looks at the Care Connect profile API's covered within this impleme
 <tr id="clinical">
 <td>Consent</td>
 <td>Consent Resource, Practitioner, Practitioner Role</td>
-<td>TBC, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">Care Connect Practioner</a>, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">Care Connect Practioner Role</a></td>
+<td><a href="api_eol_security_consent.html">EOL Consent</a>, <a href="api_eol_individuals_practitioner.html">EOL Practitioner</a>, <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role</a></td>
 </tr>
 <tr>
 <td>CPR Status</td>
 <td>Flag Resource, Encounter Resource</td>
-<td><a href="api_workflow_flag_cpr_status.html">CPR Status - Flag</a>, <a href="api_workflow_encounter_cpr_status.html">CPR Status - Encounter</a></td>
+<td><a href="api_eol_management_flag_cprstatus.html">EOL CPR Status Flag</a>, <a href="api_eol_management_encounter_cprstatus.html">EOL CPR Status Encounter</a></td>
 </tr>
 <tr>
-<td>Other Docs</td>
-<td>Document Reference</td>
-<td>TBC</td>
-</tr>
-<tr>
-<td>Problems and Interventions</td>
+<td>Advance Treatment Preferences</td>
 <td>Conditions (Problem), Practitioner, Practioner Role</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1">Care Connect Condition</a>, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">Care Connect Practioner</a>, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">Care Connect Practioner Role</a></td>
+<td><a href="api_eol_summary_condition.html">EOL Condition</a>, <a href="api_eol_individuals_practitioner.html">EOL Practitioner</a>, <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role</a></td>
 </tr>
 <tr>
 <td>Prognosis</td>
 <td>Flag Resource, Encounter Resource</td>
-<td>TBC, <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">Care Connect Encounter</a></td>
+<td><a href="api_eol_management_flag_prognosis.html">EOL Prognosis Flag</a>, <a href="api_eol_management_encounter_prognosis.html">EOL Prognosis Encounter</a></td>
 </tr>
 <tr>
-<td>Advance Treatment Preferences</td>
+<td>Preferences</td>
 <td>Location Resource</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1">Care Connect Location</a></td>
+<td><a href="api_eol_entities_location_preferences.html">EOL Location</a></td>
 </tr>
 <tr>
-<td>Functional Status</td>
-<td>&nbsp;</td>
-<td>TBC</td>
+<td>Other Docs</td>
+<td>Document Reference</td>
+<td><a href="api_eol_documents_documentreference.html">EOL Document Reference</a></td>
 </tr>
 </table>
 
@@ -214,7 +214,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 <td><a href="api_foundation_capability.html">Capability Statement</a></td>
 <td><a href="api_foundation_valueset.html">ValueSet</a></td>
 <td><a href="api_foundation_consent.html">Consent</a></td>
-<td><a href="api_foundation_documents_documentreference.html">Document Reference</a></td>
+<td><a href="api_documents_documentreference.html">Document Reference</a></td>
 </tr>
 <tr>
 <td></td>

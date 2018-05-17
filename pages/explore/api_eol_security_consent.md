@@ -1,16 +1,16 @@
 ---
-title: Foundation | Document Reference
-keywords: foundations, fhir
+title: Foundation | Consent | End of Life
+keywords: foundations, fhir, end, of, life, consent
 tags: [foundation,use_case,fhir,rest,api,noccprofile]
 sidebar: accessrecord_rest_sidebar
-permalink: api_foundation_documents_documentreference.html
-summary: A reference to a document.
+permalink: api_eol_security_consent.html
+summary: A record of a healthcare consumer’s policy choices, which permits or denies identified recipient(s) or recipient role(s) to perform one or more actions within a given policy context, for specific purposes and periods of time.
 ---
 
 {% include custom/search.warnbanner.html %}
 
 
-{% include custom/fhir.reference.html resource="" page="" fhirname="DocumentReference" fhirlink="valueset.html" content="-" userlink="-" %}
+{% include custom/fhir.reference.html resource="Localhost Consent" page="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Consent-1" fhirname="Consent" fhirlink="consent.html" content="-" userlink="-" %}
 
 
 ## 1. Read ##
