@@ -16,7 +16,11 @@ summary: Demographics and other administrative information about an individual r
 Communication: There is an exisiting extension under the Care Connect Patient profile which covers the Communication capturing requirements. the profile can be viewed here: 
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1">NHS communication preferences</a>
 
-Contacts: There is an exisiting element under the Care Connect Patient profile named Patient.contact which can be used to record End of Life contacts.
+Contacts: There is an exisiting element under the Care Connect Patient profile named 
+Patient.contact which can be used to record End of Life contacts.
+
+Lasting Power of Attorney: There is an exisiting element under the Care Connect Patient profile named 
+Patient.contact which can be used to record End of Life LPA.
 
 <div markdown="span" class="alert alert-success" role="alert">
 GET [baseUrl]/Patient/[id]</div>

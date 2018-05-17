@@ -89,18 +89,8 @@ This section looks at the Care Connect profile API's covered within this impleme
 </tr>
 <tr>
 <td>LPA Lasting Power of Attorney</td>
-<td>Care Connect under a Patient (LPA)</td>
-<td>TBC</td>
-</tr>
-<tr>
-<td>Disability</td>
-<td>Care Connect List</td>
-<td>TBC</td>
-</tr>
-<tr>
-<td>Functional Status</td>
-<td>&nbsp;</td>
-<td>TBC</td>
+<td>Care Connect under Patient</td>
+<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
 </tr>
 </table>
 
@@ -131,6 +121,16 @@ This section looks at the Care Connect profile API's covered within this impleme
 <td>Prognosis</td>
 <td>Flag Resource, Encounter Resource</td>
 <td><a href="api_eol_management_flag_prognosis.html">EOL Prognosis Flag</a>, <a href="api_eol_management_encounter_prognosis.html">EOL Prognosis Encounter</a></td>
+</tr>
+<tr>
+<td>Disability</td>
+<td>Conditions (Problem), Practitioner, Practioner Role</td>
+<td><a href="api_eol_summary_disability_condition.html">EOL Disability Condition</a>, <a href="api_eol_individuals_practitioner.html">EOL Practitioner</a>, <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role</a></td>
+</tr>
+<tr>
+<td>Functional Status</td>
+<td>Conditions (Problem), Practitioner, Practioner Role</td>
+<td><a href="api_eol_summary_functional_condition.html">EOL Functional Status Condition</a>, <a href="api_eol_individuals_practitioner.html">EOL Practitioner</a>, <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role</a></td>
 </tr>
 <tr>
 <td>Preferences</td>
