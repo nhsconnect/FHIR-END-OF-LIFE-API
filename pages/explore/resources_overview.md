@@ -9,8 +9,6 @@ summary: "Overview of the Resources section"
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/api_overview.svg %}
-
 ## 1. Pre-Requisites for FHIR Servers ##
 
 ### 1.1 CareConnectAPI Requirements ###
@@ -70,30 +68,6 @@ The FHIR Care Connect profile API's described in the Explore section of this imp
 ## 3. Resource API's ##
 This section looks at the Care Connect profile API's covered within this implementation guide.
 
-### Care Connect existing API's ###
-<table style="min-width:100%;width:100%">
-<tr id="clinical">
-<th style="width:33%;">EOL Requirement</th>
-<th style="width:33%;">FHIR Resource(s)</th>
-<th style="width:33%;">&nbsp;</th>
-</tr>
-<tr id="clinical">
-<td>Communication</td>
-<td>Care Connect under Patient</td>
-<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
-</tr>
-<tr>
-<td>Contacts</td>
-<td>Care Connect under Patient</td>
-<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
-</tr>
-<tr>
-<td>LPA Lasting Power of Attorney</td>
-<td>Care Connect under Patient</td>
-<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
-</tr>
-</table>
-
 ### End of Life Care API's ###
 
 <table style="min-width:100%;width:100%">
@@ -103,13 +77,28 @@ This section looks at the Care Connect profile API's covered within this impleme
 <th style="width:33%;">&nbsp;</th>
 </tr>
 <tr id="clinical">
+<td>Communication</td>
+<td>Patient</td>
+<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Patient</td>
+<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
+</tr>
+<tr>
+<td>LPA Lasting Power of Attorney</td>
+<td>Patient</td>
+<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
+</tr>
+<tr>
 <td>Consent</td>
-<td>Consent Resource, Practitioner, Practitioner Role</td>
+<td>Consent, Practitioner, Practitioner Role</td>
 <td><a href="api_eol_security_consent.html">EOL Consent</a>, <a href="api_eol_individuals_practitioner.html">EOL Practitioner</a>, <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role</a></td>
 </tr>
 <tr>
 <td>CPR Status</td>
-<td>Flag Resource, Encounter Resource</td>
+<td>Flag, Encounter</td>
 <td><a href="api_eol_management_flag_cprstatus.html">EOL CPR Status Flag</a>, <a href="api_eol_management_encounter_cprstatus.html">EOL CPR Status Encounter</a></td>
 </tr>
 <tr>
@@ -119,7 +108,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 </tr>
 <tr>
 <td>Prognosis</td>
-<td>Flag Resource, Encounter Resource</td>
+<td>Flag, Encounter</td>
 <td><a href="api_eol_management_flag_prognosis.html">EOL Prognosis Flag</a>, <a href="api_eol_management_encounter_prognosis.html">EOL Prognosis Encounter</a></td>
 </tr>
 <tr>
@@ -134,7 +123,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 </tr>
 <tr>
 <td>Preferences</td>
-<td>Location Resource</td>
+<td>Location</td>
 <td><a href="api_eol_entities_location_preferences.html">EOL Location</a></td>
 </tr>
 <tr>
