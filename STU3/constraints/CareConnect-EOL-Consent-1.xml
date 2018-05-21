@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/End-of-Life-Consent-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Consent-1" />
   <version value="0.0.1" />
-  <name value="End-of-Life-Consent-1" />
+  <name value="CareConnect-EOL-Consent-1" />
   <status value="draft" />
   <date value="2018-05-16T13:02:44.017+01:00" />
   <publisher value="NHS Digital" />

@@ -11,7 +11,7 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 {% include custom/fhir.STU3.reference.html resource="Encounter" page="CareConnect-Encounter-1" fhirname="Encounter" fhirlink="encounter.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Prognosis-Encounter-1" target="_blank">Localhost Encounter Prognosis</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Prognosis-Encounter-1" target="_blank">Localhost Encounter Prognosis</a>
 
 ## 1. Read ##
 

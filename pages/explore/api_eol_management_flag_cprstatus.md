@@ -12,7 +12,7 @@ summary: Workflow Flag for CPR Status
 {% include custom/fhir.referencemin.html resource="Flag" page="CareConnect-Flag-1" fhirname="Flag" fhirlink="flag.html#search" content="User Stories" userlink="" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-CPR-Status-Flag-1" target="_blank">Localhost Flag CPR Status</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-CPRStatus-Flag-1" target="_blank">Localhost Flag CPR Status</a>
 
 SCR Inclusion Dataset, and advised codes:
 450475007 | For cardiopulmonary resuscitation (finding)

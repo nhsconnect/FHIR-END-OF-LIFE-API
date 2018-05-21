@@ -12,7 +12,7 @@ summary: A record of a healthcare consumer’s policy choices, which permits or 
 {% include custom/fhir.reference.html resource="" page="" fhirname="ValueSet" fhirlink="valueset.html" content="-" userlink="-" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Consent-1" target="_blank">Localhost Consent</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Consent-1" target="_blank">Localhost Consent</a>
 
 ## 1. Read ##
 

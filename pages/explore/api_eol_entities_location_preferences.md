@@ -11,7 +11,7 @@ summary: Details and position information for a physical place where services ar
 {% include custom/fhir.STU3.reference.html resource="Location" page="CareConnect-Location-1" fhirname="Location" fhirlink="location.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Location-1" target="_blank">Localhost Location</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Location-1" target="_blank">Localhost Location</a>
 
 ## 1. Read ##
 

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/End-of-Life-Document-Reference-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Document-Reference-1" />
   <version value="0.0.1" />
-  <name value="End-of-Life-Document-Reference-1" />
+  <name value="CareConnect-EOL-Document-Reference-1" />
   <status value="draft" />
   <date value="2018-05-16T14:56:39.942+01:00" />
   <publisher value="NHS Digital" />

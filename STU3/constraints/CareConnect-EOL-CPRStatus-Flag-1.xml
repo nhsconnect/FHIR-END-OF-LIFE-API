@@ -6,9 +6,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc" />
   </extension>
-  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/End-of-Life-CPR-Status-Flag-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-CPRStatus-Flag-1" />
   <version value="0.0.1" />
-  <name value="End-of-Life-CPR-Status-Flag-1" />
+  <name value="CareConnect-EOL-CPRStatus-Flag-1" />
   <status value="draft" />
   <date value="2018-05-16" />
   <publisher value="NHS Digital" />

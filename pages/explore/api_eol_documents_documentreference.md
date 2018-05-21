@@ -13,7 +13,7 @@ summary: A DocumentReference resource is used to describe a document that is mad
 [SKETCH profile. Not official]
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Document-Reference-1" target="_blank">Localhost DocumentReference</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Document-Reference-1" target="_blank">Localhost DocumentReference</a>
 
 ## 1. Read Operation ##
 

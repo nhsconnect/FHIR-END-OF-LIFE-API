@@ -11,7 +11,7 @@ summary: Use to record detailed information about conditions, problems or diagno
 {% include custom/fhir.STU3.reference.html resource="Condition" page="CareConnect-Condition-1" fhirname="Condition" fhirlink="condition.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/End-of-Life-Condition-1" target="_blank">Localhost Condition</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Condition-1" target="_blank">Localhost Condition</a>
 
 ## 1. Read ##
 
