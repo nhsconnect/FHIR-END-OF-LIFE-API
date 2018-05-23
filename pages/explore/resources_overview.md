@@ -89,7 +89,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 <tr>
 <td>LPA Lasting Power of Attorney</td>
 <td>Patient</td>
-<td><a href="api_eol_entity_patient.html">EOL Patient</a></td>
+<td><a href="api_eol_entity_relatedperson.html">EOL Related Person</a></td>
 </tr>
 <tr>
 <td>Consent</td>

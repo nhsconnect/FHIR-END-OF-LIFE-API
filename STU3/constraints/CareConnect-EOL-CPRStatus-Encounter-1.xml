@@ -343,7 +343,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -1745,7 +1745,7 @@
       <definition value="The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them." />
       <comment value="The current status is always found in the current version of the resource, not the status history." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.statusHistory" />
         <min value="0" />
@@ -2131,7 +2131,7 @@
       <definition value="Classification of the encounter." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.class" />
         <min value="0" />
@@ -2486,7 +2486,7 @@
       <short value="List of past encounter classes" />
       <definition value="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.&#xA;&#xA;This would be used for a case where an admission starts of as an emergency encounter, then transisions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kindof discharge from emergency to inpatient." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.classHistory" />
         <min value="0" />
@@ -3174,7 +3174,7 @@
       <definition value="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." />
       <comment value="Since there are many ways to further classify encounters, this element is 0..*." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.type" />
         <min value="0" />
@@ -4108,7 +4108,7 @@
       <definition value="Indicates the urgency of the encounter." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.priority" />
         <min value="0" />
@@ -4888,7 +4888,7 @@
       <definition value="Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.episodeOfCare" />
         <min value="0" />
@@ -5130,7 +5130,7 @@
       <definition value="The referral request this encounter satisfies (incoming referral)." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.incomingReferral" />
         <min value="0" />
@@ -5363,7 +5363,7 @@
     </element>
     <element id="Encounter.participant">
       <path value="Encounter.participant" />
-      <short value="List of participants involved in the encounter" />
+      <short value="Persons involved in discussion, Persons or organisations made aware of the decision, Professionals Involved In Decision, Professional endorsing this CPR status" />
       <definition value="The list of people responsible for providing the service." />
       <min value="0" />
       <max value="*" />
@@ -6507,7 +6507,7 @@
       <definition value="The appointment that scheduled this encounter." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.appointment" />
         <min value="0" />
@@ -6959,7 +6959,7 @@
       <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence." />
       <comment value="May differ from the time the Encounter.period lasted because of leave of absence." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.length" />
         <min value="0" />
@@ -7457,7 +7457,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -7802,7 +7802,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -7936,7 +7936,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -7976,8 +7976,8 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Coding.system" />
         <min value="0" />
@@ -8060,8 +8060,8 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Coding.code" />
         <min value="0" />
@@ -8105,8 +8105,8 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Coding.display" />
         <min value="0" />
@@ -8148,7 +8148,7 @@
       <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -8188,7 +8188,7 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Encounter.reason.text" />
-      <short value="Plain text representation of the concept" />
+      <short value="Reason for CPR Status" />
       <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
       <comment value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
@@ -8236,7 +8236,7 @@
       <short value="The list of diagnosis relevant to this encounter" />
       <definition value="The list of diagnosis relevant to this encounter." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.diagnosis" />
         <min value="0" />
@@ -9195,7 +9195,7 @@
       <definition value="The set of accounts that may be used for billing for this Encounter." />
       <comment value="The billing system may choose to allocate billable items associated with the Encounter to different referenced Accounts based on internal business rules." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.account" />
         <min value="0" />
@@ -9432,7 +9432,7 @@
       <definition value="Details about the admission to a healthcare service." />
       <comment value="An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.&#xD;&#xD;The duration recorded in the period of this encounter covers the entire scope of this hospitalization record." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization" />
         <min value="0" />
@@ -14860,7 +14860,7 @@
       <definition value="List of locations where  the patient has been during this encounter." />
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class = &quot;virtual&quot;." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.location" />
         <min value="0" />
@@ -15503,7 +15503,7 @@
       <definition value="An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.serviceProvider" />
         <min value="0" />
@@ -15744,7 +15744,7 @@
       <definition value="Another Encounter of which this encounter is a part of (administratively or in time)." />
       <comment value="This is also used for associating a child's encounter back to the mother's encounter.&#xD;&#xD;Refer to the Notes section in the Patient resource for further details." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.partOf" />
         <min value="0" />
@@ -15990,6 +15990,7 @@
     <element id="Encounter.extension:encounterTransport">
       <path value="Encounter.extension" />
       <sliceName value="encounterTransport" />
+      <max value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1" />
@@ -16010,15 +16011,34 @@
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
       </type>
     </element>
+    <element id="Encounter.statusHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="StatusHistory" />
+      </extension>
+      <path value="Encounter.statusHistory" />
+      <max value="0" />
+    </element>
     <element id="Encounter.class">
       <path value="Encounter.class" />
       <short value="Classification of the encounter" />
       <definition value="Classification of the encounter." />
+      <max value="0" />
+    </element>
+    <element id="Encounter.classHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ClassHistory" />
+      </extension>
+      <path value="Encounter.classHistory" />
+      <max value="0" />
     </element>
     <element id="Encounter.classHistory.class">
       <path value="Encounter.classHistory.class" />
       <short value="Classification of the encounter" />
       <definition value="Classification of the encounter." />
+    </element>
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
+      <max value="0" />
     </element>
     <element id="Encounter.type.coding">
       <path value="Encounter.type.coding" />
@@ -16081,6 +16101,10 @@
       <path value="Encounter.type.coding.display" />
       <min value="1" />
     </element>
+    <element id="Encounter.priority">
+      <path value="Encounter.priority" />
+      <max value="0" />
+    </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
       <type>
@@ -16091,6 +16115,18 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
       </type>
+    </element>
+    <element id="Encounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.incomingReferral">
+      <path value="Encounter.incomingReferral" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <short value="Persons involved in discussion, Persons or organisations made aware of the decision, Professionals Involved In Decision, Professional endorsing this CPR status" />
     </element>
     <element id="Encounter.participant.individual">
       <path value="Encounter.participant.individual" />
@@ -16103,6 +16139,14 @@
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
     </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.length">
+      <path value="Encounter.length" />
+      <max value="0" />
+    </element>
     <element id="Encounter.reason.coding">
       <path value="Encounter.reason.coding" />
       <slicing>
@@ -16113,10 +16157,12 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
+      <max value="0" />
     </element>
     <element id="Encounter.reason.coding:snomedCT">
       <path value="Encounter.reason.coding" />
       <sliceName value="snomedCT" />
+      <max value="0" />
     </element>
     <element id="Encounter.reason.coding:snomedCT.extension">
       <path value="Encounter.reason.coding.extension" />
@@ -16131,6 +16177,7 @@
     <element id="Encounter.reason.coding:snomedCT.extension:snomedCTDescriptionID">
       <path value="Encounter.reason.coding.extension" />
       <sliceName value="snomedCTDescriptionID" />
+      <max value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid" />
@@ -16138,7 +16185,7 @@
     </element>
     <element id="Encounter.reason.coding:snomedCT.system">
       <path value="Encounter.reason.coding.system" />
-      <min value="1" />
+      <max value="0" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Encounter.reason.coding:snomedCT.version">
@@ -16147,14 +16194,40 @@
     </element>
     <element id="Encounter.reason.coding:snomedCT.code">
       <path value="Encounter.reason.coding.code" />
-      <min value="1" />
+      <max value="0" />
     </element>
     <element id="Encounter.reason.coding:snomedCT.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Encounter.reason.coding.display" />
-      <min value="1" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.reason.coding:snomedCT.userSelected">
+      <path value="Encounter.reason.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.reason.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Encounter.reason.text" />
+      <short value="Reason for CPR Status" />
+    </element>
+    <element id="Encounter.diagnosis">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Diagnosis" />
+      </extension>
+      <path value="Encounter.diagnosis" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.account">
+      <path value="Encounter.account" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization">
+      <path value="Encounter.hospitalization" />
+      <max value="0" />
     </element>
     <element id="Encounter.hospitalization.preAdmissionIdentifier.system">
       <path value="Encounter.hospitalization.preAdmissionIdentifier.system" />
@@ -16257,6 +16330,10 @@
         <strength value="preferred" />
       </binding>
     </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <max value="0" />
+    </element>
     <element id="Encounter.location.location">
       <path value="Encounter.location.location" />
       <type>
@@ -16266,6 +16343,7 @@
     </element>
     <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
@@ -16273,6 +16351,7 @@
     </element>
     <element id="Encounter.partOf">
       <path value="Encounter.partOf" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1" />
