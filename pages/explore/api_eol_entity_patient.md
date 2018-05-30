@@ -9,18 +9,18 @@ summary: Demographics and other administrative information about an individual r
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Patient" page="CareConnect-Patient-1" fhirname="Patient" fhirlink="patient.html" content="[DSTU2] Bristol Connecting Care POC" userlink="engage_poc_bristolcc.html" %}
+{% include custom/fhir.STU3.reference.html resource="Patient" page="CareConnect-Patient-1" fhirname="Patient" fhirlink="patient.html" content="N/A" userlink=" " %}
 
-## 1. Read ##
+## Communication ##
 
-Communication: There is an exisiting extension under the Care Connect Patient profile which covers the Communication capturing requirements. the profile can be viewed here: 
+It is proposed to use the exisiting extension under the Care Connect Patient profile which covers the Communication requirements. the profile can be viewed here: 
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1">NHS communication preferences</a>
 
-Contacts: There is an exisiting element under the Care Connect Patient profile named 
-Patient.contact which can be used to record End of Life contacts.
+## Contacts ##
 
-Lasting Power of Attorney: There is an exisiting element under the Care Connect Patient profile named 
-Patient.contact which can be used to record End of Life LPA.
+It is proposed to use the exisiting element under the Care Connect Patient profile named Patient.contact which can be used to record End of Life contacts.
+
+## 1. Read ##
 
 <div markdown="span" class="alert alert-success" role="alert">
 GET [baseUrl]/Patient/[id]</div>

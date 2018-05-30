@@ -6,9 +6,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
   </extension>
-  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Prognosis-Encounter-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Preferences-Encounter-1" />
   <version value="0.0.1" />
-  <name value="CareConnect-EOL-Prognosis-Encounter-1" />
+  <name value="CareConnect-EOL-Preferences-Encounter-1" />
   <status value="draft" />
   <date value="2018-05-16" />
   <publisher value="NHS Digital" />
@@ -2318,7 +2318,7 @@
     </element>
     <element id="Encounter.participant">
       <path value="Encounter.participant" />
-      <short value="Persons or organisations aware of the prognosis" />
+      <short value="Persons or organisations aware of the Preferences" />
       <definition value="The list of people responsible for providing the service." />
       <min value="0" />
       <max value="*" />
@@ -3288,7 +3288,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Prognosis-Code-1" />
+      <fixedCode value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Preferences-Code-1" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5941,7 +5941,7 @@
     </element>
     <element id="Encounter.participant">
       <path value="Encounter.participant" />
-      <short value="Persons or organisations aware of the prognosis" />
+      <short value="Persons or organisations aware of the Preferences" />
     </element>
     <element id="Encounter.participant.individual">
       <path value="Encounter.participant.individual" />
@@ -6020,7 +6020,7 @@
     <element id="Encounter.reason.coding:snomedCT.code">
       <path value="Encounter.reason.coding.code" />
       <max value="0" />
-      <fixedCode value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Prognosis-Code-1" />
+      <fixedCode value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Preferences-Code-1" />
     </element>
     <element id="Encounter.reason.coding:snomedCT.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

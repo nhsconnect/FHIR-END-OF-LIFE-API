@@ -1,10 +1,10 @@
 ---
-title: Workflow | Flag | CPR Status
+title: Workflow | Flag | End of Life Register
 keywords: usecase, flag, cpr, status
 tags: [rest, fhir, workflow,api]
 sidebar: foundations_sidebar
-permalink: api_eol_management_flag_prognosis.html
-summary: Workflow Flag for CPR Status
+permalink: api_eol_management_flag_register.html
+summary: Workflow Flag for End of Life Register
 ---
 
 {% include custom/search.warnbanner.html %}
@@ -12,7 +12,7 @@ summary: Workflow Flag for CPR Status
 {% include custom/fhir.referencemin.html resource="Flag" page="CareConnect-Flag-1" fhirname="Flag" fhirlink="flag.html#search" content="User Stories" userlink="" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Prognosis-Flag-1" target="_blank">Localhost Flag Prognosis</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Register-Flag-1" target="_blank">Localhost Flag Register</a>
 
 SCR Inclusion Dataset, and advised codes:
 450475007 | For cardiopulmonary resuscitation (finding)

@@ -1,9 +1,9 @@
 ---
-title: Workflow | Encounter | Prognosis
-keywords: usecase, encounter, prognosis
+title: Workflow | Encounter | Preferences
+keywords: usecase, encounter, preferences
 tags: [rest, fhir, workflow,api]
 sidebar: foundations_sidebar
-permalink: api_eol_management_encounter_prognosis.html
+permalink: api_eol_management_encounter_preferences.html
 summary: An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.
 ---
 {% include custom/search.warnbanner.html %}
@@ -11,7 +11,7 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 {% include custom/fhir.STU3.reference.html resource="Encounter" page="CareConnect-Encounter-1" fhirname="Encounter" fhirlink="encounter.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Prognosis-Encounter-1" target="_blank">Localhost Encounter Prognosis</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Preferences-Encounter-1" target="_blank">Localhost Encounter Preferences</a>
 
 ## 1. Read ##
 

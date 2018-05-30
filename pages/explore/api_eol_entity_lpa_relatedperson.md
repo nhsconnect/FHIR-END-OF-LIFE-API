@@ -1,18 +1,18 @@
 ---
-title: Individuals | Patient - End of Life - Related Person
+title: Individuals | Patient - End of Life - LPA Related Person
 keywords: getcarerecord, structured, rest, patient
 tags: [rest, fhir, identification,api]
 sidebar: accessrecord_rest_sidebar
-permalink: api_eol_entity_relatedperson.html
+permalink: api_eol_entity_lpa_relatedperson.html
 summary: Demographics and other administrative information about an individual receiving care or other health-related services.
 ---
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="https://www.hl7.org/fhir/relatedperson.html" fhirname="Related Person" fhirlink="relatedperson.html" content="[STU3] Bristol Connecting Care POC" userlink="engage_poc_bristolcc.html" %}
+{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="https://www.hl7.org/fhir/relatedperson.html" fhirname="Related Person" fhirlink="relatedperson.html" content="N/A" userlink=" " %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-RelatedPerson-1" target="_blank">Localhost Related Person</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-LPA-RelatedPerson-1" target="_blank">Localhost LPA Related Person</a>
 
 ## 1. Read ##
 
