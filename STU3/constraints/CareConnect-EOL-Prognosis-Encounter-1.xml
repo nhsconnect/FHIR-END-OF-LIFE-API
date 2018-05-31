@@ -3204,7 +3204,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://snomed.info/sct" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3288,7 +3287,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Prognosis-Code-1" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3334,10 +3332,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="1064691000000106" />
-        <valueString value="Limited life expectancy of approximately one year" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6011,7 +6005,6 @@
     <element id="Encounter.reason.coding:snomedCT.system">
       <path value="Encounter.reason.coding.system" />
       <max value="0" />
-      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Encounter.reason.coding:snomedCT.version">
       <path value="Encounter.reason.coding.version" />
@@ -6020,7 +6013,6 @@
     <element id="Encounter.reason.coding:snomedCT.code">
       <path value="Encounter.reason.coding.code" />
       <max value="0" />
-      <fixedCode value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Prognosis-Code-1" />
     </element>
     <element id="Encounter.reason.coding:snomedCT.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -6028,10 +6020,6 @@
       </extension>
       <path value="Encounter.reason.coding.display" />
       <max value="0" />
-      <example>
-        <label value="1064691000000106" />
-        <valueString value="Limited life expectancy of approximately one year" />
-      </example>
     </element>
     <element id="Encounter.reason.coding:snomedCT.userSelected">
       <path value="Encounter.reason.coding.userSelected" />
