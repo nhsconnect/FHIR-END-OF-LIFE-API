@@ -1,17 +1,17 @@
 ---
-title: Workflow | Encounter | Preferences
-keywords: usecase, encounter, preferences
+title: Workflow | Questionnaire Response | Preferences
+keywords: usecase, questionnaire, response, preferences
 tags: [rest, fhir, workflow,api]
 sidebar: foundations_sidebar
-permalink: api_eol_management_encounter_preferences.html
+permalink: api_eol_diagnostics_questionnaireresponse_preferences.html
 summary: An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Encounter" page="CareConnect-Encounter-1" fhirname="Encounter" fhirlink="encounter.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="QuestionnaireResponse" page="CareConnect-EOL-Preferences-QuestionnaireResponse-1" fhirname="QuestionnaireResponse" fhirlink="questionnaireresponse.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
 ## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Preferences-Encounter-1" target="_blank">Localhost Encounter Preferences</a>
+<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Preferences-QuestionnaireResponse-1" target="_blank">Localhost Questionnaire Response Preferences</a>
 
 ## 1. Read ##
 

@@ -9,7 +9,7 @@ summary: Demographics and other administrative information about an individual r
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="https://www.hl7.org/fhir/relatedperson.html" fhirname="Related Person" fhirlink="relatedperson.html" content="N/A" userlink=" " %}
+{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="CareConnect-EOL-LPA-RelatedPerson-1" fhirname="Related Person" fhirlink="relatedperson.html" content="N/A" userlink=" " %}
 
 ## Localhost Profile link ##
 <a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-LPA-RelatedPerson-1" target="_blank">Localhost LPA Related Person</a>

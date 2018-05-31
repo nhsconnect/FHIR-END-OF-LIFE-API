@@ -50,13 +50,6 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <a href="api_eol_management_encounter_cprstatus.html">EOL CPR Status Encounter (L3)</a></td>
 </tr>
 <tr>
-<td>Advance Treatment Preferences</td>
-<td>Conditions (Problem)<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_condition.html">EOL ATP Condition (L3)*</a><br/>
-<a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
-<a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
-</tr>
-<tr>
 <td>End of Life Register</td>
 <td>Flag</td>
 <td><a href="api_eol_management_flag_register.html">EOL Register Flag (L3)</a></td>
@@ -66,6 +59,13 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <td>Encounter<br/>Observation</td>
 <td><a href="api_eol_management_encounter_prognosis.html">EOL Prognosis Encounter (L3)</a><br/>
 <a href="api_eol_diagnostics_prognosis_observation.html">EOL Prognosis Observation (L3)</a></td>
+</tr>
+<tr>
+<td>Advance Treatment Preferences</td>
+<td>Conditions (Problem)<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_summary_condition.html">EOL ATP Condition (L3)*</a><br/>
+<a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
+<a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
 </tr>
 <tr>
 <td>Disability</td>
@@ -83,9 +83,8 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 </tr>
 <tr>
 <td>Preferences</td>
-<td>Encounter<br/>Location</td>
-<td><a href="api_eol_management_encounter_preferences.html">EOL Preferences Encounter (L3)*</a><br/>
-<a href="api_eol_entities_location_preferences.html">EOL Preferences Location (L3)*</a></td>
+<td>Questionnaire Response</td>
+<td><a href="api_eol_diagnostics_questionnaireresponse_preferences.html">EOL Preferences Questionnaire Response (L3)*</a></td>
 </tr>
 <tr>
 <td>Other Docs</td>
