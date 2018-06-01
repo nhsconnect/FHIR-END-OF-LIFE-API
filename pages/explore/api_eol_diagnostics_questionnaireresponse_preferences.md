@@ -10,9 +10,6 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 
 {% include custom/fhir.STU3.reference.html resource="QuestionnaireResponse" page="CareConnect-EOL-Preferences-QuestionnaireResponse-1" fhirname="QuestionnaireResponse" fhirlink="questionnaireresponse.html" content="User Stories" userlink="engage_michaelsstory.html" %}
 
-## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Preferences-QuestionnaireResponse-1" target="_blank">Localhost Questionnaire Response Preferences</a>
-
 ## 1. Read ##
 
 <div markdown="span" class="alert alert-success" role="alert">
