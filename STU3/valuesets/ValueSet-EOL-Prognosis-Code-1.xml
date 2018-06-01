@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="CareConnect-CPRStatus-Code-1"/>
-	<url value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-Prognosis-Code-1"/>
+	<id value="EOL-Prognosis-Code-1"/>
+	<url value="https://fhir.nhs.uk/STU3/ValueSet/EOL-Prognosis-Code-1"/>
 	<version value="1.0.0"/>
-	<name value="Care Connect Prognosis Code"/>
+	<name value="EOL Prognosis Code"/>
 	<status value="active"/>
 	<date value="2018-05-21T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
