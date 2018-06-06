@@ -62,29 +62,29 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 </tr>
 <tr>
 <td>Advance Treatment Preferences</td>
-<td>Conditions (Problem)<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_condition.html">EOL ATP Condition (L3)*</a><br/>
+<td>Conditions (Problem)<br/>Questionnaire Response<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_summary_condition.html">EOL ATP Condition (L3)*<br/><a href="api_eol_diagnostics_questionnaireresponse.html">EOL Questionnaire Response (L3)*</a></a><br/>
 <a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
 </tr>
 <tr>
 <td>Disability</td>
 <td>Conditions (Problem)<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_disability_condition.html">EOL Disability Condition (L3)*</a><br/>
+<td><a href="api_eol_summary_disability_condition.html">EOL Disability Condition (L2)</a><br/>
 <a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
 </tr>
 <tr>
 <td>Functional Status</td>
-<td>Conditions (Problem)<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_functional_condition.html">EOL Functional Status Condition (L3)*</a><br/>
+<td>Questionnaire Response<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_diagnostics_questionnaireresponse.html">EOL Questionnaire Response (L3)*</a><br/>
 <a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
 </tr>
 <tr>
 <td>Preferences</td>
 <td>Questionnaire Response</td>
-<td><a href="api_eol_diagnostics_questionnaireresponse_preferences.html">EOL Preferences Questionnaire Response (L3)*</a></td>
+<td><a href="api_eol_diagnostics_questionnaireresponse.html">EOL Questionnaire Response (L3)*</a></td>
 </tr>
 <tr>
 <td>Other Docs</td>

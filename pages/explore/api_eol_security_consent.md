@@ -9,7 +9,7 @@ summary: A record of a healthcare consumer’s policy choices, which permits or 
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Consent" page="CareConnect-EOL-Consent-1" fhirname="Consent" fhirlink="consent.html" content="-" userlink="-" %}
+{% include custom/fhir.reference.html resource="Consent" page="CareConnect-EOL-Consent-1" fhirname="Consent" fhirlink="consent.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## 1. Read ##
 

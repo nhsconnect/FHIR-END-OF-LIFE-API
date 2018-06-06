@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Preferences-QuestionnaireResponse-1" />
-  <version value="1.0.0" />
-  <name value="CareConnect-EOL-Preferences-QuestionnaireResponse-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-QuestionnaireResponse-1" />
+  <version value="1.0.1" />
+  <name value="CareConnect-EOL-QuestionnaireResponse-1" />
   <status value="draft" />
-  <date value="2018-05-31T15:31:29.22+01:00" />
+  <date value="2018-06-05" />
   <publisher value="NHS Digital" />
   <contact>
     <telecom>
@@ -12,7 +12,7 @@
       <value value="interoperabilityteam@nhs.net" />
     </telecom>
   </contact>
-  <description value="An End of Life Preferences Questionnaire Response." />
+  <description value="An End of Life Questionnaire Response." />
   <copyright value="Copyright © 2017 NHS Digital" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -886,7 +886,7 @@
     <element id="QuestionnaireResponse.item">
       <path value="QuestionnaireResponse.item" />
       <short value="Groups and questions" />
-      <definition value="A group or question item from the original questionnaire for which answers are provided." />
+      <definition value="A group or question item from the original questionnaire for which answers are provided. This is for coded and free text fields." />
       <comment value="Groups cannot have answers and therefore must nest directly within item. When dealing with questions, nesting must occur within each answer because some questions may have multiple answers (and the nesting occurs for each answer)." />
       <min value="0" />
       <max value="*" />
@@ -1112,7 +1112,7 @@
     </element>
     <element id="QuestionnaireResponse.item.text">
       <path value="QuestionnaireResponse.item.text" />
-      <short value="Name for group or question text" />
+      <short value="Preferred Place of Death - Textual, Preferences and Wishes, Domestic Access and Information" />
       <definition value="Text that is displayed above the contents of the group or as the text of the question being answered." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Allows the questionnaire response to be read without access to the questionnaire." />
@@ -1194,7 +1194,7 @@
       <definition value="The respondent's answer(s) to the question." />
       <comment value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="QuestionnaireResponse.item.answer" />
         <min value="0" />
@@ -1360,7 +1360,6 @@
       </type>
       <type>
         <code value="Coding" />
-        <profile value="12345" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1457,6 +1456,18 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
     </element>
+    <element id="QuestionnaireResponse.item">
+      <path value="QuestionnaireResponse.item" />
+      <definition value="A group or question item from the original questionnaire for which answers are provided. This is for coded and free text fields." />
+    </element>
+    <element id="QuestionnaireResponse.item.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <short value="Preferred Place of Death - Textual, Preferences and Wishes, Domestic Access and Information" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <max value="1" />
+    </element>
     <element id="QuestionnaireResponse.item.answer.value[x]">
       <path value="QuestionnaireResponse.item.answer.value[x]" />
       <type>
@@ -1464,7 +1475,6 @@
       </type>
       <type>
         <code value="Coding" />
-        <profile value="12345" />
       </type>
     </element>
   </differential>

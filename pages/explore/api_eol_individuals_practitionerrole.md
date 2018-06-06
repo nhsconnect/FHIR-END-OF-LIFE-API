@@ -9,7 +9,7 @@ summary: A specific set of Roles/Locations/specialties/services that a practitio
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="PractitionerRole" page="CareConnect-PractitionerRole-1" fhirname="Practitioner Role" fhirlink="practitionerrole.html" content="" userlink="" %}
+{% include custom/fhir.reference.html resource="PractitionerRole" page="CareConnect-PractitionerRole-1" fhirname="Practitioner Role" fhirlink="practitionerrole.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 
 ## 1. Read ##
