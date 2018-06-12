@@ -11,14 +11,9 @@ summary: Workflow Flag for End of Life Register
 
 {% include custom/fhir.STU3.reference.html resource="Flag" page="CareConnect-EOL-Register-Flag-1" fhirname="Flag" fhirlink="flag.html" content="User Stories" userlink="engage_endoflife.html" %}
 
-SCR Inclusion Dataset, and advised codes:
-450475007 | For cardiopulmonary resuscitation (finding)
-450476008 | Not for cardiopulmonary resuscitation (finding)
+## Patient Scenario ##
 
-Other codes in SCR Inclusion Dataset:
-304252001 | For resuscitation (finding)
-304253006 | Not for resuscitation (finding)
-143021000119109 | Do not resuscitate status with supporting documentation (finding)
+Whether the patient has been placed on the End of Life Register.
 
 ## 1. Read ##
 

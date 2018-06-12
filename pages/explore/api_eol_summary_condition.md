@@ -10,7 +10,9 @@ summary: Use to record detailed information about conditions, problems or diagno
 
 {% include custom/fhir.STU3.reference.html resource="Condition" page="CareConnect-EOL-Condition-1" fhirname="Condition" fhirlink="condition.html" content="User Stories" userlink="engage_endoflife.html" %}
 
-It is proposed to use the Condition resource to record Advance Treatment Preferences, Disability and Functional Status.
+## Patient Scenario ##
+
+This is a description of any disabilites th a patient may have. This is captured in FHIR using the Condition resource. 
 
 ## 1. Read ##
 

@@ -11,14 +11,15 @@ summary: Workflow Flag for CPR Status
 
 {% include custom/fhir.STU3.reference.html resource="Flag" page="CareConnect-EOL-CPRStatus-Flag-1" fhirname="Flag" fhirlink="flag.html" content="User Stories" userlink="engage_endoflife.html" %}
 
-SCR Inclusion Dataset, and advised codes:
-450475007 | For cardiopulmonary resuscitation (finding)
-450476008 | Not for cardiopulmonary resuscitation (finding)
+## Patient Scenario ##
 
-Other codes in SCR Inclusion Dataset:
-304252001 | For resuscitation (finding)
-304253006 | Not for resuscitation (finding)
-143021000119109 | Do not resuscitate status with supporting documentation (finding)
+The CPR Status is the result of a clinical encounter, clinicians will assess the clincal benefit of providing CPR to the patient. Patient can make an advance decision to refuse treatment. The clinician decides the status of the flag during an encounter and also makes some observations about the patient. 
+
+The Date time of CPR Status is captured as well as the review date, this is an ioptional entry to provide an agreed review date for the status. Blank implies that this is an indefinite decision. A CPR status that has gone beyond the review date in then invalid.
+
+All none clinical participants are captured who may have had direct involvement or are notified of the decision at a later date. 
+
+Persons involved in discussion, Persons or organisations made aware of the decision, Professionals Involved In Decision, Professional endorsing this CPR status
 
 ## 1. Read ##
 

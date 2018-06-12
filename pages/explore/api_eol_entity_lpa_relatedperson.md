@@ -11,6 +11,10 @@ summary: Demographics and other administrative information about an individual r
 
 {% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="CareConnect-EOL-LPA-RelatedPerson-1" fhirname="Related Person" fhirlink="relatedperson.html" content="N/A" userlink=" " %}
 
+## Patient Scenario ##
+
+This is used to capture if the Patient has a person or persons to be appointed as Lasting Powers of Attorney for their health and welfare. 
+
 ## 1. Read ##
 
 Lasting Power of Attorney: Proposed to use the Related Person resource.

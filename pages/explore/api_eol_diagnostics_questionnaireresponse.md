@@ -10,9 +10,11 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 
 {% include custom/fhir.STU3.reference.html resource="QuestionnaireResponse" page="CareConnect-EOL-Preferences-QuestionnaireResponse-1" fhirname="QuestionnaireResponse" fhirlink="questionnaireresponse.html" content="User Stories" userlink="engage_endoflife.html" %}
 
-The Questionnaire Response resource can be used to capture information for the following:
+## Patient Scenario ##
 
 ### Advance Treatment Preferences ###
+
+Many localities have or will implement ReSPECT so this value can be preserved when transmitting within systems. This is captured through the ReSPECT process completing the form with the patient (there is other data collected on the ReSPECT form, the other data is captured within the minimum dataset).
 
 ReSPECT Care Priority<br/>
 ReSPECT Care Priority Scale<br/>
@@ -20,12 +22,16 @@ ReSPECT Patient Care Priority - Textual
 
 ### Preferences ###
 
+This is used to record a patients preferred place of death and any other preferences and wishes (This is pretty much a catch-all data item where the whole of the patient's preferences are recorded. This will include wishes for care and also cultural, religious and social needs). It also records Domestic Access and Information. 
+
 Preferred Place of Death - Coded <br/>
 Preferred Place of Death - Textual<br/>
 Preferences and Wishes<br/>
 Domestic Access and Information
 
 ### Functional Status ###
+
+The Functional Status is recorded by clinicians during encounters with the patient. It is to capture where they score on a Karnofsky scale or Electronic Frailty Index. It is to help give an early indication of their functional status. There is a mandatory textual field for systems that do not store any coding. 
 
 Functional Status<br/>
 Functional Status Type<br/>

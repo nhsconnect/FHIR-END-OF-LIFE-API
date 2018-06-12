@@ -11,6 +11,14 @@ summary: A record of a healthcare consumer’s policy choices, which permits or 
 
 {% include custom/fhir.reference.html resource="Consent" page="CareConnect-EOL-Consent-1" fhirname="Consent" fhirlink="consent.html" content="User Stories" userlink="engage_endoflife.html" %}
 
+## Patient Scenario ##
+
+Any encounter with an NHS professional. Especially on creation of the intial EPACCs record, the patient will be asked consent to share this data more widely for the purposes of providing them with direct care.
+
+A consent is recorded for a patient based on their meeting with a professional. The Consent FHIR resource has been chosen to represent this consent recording. It can record the status as well as the purpose of the consent, and actors involved (Professionals recording this consent status).
+
+Where there is no Consent to share on the system, no EOL data will be shared on other consumer systems.
+
 ## 1. Read ##
 
 <div markdown="span" class="alert alert-success" role="alert">

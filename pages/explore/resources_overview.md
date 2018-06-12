@@ -19,9 +19,14 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <tr id="clinical">
 <th style="width:33%;">EOL Requirement</th>
 <th style="width:33%;">FHIR Resource(s)</th>
-<th style="width:33%;">&nbsp;</th>
+<th style="width:33%;">Care Connect Profile(s)</th>
 </tr>
 <tr id="clinical">
+<td>EOL Record</td>
+<td>Bundle</td>
+<td><a href="api_eol_bundle.html">EOL Bundle (L3) - PENDING</a></td>
+</tr>
+<tr>
 <td>Communication</td>
 <td>Patient</td>
 <td><a href="api_eol_entity_patient.html">EOL Patient (L2)</a></td>
@@ -45,9 +50,10 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 </tr>
 <tr>
 <td>CPR Status</td>
-<td>Flag<br/>Encounter</td>
+<td>Flag<br/>Encounter<br/>Observation</td>
 <td><a href="api_eol_management_flag_cprstatus.html">EOL CPR Status Flag (L3)</a><br/>
-<a href="api_eol_management_encounter_cprstatus.html">EOL CPR Status Encounter (L3)</a></td>
+<a href="api_eol_management_encounter_cprstatus.html">EOL CPR Status Encounter (L3)</a><br/>
+<a href="api_eol_management_observation_cprstatus.html">EOL CPR Status Observation (L3) - PENDING</a></td>
 </tr>
 <tr>
 <td>End of Life Register</td>
@@ -63,14 +69,16 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <tr>
 <td>Advance Treatment Preferences</td>
 <td>Conditions (Problem)<br/>Questionnaire Response<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_condition.html">EOL ATP Condition (L3)*<br/><a href="api_eol_diagnostics_questionnaireresponse.html">EOL Questionnaire Response (L3)*</a></a><br/>
-<a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
-<a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
+<td><a href="api_eol_summary_condition.html">EOL ATP Condition (L3)*</a><br/>
+ <a href="api_eol_diagnostics_questionnaireresponse.html">EOL Questionnaire Response (L3)*</a><br/>
+ <a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
+ <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
 </tr>
 <tr>
 <td>Disability</td>
-<td>Conditions (Problem)<br/>Practitioner<br/>Practioner Role</td>
+<td>Conditions (Problem)<br/>List<br/>Practitioner<br/>Practioner Role</td>
 <td><a href="api_eol_summary_disability_condition.html">EOL Disability Condition (L2)</a><br/>
+<a href="api_eol_summary_disability_list.html">EOL Disability List (L2) - PENDING</a><br/>
 <a href="api_eol_individuals_practitioner.html">EOL Practitioner (L2)</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">EOL Practitioner Role (L2)</a></td>
 </tr>

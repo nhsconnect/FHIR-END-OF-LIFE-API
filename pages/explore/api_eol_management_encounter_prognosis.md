@@ -10,6 +10,12 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 
 {% include custom/fhir.STU3.reference.html resource="Encounter" page="CareConnect-EOL-Prognosis-Encounter-1" fhirname="Encounter" fhirlink="encounter.html" content="User Stories" userlink="engage_endoflife.html" %}
 
+## Patient Scenario ##
+
+A prognosis is a clincal decision during an encounter to estimate a patients life expectancy, a prognosis is updated during an Encounter with the Patient. The Prognosis is then captured as an Observation in Coded and Textual format. 
+
+Persons or organisations aware of the prognosis are also captured in the Encounter participants, note there may be times when someone is made aware a few days after the encounter. At which pooint an update record would be actioned on the Encounter to include this information. 
+
 ## 1. Read ##
 
 <div markdown="span" class="alert alert-success" role="alert">
