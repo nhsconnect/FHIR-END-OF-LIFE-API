@@ -34,15 +34,17 @@ Contents
 4.3.	National Reporting – days in hospital in final 90 days of life	13
 4.4.	National Reporting – when EoL care plan was recorded	13
  
-1.	Introduction
+## 1.	Introduction ##
 To support the End of Life National Minimum Dataset, this document explains the user stories and use cases that will (or possibly will) employ the FHIR resources that will be produced as part of delivery of this interoperability dataset.
 The purpose of this document is to explain those user stories and use cases to those developing the FHIR resources and those technicians and clinicians that will be reviewing the FHIR resources as part of the INTEROPen curation process.
 The FHIR resources will be used to deliver both API “pull” of data from source systems and also messaging to “push” data to receiving systems.  The nature of the fragmented delivery of EPaCCS across the NHS in England means that the implementation of the resources will depend upon what solutions are being employed locally.
  
 The first of type (FoT) implementation will be by the London Digital Programme (LDP).  LDP will offer U&EC users access to the data held with the Londonwide CMC EPaCCS by using pointers stored within its new London Health and Care Information Exchange (LHCIE).
-2.	Use Cases
+
+## 2.	Use Cases ##
 The required data flows are described as use cases.
-2.1.	111/999 Call Handler takes call for patient with EoL plans and preferences.
+
+## 2.1.	111/999 Call Handler takes call for patient with EoL plans and preferences. ##
 This is the primary use case for the first of type (FoT) delivery by the London Digital Programme (LDP).  LDP are developing a system that enables Londonwide users to access source systems such as Co-ordinate My Care (CMC) to provide EoL and other data.
 Alternate flows in blue are outside of the FoT scope.
 Trigger	Call received – EoL patient is unwell or exhibiting changed status.
@@ -70,7 +72,7 @@ Go to 4
 10a	Patient is taken to Hospital if their planned treatment level indicates this, based on their current condition.
 End
 
-2.2.	Patient agrees advance care plan and preferences with community palliative care team (GP update)
+## 2.2.	Patient agrees advance care plan and preferences with community palliative care team (GP update) ##
 Trigger	Patient agrees advance care plan and preferences with community palliative care team.
 The local EPaCCS is not also the patient’s GP system.
 Actors	EPaCCS user, patient, GP
@@ -82,7 +84,7 @@ Main Flow
 5	GP reviews incoming changes and accepts them into their GP system.
 6	EoL dataset details are automatically updated to the SCR.
 
-2.3.	Patient agrees advance care plan and preferences with community palliative care team (U&EC update)
+## 2.3.	Patient agrees advance care plan and preferences with community palliative care team (U&EC update) ##
 Trigger	Patient agrees advance care plan and preferences with community palliative care team.
 The local EPaCCS is set up to automatically update the local U&EC system.
 Actors	EPaCCS user, patient
@@ -93,7 +95,7 @@ Main Flow
 4	FHIR update is routed to the U&EC system.
 5	U&EC system accepts the changes.
 
-2.4.	Patient agrees advance care plan and preferences with GP (EPaCCS update)
+## 2.4.	Patient agrees advance care plan and preferences with GP (EPaCCS update) ##
 Trigger	Patient agrees advance care plan and preferences with a GP or care team.
 The local EPaCCS is not also the patient’s GP system.
 Actors	GP system user, patient, EPaCCS user
@@ -109,9 +111,9 @@ Alternate Flows
 b)	GP system uses FHIR EoL dataset API available on partner EPaCCS to update the patient EoL data.
 c)	<end>
 
-3.	User Stories
+## 3.	User Stories ##
 Requirements are described as user stories to enable a better understanding of the issues that require resolution by any integrated system.
-3.1.	EoL data and preferences viewable by all care professionals
+## 3.1.	EoL data and preferences viewable by all care professionals ##
 In order to remove the need to repeat my statement of preferences and for those preferences to be respected when I’m unable to communicate them successfully
 As a patient
 I want my EoL data and preferences to be shared so that they can be accessed by all health and care professionals attending to my needs.
@@ -124,20 +126,23 @@ Acceptance Criteria
 •	The care professional must only be able to amend those data items over which they have jurisdiction.
 •	The care professional may be able to view the current EoL data and preferences via a viewer portal or embedded within their own native IT system.
 •	Any changes must be capable of being shared promptly so that other care professionals will have access to the changed record. 
-3.2.	Up to date preferences are accessible to care professionals
+
+## 3.2.	Up to date preferences are accessible to care professionals ##
 In order to ensure that care professionals always respond to my latest wishes
 As a patient
 I want to be assured that any updates to my preferences will be promptly shared to systems that will be used by my care professionals.
 Acceptance Criteria
 •	EoL preferences to be updated and shared must, as a minimum, comply with the agreed End of Life National Minimum Dataset.
 •	Updates to EoL preferences must be promptly shared with all systems that will be used to deliver the patient’s care, with little or no user interaction.
-3.3.	Patient/carers can directly view EoL preferences
+
+## 3.3.	Patient/carers can directly view EoL preferences ##
 In order to ensure that my statement of preferences is completely up to date with my current wishes
 As a patient or an authorised proxy of the patient
 I want to be able to independently (or with help from my carers) view my statement of preferences whenever I wish to.
 Commentary
 Commitments have been made that patients/carers will have access to their EoL preferences via their own IT applications.  This story will be eventually delivered by the NHS Online programme.  It expected that as the software is developed it will use the End of Life National Minimum Dataset. 
-3.4.	Patient/carers can directly amend EoL preferences
+
+## 3.4.	Patient/carers can directly amend EoL preferences ##
 In order to ensure that my statement of preferences is completely up to date with my current wishes
 As a patient or an authorised proxy of the patient
 I want to be able to independently (or with help from my carers) update my statement of preferences whenever I wish to.
@@ -145,7 +150,8 @@ Commentary
 Commitments have been made that patients/carers will have access to their EoL preferences and in some circumstances, be able to effect changes to those preferences via their own IT applications.  Consideration must be taken to ensure that the patient can only amend those preferences where it is safe for the patient to do so without professional support.
 Acceptance Criteria
 •	The patient must only be able to alter those items of the preferences over which they have jurisdiction.
-3.5.	Urgent and Emergency Care View Current EoL Data
+
+## 3.5.	Urgent and Emergency Care View Current EoL Data ##
 In order that the EoL patient receives the appropriate care for their current condition and wishes 
 As an urgent or emergency care user
 I want to quickly view the latest EoL information from the EPaCCS that supports this patient’s EoL care
@@ -154,7 +160,8 @@ In the FoT solution, to be delivered by the LDP, the LDP brokerage will direct t
 Other urgent care systems may employ “click through” technology to access partner EPaCCS, using the national minimum dataset
 Acceptance Criteria
 •	EoL information to be viewed must, as a minimum, comply with the agreed End of Life National Minimum Dataset.
-3.6.	Update Urgent and Emergency Care with EoL Data
+
+## 3.6.	Update Urgent and Emergency Care with EoL Data ##
 In order that EoL patients receive the appropriate care for their current condition and wishes
 As an urgent or emergency care user
 I want to receive updates for changes of patient EoL information from source systems
@@ -163,7 +170,8 @@ Some local solutions require changes made to EPaCCS data to be transmitted direc
 Acceptance Criteria
 •	EoL information to be updated and shared must, as a minimum, comply with the agreed End of Life National Minimum Dataset.
 •	Updates to EoL information must be promptly shared with urgent and emergency care systems, with little or no user interaction.
-3.7.	Update GP Systems (and hence SCR) with EoL Data
+
+## 3.7.	Update GP Systems (and hence SCR) with EoL Data ##
 In order that EoL patients receive the appropriate care for their current condition and wishes
 As a GP system user
 I want to receive updates for changes of patient EoL information from source systems
@@ -175,7 +183,7 @@ Acceptance Criteria
 •	EoL information to be updated and shared must, as a minimum, comply with the agreed End of Life National Minimum Dataset.
 •	Updates to EoL preferences must be promptly shared with GP systems, with little or no user interaction.
 
-3.8.	Update EPaCCS with EoL Data
+## 3.8.	Update EPaCCS with EoL Data ##
 In order that EoL patients receive the appropriate care for their current condition and wishes
 As an EPaCCS system user
 I want to receive updates for changes of patient EoL information from source systems
@@ -185,9 +193,11 @@ Additionally, Trust systems may use the message standard to transmit changes in 
 Acceptance Criteria
 •	EoL information to be updated and shared must, as a minimum, comply with the agreed End of Life National Minimum Dataset.
 •	Updates to EoL preferences must be promptly shared with GP systems, with little or no user interaction
-4.	Out of Scope User Stories
+
+## 4.	Out of Scope User Stories ##
 The following stories may be supported by delivery of the EoL National Minimum Dataset FHIR resources, but they are not to be delivered by the initial implementation.
-4.1.	National Reporting – death in preferred place
+
+## 4.1.	National Reporting – death in preferred place ##
 In order that the benefits of integrated EPaCCS and the quality of EoL care can be better measured
 As a nationally-based EoL professional
 I want national reporting to show the incidence of people dying in their preferred place of death.
@@ -196,19 +206,22 @@ Acceptance Criteria
 •	Data must be capable of being split across geographic and organisational boundaries.
 •	Data must show totals of preferred place of death vs. actual place of death.
 •	Data should be capable of reporting counts by the reason for variance where the actual place of death does not match the preferred place of death.
-4.2.	National Reporting – three or more emergency admissions in final 90 days of life
+
+## 4.2.	National Reporting – three or more emergency admissions in final 90 days of life ##
 In order that the benefits of integrated EPaCCS and the quality of EoL care can be better measured
 As a nationally-based EoL professional
 I want national reporting to show the incidence of people with three or more emergency admissions in the last 90 days of life.
 Commentary
 This is a requirement from Professor Bee Wee.  This is data that will be collected from other urgent and emergency care data collections.  It is out of scope for this current piece of work.
-4.3.	National Reporting – days in hospital in final 90 days of life
+
+## 4.3.	National Reporting – days in hospital in final 90 days of life ##
 In order that the benefits of integrated EPaCCS and the quality of EoL care can be better measured
 As a nationally-based EoL professional
 I want national reporting to show data for number of days people are spending in hospital during their final 90 days of life.
 Commentary
 This is a requirement from Professor Bee Wee.  This is data that will be collected from other urgent and emergency care data collections.  It is out of scope for this current piece of work.
-4.4.	National Reporting – when EoL care plan was recorded
+
+## 4.4.	National Reporting – when EoL care plan was recorded ##
 In order that the benefits of integrated EPaCCS and the quality of EoL care can be better measured
 As a nationally-based EoL professional
 I want national reporting to show data for when an EoL care plan was recorded and whether the person consented to sharing of this data.

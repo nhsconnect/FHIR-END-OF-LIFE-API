@@ -13,13 +13,19 @@ summary: Workflow Flag for CPR Status
 
 ## Patient Scenario ##
 
-The CPR Status is the result of a clinical encounter, clinicians will assess the clincal benefit of providing CPR to the patient. Patient can make an advance decision to refuse treatment. The clinician decides the status of the flag during an encounter and also makes some observations about the patient. 
+CPR Status
 
-The Date time of CPR Status is captured as well as the review date, this is an ioptional entry to provide an agreed review date for the status. Blank implies that this is an indefinite decision. A CPR status that has gone beyond the review date in then invalid.
+The CPR Status is the result of an encounter where clinicians will assess the clinical benefit of providing CPR to the patient. Clinicians must consider the wishes of the patient where they have made a legal Advance Decision to Refuse Treatment. 
 
-All none clinical participants are captured who may have had direct involvement or are notified of the decision at a later date. 
+The underlying reason for the CPR decision and the mental capacity of the patient at the time of this decision-making are recorded as observations.
 
-Persons involved in discussion, Persons or organisations made aware of the decision, Professionals Involved In Decision, Professional endorsing this CPR status
+The date and time of CPR Status (encounter) is captured as well as (optionally) a review date.
+
+The review date is an effective end date of this CPR status.  Once the review date has passed, this CPR status becomes invalid.  Where the review date is blank/null, this is an indefinite decision (at least until another CPR status is recorded with a later date and time.
+
+All non-clinical participants are captured who may have had direct involvement, as are others who have been notified of the decision later.
+
+Another, more senior, professional must endorse the status where the professional recording the status does not have enough seniority to make the final decision.
 
 ## 1. Read ##
 

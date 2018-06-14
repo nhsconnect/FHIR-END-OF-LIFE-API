@@ -12,9 +12,11 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 
 ## Patient Scenario ##
 
-A prognosis is a clincal decision during an encounter to estimate a patients life expectancy, a prognosis is updated during an Encounter with the Patient. The Prognosis is then captured as an Observation in Coded and Textual format. 
+Prognosis
 
-Persons or organisations aware of the prognosis are also captured in the Encounter participants, note there may be times when someone is made aware a few days after the encounter. At which pooint an update record would be actioned on the Encounter to include this information. 
+A prognosis is a clinical decision made during an encounter to estimate a patient’s life expectancy. The prognosis is then captured as an observation in coded and textual format. 
+
+Persons or organisations aware of the prognosis are also captured in the encounter participants.  There may be times when someone is subsequently made aware of the prognosis some time after the encounter. On these occasions, an update record will be actioned on the encounter to include this information.
 
 ## 1. Read ##
 

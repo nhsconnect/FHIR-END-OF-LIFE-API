@@ -9,11 +9,14 @@ summary: Demographics and other administrative information about an individual r
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="CareConnect-EOL-LPA-RelatedPerson-1" fhirname="Related Person" fhirlink="relatedperson.html" content="N/A" userlink=" " %}
+{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="CareConnect-EOL-LPA-RelatedPerson-1" fhirname="Related Person" fhirlink="relatedperson.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Patient Scenario ##
 
-This is used to capture if the Patient has a person or persons to be appointed as Lasting Powers of Attorney for their health and welfare. 
+Lasting Power of Attorney
+
+This is used to capture if the patient has a person or persons that have been appointed with lasting power of attorney for their health and welfare.
+ the Patient has a person or persons to be appointed as Lasting Powers of Attorney for their health and welfare. 
 
 ## 1. Read ##
 

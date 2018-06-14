@@ -13,7 +13,9 @@ summary: Workflow Flag for End of Life Register
 
 ## Patient Scenario ##
 
-Whether the patient has been placed on the End of Life Register.
+End of Life Register
+
+Whether the patient has been placed on the local end of life register.
 
 ## 1. Read ##
 

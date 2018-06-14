@@ -10,6 +10,12 @@ summary: Use to record detailed information about conditions, problems or diagno
 
 {% include custom/fhir.reference.html resource="Condition" page="CareConnect-Condition-1" fhirname="Condition" fhirlink="condition.html" content="User Stories" userlink="engage_endoflife.html" %}
 
+## Patient Scenario ##
+
+Disabilities
+
+This is a description of any disabilities the patient may have. This is captured in FHIR using the Condition resource.
+
 ## 1. Read ##
 
 <div markdown="span" class="alert alert-success" role="alert">

@@ -14,29 +14,18 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 
 ### Advance Treatment Preferences ###
 
-Many localities have or will implement ReSPECT so this value can be preserved when transmitting within systems. This is captured through the ReSPECT process completing the form with the patient (there is other data collected on the ReSPECT form, the other data is captured within the minimum dataset).
+Advance treatment preferences are recorded as a table of the problem/condition/anticipated event, coupled with the intervention required and an indicator of the level of intervention.
 
-ReSPECT Care Priority<br/>
-ReSPECT Care Priority Scale<br/>
-ReSPECT Patient Care Priority - Textual
+Most of the ReSPECT data can be captured within the minimum dataset, however the ReSPECT care priority values cannot be accommodated elsewhere and so must be recorded separately.  As many localities have or will implement ReSPECT, it important that these additional ReSPECT values can be transmitted.
 
 ### Preferences ###
 
-This is used to record a patients preferred place of death and any other preferences and wishes (This is pretty much a catch-all data item where the whole of the patient's preferences are recorded. This will include wishes for care and also cultural, religious and social needs). It also records Domestic Access and Information. 
-
-Preferred Place of Death - Coded <br/>
-Preferred Place of Death - Textual<br/>
-Preferences and Wishes<br/>
-Domestic Access and Information
+This is used to record a patient’s preferred place of death and any other preferences and wishes, including wishes for care and cultural, religious and social needs.  Additionally, there is an option to record domestic information and access instructions for the patient’s residence. 
 
 ### Functional Status ###
 
-The Functional Status is recorded by clinicians during encounters with the patient. It is to capture where they score on a Karnofsky scale or Electronic Frailty Index. It is to help give an early indication of their functional status. There is a mandatory textual field for systems that do not store any coding. 
+The patient’s functional status is recorded by clinicians during encounters with the patient and gives consumers of the data a general indication of the wellness of the patient. The status can be codified using either the Karnofsky scale or Electronic Frailty Index and there is a mandatory textual field for systems that do not store this data as a codeable concept.
 
-Functional Status<br/>
-Functional Status Type<br/>
-Functional Status Value<br/>
-Functional Status Text
 
 ...
 
