@@ -8,7 +8,7 @@ summary: A DocumentReference resource is used to describe a document that is mad
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="DocumentReference" page="CareConnect-EOL-Document-Reference-1" fhirname="DocumentReference" fhirlink="DocumentReference.html" content="N/A" userlink=" " %}
+{% include custom/fhir.STU3.reference.html resource="DocumentReference" page="EOL-Document-Reference-1" fhirname="DocumentReference" fhirlink="DocumentReference.html" content="N/A" userlink=" " %}
 
 [SKETCH profile. Not official]
 

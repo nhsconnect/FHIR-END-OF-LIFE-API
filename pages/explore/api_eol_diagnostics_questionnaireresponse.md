@@ -8,7 +8,7 @@ summary: An interaction between a patient and healthcare provider(s) for the pur
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="QuestionnaireResponse" page="CareConnect-EOL-Preferences-QuestionnaireResponse-1" fhirname="QuestionnaireResponse" fhirlink="questionnaireresponse.html" content="User Stories" userlink="engage_endoflife.html" %}
+{% include custom/fhir.STU3.reference.html resource="QuestionnaireResponse" page="EOL-Preferences-QuestionnaireResponse-1" fhirname="QuestionnaireResponse" fhirlink="questionnaireresponse.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Patient Scenario ##
 

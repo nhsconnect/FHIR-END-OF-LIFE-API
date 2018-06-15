@@ -51,25 +51,25 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <tr>
 <td>CPR Status</td>
 <td>Flag<br/>Encounter<br/>Observation</td>
-<td><a href="api_eol_management_flag_cprstatus.html">Care Connect CPR Status Flag</a><br/>
-<a href="api_eol_management_encounter_cprstatus.html">Care Connect CPR Status Encounter</a><br/>
-<a href="api_eol_management_observation_cprstatus.html">Care Connect CPR Status Observation - PENDING</a></td>
+<td><a href="api_eol_management_flag_cprstatus.html">EOL CPR Status Flag</a><br/>
+<a href="api_eol_management_encounter_cprstatus.html">Care Connect EOL CPR Status Encounter</a><br/>
+<a href="api_eol_diagnostics_observation_cprstatus.html">EOL CPR Status Observation</a></td>
 </tr>
 <tr>
 <td>End of Life Register</td>
 <td>Flag</td>
-<td><a href="api_eol_management_flag_register.html">Care Connect Register Flag</a></td>
+<td><a href="api_eol_management_flag_register.html">EOL Register Flag</a></td>
 </tr>
 <tr>
 <td>Prognosis</td>
 <td>Encounter<br/>Observation</td>
-<td><a href="api_eol_management_encounter_prognosis.html">Care Connect Prognosis Encounter</a><br/>
-<a href="api_eol_diagnostics_prognosis_observation.html">Care Connect Prognosis Observation</a></td>
+<td><a href="api_eol_management_encounter_prognosis.html">Care Connect EOL  Prognosis Encounter</a><br/>
+<a href="api_eol_diagnostics_observation_prognosis.html">EOL Prognosis Observation</a></td>
 </tr>
 <tr>
 <td>Advance Treatment Preferences</td>
 <td>Conditions (Problem)<br/>Questionnaire Response<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_condition.html">Care Connect ATP Condition</a><br/>
+<td><a href="api_eol_summary_atp_condition.html">Care Connect ATP Condition</a><br/>
  <a href="api_eol_diagnostics_questionnaireresponse.html">EOL Questionnaire Response</a><br/>
  <a href="api_eol_individuals_practitioner.html">Care Connect Practitioner</a><br/>
  <a href="api_eol_individuals_practitionerrole.html">Care Connect Practitioner Role</a></td>
@@ -78,7 +78,7 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <td>Disability</td>
 <td>Conditions (Problem)<br/>List<br/>Practitioner<br/>Practioner Role</td>
 <td><a href="api_eol_summary_disability_condition.html">Care Connect Disability Condition</a><br/>
-<a href="api_eol_summary_disability_list.html">Care Connect Disability List - PENDING</a><br/>
+<a href="api_eol_summary_disability_list.html">Care Connect Disability List</a><br/>
 <a href="api_eol_individuals_practitioner.html">Care Connect Practitioner</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">Care Connect Practitioner Role</a></td>
 </tr>

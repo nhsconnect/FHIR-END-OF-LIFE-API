@@ -9,7 +9,7 @@ summary: A record of a healthcare consumer’s policy choices, which permits or 
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Consent" page="CareConnect-EOL-Consent-1" fhirname="Consent" fhirlink="consent.html" content="User Stories" userlink="engage_endoflife.html" %}
+{% include custom/fhir.STU3.reference.html resource="Consent" page="EOL-Consent-1" fhirname="Consent" fhirlink="consent.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Patient Scenario ##
 
@@ -20,6 +20,31 @@ On an encounter with a professional, and always on creation of the initial EPaCC
 A consent is recorded for a patient based on their meeting with a professional. The Consent FHIR resource has been chosen to represent this consent recording. It can record the status as well as the purpose of the consent, and actors involved (professionals recording this consent status).
 
 Where there is no consent to share on the system, no EOL data will be shared to other consumer systems.
+
+## Dataset to FHIR Mappings ##
+
+<table style="min-width:100%;width:100%">
+<tr id="clinical">
+<th style="width:33%;">Dataset Item</th>
+<th style="width:33%;">FHIR Mapping</th>
+<th style="width:33%;">Comments</th>
+</tr>
+<tr id="clinical">
+<td>425691002 | Consent given for electronic record sharing (finding)</td>
+<td>Consent.status = Active</td>
+<td></td>                                            
+</tr>
+<tr id="clinical">
+<td>342611000000100 | Refused consent for electronic record sharing (finding)</td>
+<td>Consent.status = Rejected</td>
+<td></td>                        
+</tr>
+<tr id="clinical">
+<td>414859005 | No consent for electronic record sharing (finding)</td> 
+<td>Consent.status = Inactive</td>
+<td></td>                                            
+</tr>
+</table>
 
 ## 1. Read ##
 

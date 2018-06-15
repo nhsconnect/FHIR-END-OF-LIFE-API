@@ -9,7 +9,7 @@ summary: Workflow Flag for End of Life Register
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Flag" page="CareConnect-EOL-Register-Flag-1" fhirname="Flag" fhirlink="flag.html" content="User Stories" userlink="engage_endoflife.html" %}
+{% include custom/fhir.STU3.reference.html resource="Flag" page="EOL-Register-Flag-1" fhirname="Flag" fhirlink="flag.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Patient Scenario ##
 

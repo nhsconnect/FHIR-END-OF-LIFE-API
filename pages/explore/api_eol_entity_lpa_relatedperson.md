@@ -9,7 +9,7 @@ summary: Demographics and other administrative information about an individual r
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="CareConnect-EOL-LPA-RelatedPerson-1" fhirname="Related Person" fhirlink="relatedperson.html" content="User Stories" userlink="engage_endoflife.html" %}
+{% include custom/fhir.STU3.reference.html resource="RelatedPerson" page="EOL-LPA-RelatedPerson-1" fhirname="Related Person" fhirlink="relatedperson.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Patient Scenario ##
 

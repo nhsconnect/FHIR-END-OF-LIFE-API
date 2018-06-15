@@ -9,7 +9,7 @@ summary: Other Bundle
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Bundle" page="CareConnect-EOL-Bundle-1" fhirname="Bundle" fhirlink="bundle.html" content="User Stories" userlink="engage_endoflife.html" %}
+{% include custom/fhir.STU3.reference.html resource="Bundle" page="EOL-Bundle-1" fhirname="Bundle" fhirlink="bundle.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Bundle ##
 

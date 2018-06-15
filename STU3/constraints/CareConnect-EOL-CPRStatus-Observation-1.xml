@@ -6,9 +6,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="oo" />
   </extension>
-  <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/EOL-Prognosis-Observation-1" />
+  <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/EOL-CPRStatus-Observation-1" />
   <version value="0.0.1" />
-  <name value="EOL-Prognosis-Observation-1" />
+  <name value="EOL-CPRStatus-Observation-1" />
   <status value="draft" />
   <date value="2017-07-11T14:34:25.8488438+01:00" />
   <publisher value="HL7 UK" />
@@ -2462,7 +2462,7 @@
         <map value="context" />
       </mapping>
     </element>
-    <element id="Observation.effective[x]:effectiveDateTime">
+    <element id="Observation.effectiveDateTime:effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <sliceName value="effectiveDateTime" />
       <short value="Date of Prognosis" />
@@ -6269,7 +6269,7 @@
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1" />
       </type>
     </element>
-    <element id="Observation.effective[x]:effectiveDateTime">
+    <element id="Observation.effectiveDateTime:effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <sliceName value="effectiveDateTime" />
       <short value="Date of Prognosis" />
