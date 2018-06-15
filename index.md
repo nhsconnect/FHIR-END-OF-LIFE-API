@@ -20,6 +20,4 @@ The Care Connect RESTful APIs within this site have been developed collaborative
 
 The INTEROPen vision is to create a library of nationally defined HL7® FHIR® resources and interaction patterns that implementers can adopt to simplify integration and interoperability within UK health and social care.
 
-Find out more on the [INTEROPen website](http://interopen.org/).
-
 {% include custom/contribute.html content="To get involved in any parts of the roadmap or to discuss the other elements please get in touch. "%}
