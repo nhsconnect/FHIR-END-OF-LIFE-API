@@ -18,15 +18,6 @@ Advance treatment preferences are recorded as a table of the problem/condition/a
 
 Most of the ReSPECT data can be captured within the minimum dataset, however the ReSPECT care priority values cannot be accommodated elsewhere and so must be recorded separately.  As many localities have or will implement ReSPECT, it important that these additional ReSPECT values can be transmitted.
 
-### Preferences ###
-
-This is used to record a patient’s preferred place of death and any other preferences and wishes, including wishes for care and cultural, religious and social needs.  Additionally, there is an option to record domestic information and access instructions for the patient’s residence. 
-
-### Functional Status ###
-
-The patient’s functional status is recorded by clinicians during encounters with the patient and gives consumers of the data a general indication of the wellness of the patient. The status can be codified using either the Karnofsky scale or Electronic Frailty Index and there is a mandatory textual field for systems that do not store this data as a codeable concept.
-
-
 ...
 
     <QuestionnaireResponse xmlns="http://hl7.org/fhir">
@@ -62,7 +53,37 @@ The patient’s functional status is recorded by clinicians during encounters wi
 			<valueString value="I will let the medical professional take the decision"/> 
 		</answer> 
 		</item> 
-	</item> 
+	</item>
+	</QuestionnaireResponse>
+
+....
+
+### Preferences ###
+
+This is used to record a patient’s preferred place of death and any other preferences and wishes, including wishes for care and cultural, religious and social needs.  Additionally, there is an option to record domestic information and access instructions for the patient’s residence. 
+
+...
+
+    <QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <id value="f201"/> 
+	<text> 
+	<status value="generated"/> 
+	<div xmlns="http://www.w3.org/1999/xhtml">
+	<p> <b> Generated Narrative with Details</b> </p>
+	</div> 
+	</text> 
+	<status value="completed"/>
+	<subject> 
+		<reference value="Patient/f201"/> 
+		<display value="Daniel Briggs"/> 
+	</subject> 
+	<authored value="2013-06-18T00:00:00+01:00"/> 
+	<author> 
+		<reference value="Practitioner/f201"/> 
+	</author> 
+	<source> 
+		<reference value="Practitioner/f201"/> 
+	</source> 
 	<item> 
 		<!--   Answers to Preferences   -->
 		<linkId value="2"/> 
@@ -100,6 +121,37 @@ The patient’s functional status is recorded by clinicians during encounters wi
 		</answer> 
 		</item> 
 	</item> 
+	</QuestionnaireResponse>
+
+....
+
+### Functional Status ###
+
+The patient’s functional status is recorded by clinicians during encounters with the patient and gives consumers of the data a general indication of the wellness of the patient. The status can be codified using either the Karnofsky scale or Electronic Frailty Index and there is a mandatory textual field for systems that do not store this data as a codeable concept.
+
+
+...
+
+    <QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <id value="f201"/> 
+	<text> 
+	<status value="generated"/> 
+	<div xmlns="http://www.w3.org/1999/xhtml">
+	<p> <b> Generated Narrative with Details</b> </p>
+	</div> 
+	</text> 
+	<status value="completed"/>
+	<subject> 
+		<reference value="Patient/f201"/> 
+		<display value="Daniel Briggs"/> 
+	</subject> 
+	<authored value="2013-06-18T00:00:00+01:00"/> 
+	<author> 
+		<reference value="Practitioner/f201"/> 
+	</author> 
+	<source> 
+		<reference value="Practitioner/f201"/> 
+	</source> 
 	<item> 
 		<!--   Answers to Functional Status   -->
 		<linkId value="3"/> 
