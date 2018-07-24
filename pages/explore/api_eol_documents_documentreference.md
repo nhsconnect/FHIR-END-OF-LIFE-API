@@ -8,12 +8,9 @@ summary: A DocumentReference resource is used to describe a document that is mad
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.nonecc.html resource="DocumentReference" resourceurl= "https://data.developer.nhs.uk/fhir/nrls-v1-draft-a/Profile.RecordLocator/nrls-documentreference-1-0.html" page="" fhirname="DocumentReference" fhirlink="documentreference.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="DocumentReference" page="EOL-Document-Reference-1" fhirname="DocumentReference" fhirlink="DocumentReference.html" content="N/A" userlink=" " %}
 
 [SKETCH profile. Not official]
-
-## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Document-Reference-1" target="_blank">Localhost DocumentReference</a>
 
 ## 1. Read Operation ##
 

@@ -1,7 +1,7 @@
 entries:
 - title: STU3 | FHIR END OF LIFE |
   product: STU3 | FHIR END OF LIFE |
-  version: 1.0.0-alpha.0
+  version: 1.0.0-alpha
   levels: one
   folders:
 
@@ -26,7 +26,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Engagement Approach
+    - title: Overview
       url: /engage.html
       output: web, pdf
       type: homepage
@@ -36,18 +36,10 @@ entries:
         output: web
         subfolderitems:
 
-        - title: "Case Study Overview"
-          url: /engage_case_studies.html
+        - title: "End of Life Use Case"
+          url: /engage_endoflife.html
           output: web
-        - title: Bristol Connecting Care POC
-          url: /engage_poc_bristolcc.html
-          output: web
-        - title: "University Hospital Southampton"
-          url: /engage_poc_uhscc.html
-          output: web
-        - title: "Michael's Story"
-          url: /engage_michaelsstory.html
-          output: web
+
 
   - title: Resources
     output: web
@@ -60,7 +52,7 @@ entries:
         output: web
         subfolderitems:
         - title: API Codes
-          url: /explore_api_codes.html
+          url: /resources_api_codes.html
           output: web
         - title: Search Parameters
           url: /explore_search_parameters.html
@@ -69,7 +61,7 @@ entries:
           url: /explore_fhir_open_source_guidance.html
           output: web
         - title: Reference
-          url: /explore_reference.html
+          url: /resources_reference.html
           output: web
         - title: Care Connect Versioning
           url: /explore_cc_versioning.html
@@ -93,9 +85,7 @@ entries:
         - title: FHIR Tools
           url: /support_fhirtools.html
           output: web
-        - title: Resource Definitions
-          url: /support_referenceapiservers.html
-          output: web
+
 
   - title: Tags
     output: web

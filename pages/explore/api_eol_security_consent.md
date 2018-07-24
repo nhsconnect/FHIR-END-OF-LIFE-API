@@ -9,94 +9,14 @@ summary: A record of a healthcare consumer’s policy choices, which permits or 
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="" page="" fhirname="ValueSet" fhirlink="valueset.html" content="-" userlink="-" %}
+{% include custom/fhir.STU3.reference.html resource="Consent" page="EOL-Consent-1" fhirname="Consent" fhirlink="consent.html" content="User Stories" userlink="engage_endoflife.html" %}
 
-## Localhost Profile link ##
-<a href="http://localhost:8080/STU3/StructureDefinition/CareConnect-EOL-Consent-1" target="_blank">Localhost Consent</a>
+## Patient Scenario ##
 
-## 1. Read ##
+Consent
 
-<div markdown="span" class="alert alert-success" role="alert">
-GET [baseUrl]/ValueSet/[id]</div>
+On an encounter with a professional, and always on creation of the initial EPaCCS record, the patient will be asked consent to share this data more widely for the purposes of providing them with direct care.
 
-{% include custom/read.response.html resource="Consent" content="" %}
+A consent is recorded for a patient based on their meeting with a professional. The Consent FHIR resource has been chosen to represent this consent recording. It can record the status as well as the purpose of the consent, and actors involved (professionals recording this consent status).
 
-## 2. Example ##
-
-{% include custom/search.warn_ri_banner.html %}
-
-### 2.1 Request Query ###
-
-Return the ValueSet for Care Connect Administrative Gender. Replace 'baseUrl' with the actual base Url of the FHIR Server.
-
-#### 2.1.1. cURL ####
-
-{% include custom/embedcurl.html title="Read Care Connect Administrative Gender ValueSet" command="curl -H 'Accept: application/xml+fhir' -H 'Authorization: BEARER [token]' -X GET  '[baseUrl]/ValueSet/CareConnect-AdministrativeGender-1'" %}
-
-### 2.2 Response Body ###
-
-```xml
-<ValueSet xmlns="http://hl7.org/fhir">
-	<id value="CareConnect-AdministrativeGender-1"/>
-	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-map">
-		<valueReference>
-			<reference value="https://fhir.hl7.org.uk/STU3/ConceptMap/AdministrativeGender-1"/>
-		</valueReference>
-	</extension>
-	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
-		<valueUri value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-	</extension>
-	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-		<valueCode value="pc"/>
-	</extension>
-	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-		<valueInteger value="5"/>
-	</extension>
-	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
-		<valueString value="Informative"/>
-	</extension>
-	<url value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1"/>
-	<identifier>
-		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:oid:2.16.840.1.113883.4.642.3.1"/>
-	</identifier>
-	<version value="3.0.1"/>
-	<name value="Administrative Gender"/>
-	<status value="active"/>
-	<date value="2017-04-19T07:46:00+10:00"/>
-	<publisher value="HL7 (FHIR Project)"/>
-	<contact>
-		<telecom>
-			<system value="url"/>
-			<value value="http://hl7.org/fhir"/>
-		</telecom>
-		<telecom>
-			<system value="email"/>
-			<value value="fhir@lists.hl7.org"/>
-		</telecom>
-	</contact>
-	<description value="The gender of a person used for administrative purposes."/>
-	<copyright value="Copyright © HL7.org 2011+"/>
-	<compose>
-		<include>
-			<system value="http://hl7.org/fhir/administrative-gender"/>
-			<concept>
-				<code value="male"/>
-				<display value="Male"/>
-			</concept>
-			<concept>
-				<code value="female"/>
-				<display value="Female"/>
-			</concept>
-			<concept>
-				<code value="other"/>
-				<display value="Other"/>
-			</concept>
-			<concept>
-				<code value="unknown"/>
-				<display value="Unknown"/>
-			</concept>
-		</include>
-	</compose>
-</ValueSet>
-```
+Where there is no consent to share on the system, no EOL data will be shared to other consumer systems.
