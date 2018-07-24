@@ -19,7 +19,7 @@ The patient's problem list is made up of one or more conditions or problems that
 
 
 ```xml
-<List xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/stu3/list.xsd">
+<List xmlns="http://hl7.org/fhir">
 	<id value="9fa0541c-67a2-4946-a7e3-ef3c4a8991f1"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProblemList-1"/>

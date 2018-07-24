@@ -63,10 +63,11 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 </tr>
 <tr>
 <td>Advance Treatment Preferences</td>
-<td>Conditions (Problem)<br/>Conditions (Problem) List<br/>Questionnaire Response<br/>Practitioner<br/>Care Connect Practioner Role</td>
-<td><a href="api_eol_summary_atp_condition.html">CareConnect-EOL-AdvanceTreatmentPreferences-Condition-1</a><br/>
+<td>Condition<br/>List<br/>CarePlan<br/>Questionnaire Response<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_management_problemlist.html">CareConnect-ProblemList-1</a><br/>
+ <a href="api_eol_summary_problemheader_condition.html">CareConnect-ProblemHeader-Condition-1</a><br/>
+ <a href="api_eol_summary_atp_careplan.html">EOL-AdvanceTreatmentPreferences-CarePlan-1</a><br/>
  <a href="api_eol_advancetreatmentpreferences_questionnaireresponse.html">EOL-AdvanceTreatmentPreferences-QuestionnaireResponse-1</a><br/>
- <a href="api_eol_summary_problemlist.html">CareConnect-ProblemList-1</a><br/>
  <a href="api_eol_individuals_practitioner.html">CareConnect-Practitioner-1</a><br/>
  <a href="api_eol_individuals_practitionerrole.html">CareConnect-PractitionerRole-1</a></td>
 

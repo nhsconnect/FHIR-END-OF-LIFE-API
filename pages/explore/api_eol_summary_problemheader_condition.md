@@ -19,31 +19,29 @@ The patient’s problems and/or conditions are recorded by clinicians during enc
 
 
 ```xml
-<List xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/stu3/list.xsd">
+<Condition xmlns="http://hl7.org/fhir">
 	<id value="9fa0541c-67a2-4946-a7e3-ef3c4a8991f1"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProblemList-1"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProblemHeaer-Condition-1"/>
 	</meta>
-	<status value="current"/>
-	<mode value="working"/>
-	<code>
+	<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1">
+		<valueReference>
+			<reference value="EOL-AdvanceTreatmentPreferences-CarePlan-1/41e7045d-f5a0-4650-be70-536134858fd2"/>
+		</valueReference>
+	</extension>
+	<clinicalStatus value="active"/>
+	<category>
 		<coding>
-			<system value="http://hl7.org/fhir/list-example-use-codes"/>
-			<code value="Problems"/>
-			<display value="Problem List"/>
+			<system value="http://hl7.org/fhir/condition-category"/>
+			<code value="Problem-List-Item"/>
+			<display value="Problem List Item"/>
 		</coding>
+	</category>
+	<code >
+		<text value="Asthma"/>
 	</code>
 	<subject>
 		<reference value="CareConnect-Patient-1/6101231234"/>
 	</subject>
-	<date value="2018-06-18T00:00:00+01:00"/>
-	<source>
-		<reference value="CareConnect-Practitioner-1/12345678"/>
-	</source>
-	<entry>
-		<item>
-			<reference value="CareConnect-ProblemHeader-Condition-1/4adbbc2b-468a-4517-a5ae-f1d0db19cce5"/>
-		</item>
-	</entry>
-</List>
+</Condition>
 ```
