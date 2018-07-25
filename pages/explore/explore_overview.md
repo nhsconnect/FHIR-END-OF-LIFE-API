@@ -74,9 +74,9 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 </tr>
 <tr>
 <td>Disability</td>
-<td>Conditions (Problem)<br/>List<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_disability_condition.html">CareConnect-Disability-Condition-1</a><br/>
-<a href="api_eol_summary_disability_list.html">CareConnect-Disability-List-1</a><br/>
+<td>Condition (Problem)<br/>List<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_summary_disability_condition.html">CareConnect-ProblemHeader-Condition-1</a><br/>
+<a href="api_eol_summary_disability_list.html">CareConnect-ProblemList-1</a><br/>
 <a href="api_eol_individuals_practitioner.html">CareConnect-Practitioner-1</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">CareConnect-PractitionerRole-1</a></td>
 </tr>

@@ -31,9 +31,9 @@ The patient’s care plan provides deatils for how a condition that has been dia
 	</author>
 	<activity>
 		<detail>
-		<code>
-			<text value="Comfort, symptomatic treatment only"/>
-		</code>
+			<code>
+				<text value="Comfort, symptomatic treatment only"/>
+			</code>
 			<status value="completed"/>
 			<description value="Nebulizer can be used to make patient more comfortable"/>
 		</detail>

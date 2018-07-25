@@ -8,7 +8,7 @@ summary: Clinical details of problems and/or conditions that affect the patient.
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="List" page="CareConnect-ProblemList-1" fhirname="List" fhirlink="list.html" content="User Stories" userlink="engage_endoflife.html" %}
+{% include custom/fhir.STU3.reference.html resource="Condition" page="CareConnect-ProblemHeader-Condition-1" fhirname="List" fhirlink="condition.html" content="User Stories" userlink="engage_endoflife.html" %}
 
 ## Patient Scenario ##
 
