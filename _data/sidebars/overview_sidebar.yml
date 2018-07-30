@@ -63,9 +63,6 @@ entries:
         - title: Reference
           url: /resources_reference.html
           output: web
-        - title: Care Connect Versioning
-          url: /explore_cc_versioning.html
-          output: web
   - title: Help & Support
     output: web
     folderitems:

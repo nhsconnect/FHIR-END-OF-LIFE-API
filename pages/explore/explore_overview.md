@@ -11,7 +11,7 @@ summary: "Overview of the Resources section"
 
 ## 1. End of Life Recording ##
 
-This page provides an overview of the FHIR STU3 Resources that are required to build the required API messaging. Each link will take you to the resource page detail with a link to the Structure Defnitions of each resource.
+This page provides an overview of the FHIR STU3 Resources that are required to build the required API messaging. Each link will take you to the resource page detail with a link to the Structure Definitions of each resource.
 
 ## 2. End of Life Care API's ###
 

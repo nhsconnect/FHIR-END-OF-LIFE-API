@@ -32,7 +32,6 @@ fhir_ref_impl_sec: http://purple.testlab.nhs.uk:20080/
 fhir_profile_baseurl: https://fhir.hl7.org.uk/STU3/StructureDefinition/
 fhir_profile_stu3_baseurl: https://fhir.nhs.uk/STU3/StructureDefinition/
 hl7_baseurl:
-  stu2: https://www.hl7.org/fhir/DSTU2/
   stu3: https://www.hl7.org/fhir/STU3/
 
 
@@ -58,12 +57,12 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: apilabs@nhs.net
+feedback_email: interoperabilityteam@nhs.net
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: false
 
-feedback_subject_line: Care Connect API
+feedback_subject_line: End of Life API
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
@@ -114,15 +113,15 @@ sidebars:
 - appointments_sidebar
 - tasks_sidebar
 
-description: "The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources."
+description: "The End of Life API supports the development of a digital end of life care interoperability capability, which uses a clinically-assured information standard SCCI 1580 to support the sharing of end of life care records"
 # the description is used in the feed.xml file
 
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://nhsconnect.github.io/CareConnectAPI
+url: https://nhsconnect.github.io/FHIR-END-OF-LIFE-API/
 
-repository: nhsconnect/CareConnectAPI
+repository: nhsconnect/FHIR-END-OF-LIFE-API
 
 gist:
   noscript: false

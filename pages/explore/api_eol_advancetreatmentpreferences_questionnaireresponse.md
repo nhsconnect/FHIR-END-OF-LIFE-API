@@ -4,7 +4,7 @@ keywords: usecase, questionnaire, response, preferences
 tags: [rest, fhir, workflow,api]
 sidebar: foundations_sidebar
 permalink: api_eol_advancetreatmentpreferences_questionnaireresponse.html
-summary: An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.
+summary: Questionnaire Response to capture the ReSPECT values for a patient.
 ---
 {% include custom/search.warnbanner.html %}
 

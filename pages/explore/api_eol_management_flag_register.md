@@ -5,6 +5,7 @@ tags: [rest, fhir, workflow,api]
 sidebar: foundations_sidebar
 permalink: api_eol_management_flag_register.html
 summary: Workflow Flag for End of Life Register
+toc: false
 ---
 
 {% include custom/search.warnbanner.html %}
@@ -32,7 +33,7 @@ Whether the patient has been placed on the local end of life register.
 		</coding>
 	</code>
 	<subject>
-		<reference value="CareConnect-Patient-1/6101231234"/>
+		<reference value="https://demographics.spineservices.nhs.uk/STU3CareConnect-Patient-1/6101231234"/>
 	</subject>
 </Flag>
 ```

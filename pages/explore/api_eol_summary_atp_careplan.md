@@ -5,6 +5,7 @@ tags: [rest, fhir, management,api]
 sidebar: foundations_sidebar
 permalink: api_eol_summary_atp_careplan.html
 summary: Clinical details of problems and/or conditions that affect the patient.
+toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
@@ -15,7 +16,7 @@ summary: Clinical details of problems and/or conditions that affect the patient.
 
 ### Care Plan ###
 
-The patient’s care plan provides deatils for how a condition that has been diagnosed for a patient should be treated by healthcare professionals along with any interventions that have been agreed with the patient. Each condition diagnosed has a related care plan.
+The patient’s care plan provides details for how a condition that has been diagnosed for a patient should be treated by healthcare professionals along with any interventions that have been agreed with the patient. Each condition diagnosed has a related care plan.
 
 
 ```xml
