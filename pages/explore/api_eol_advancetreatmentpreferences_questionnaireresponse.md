@@ -26,11 +26,11 @@ Most of the ReSPECT data can be captured within the minimum dataset, however the
 	</meta>
 	<status value="completed"/>
 	<subject> 
-		<reference value="CareConnect-Patient-1/6101231234"/> 
+		<reference value="https://demographics.spineservices.nhs.uk/STU3/CareConnect-Patient-1/6101231234"/> 
 	</subject> 
 	<authored value="2018-06-18T00:00:00+01:00"/> 
 	<author> 
-		<reference value="CareConnect-Practitioner-1/12345678"/> 
+		<reference value="https://directory.spineservices.nhs.uk/STU3//CareConnect-Practitioner-1/12345678"/> 
 	</author> 
 	<item> 
 		<linkId value="respectCarePriorityScale"/> 

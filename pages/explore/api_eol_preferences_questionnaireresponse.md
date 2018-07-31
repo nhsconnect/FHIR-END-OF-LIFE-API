@@ -24,11 +24,11 @@ This is used to record a patient’s preferred place of death and any other pref
 	</meta>
 	<status value="completed"/>
 	<subject> 
-		<reference value="CareConnect-Patient-1/6101231234"/> 
+		<reference value="https://demographics.spineservices.nhs.uk/STU3/Patient/6105551234"/>
 	</subject> 
 	<authored value="2018-06-18T00:00:00+01:00"/> 
 	<author> 
-		<reference value="CareConnect-Practitioner-1/12345678"/> 
+		<reference value="https://directory.spineservices.nhs.uk/CareConnect-Practitioner-1/12345678"/> 
 	</author> 
 	<item> 
 		<linkId value="preferredPlaceOfDeathCoded"/>
@@ -49,7 +49,7 @@ This is used to record a patient’s preferred place of death and any other pref
 		</answer> 
 		</item> 
 		<item> 
-		<linkId value="domesticAccessAndInformation/> 
+		<linkId value="domesticAccessAndInformation"/> 
 		<text value="Domestic Access and Information"/> 
 		<answer> 
 			<valueString value="I have a dog at home"/>

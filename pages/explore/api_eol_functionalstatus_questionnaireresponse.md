@@ -5,6 +5,7 @@ tags: [rest, fhir, workflow,api]
 sidebar: foundations_sidebar
 permalink: api_eol_functionalstatus_questionnaireresponse.html
 summary: Questionnaire Response to capture the functional status of a patient using established scales where available.
+toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
@@ -26,10 +27,10 @@ The patient’s functional status is recorded by clinicians during encounters wi
 	</meta>
 	<status value="completed"/>
 	<subject>
-		<reference value="CareConnect-Patient-1/6101231234"/>
+		<reference value="https://demographics.spineservices.nhs.uk/STU3/CareConnect-Patient-1/6101231234"/> 
 	</subject>
 	<author>
-		<reference value="CareConnect-Practitioner-1/12345678"/>
+		<reference value="https://directory.spineservices.nhs.uk/CareConnect-Practitioner-1/12345678"/>
 	</author>
 	<item>
 		<linkId value="functionalStatusType"/>
