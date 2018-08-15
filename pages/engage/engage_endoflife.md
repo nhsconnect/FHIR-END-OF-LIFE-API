@@ -123,8 +123,10 @@ Requirements are described as user stories to enable a better understanding of t
 
 ## 3.1.	EoL data and preferences viewable by all care professionals ##
 
-**In order to** remove the need to repeat my statement of preferences and for those preferences to be respected when I’m unable to communicate them successfully\
-**As a** patient\
+**In order to** remove the need to repeat my statement of preferences and for those preferences to be respected when I’m unable to communicate them successfully
+
+**As a** patient
+
 **I want** my EoL data and preferences to be shared so that they can be accessed by all health and care professionals attending to my needs.
 
 **Commentary**
@@ -142,8 +144,10 @@ This broad user story explains the aim of the project from the patient’s persp
 
 ## 3.2.	Up to date preferences are accessible to care professionals ##
 
-**In order to** ensure that care professionals always respond to my latest wishes\
-**As a** patient\
+**In order to** ensure that care professionals always respond to my latest wishes
+
+**As a** patient
+
 **I want to** be assured that any updates to my preferences will be promptly shared to systems that will be used by my care professionals.
 
 **Acceptance Criteria**
@@ -153,8 +157,10 @@ This broad user story explains the aim of the project from the patient’s persp
 
 ## 3.3.	Patient/carers can directly view EoL preferences ##
 
-**In order to** ensure that my statement of preferences is completely up to date with my current wishes\
-**As a** patient or an authorised proxy of the patient\
+**In order to** ensure that my statement of preferences is completely up to date with my current wishes
+
+**As a** patient or an authorised proxy of the patient
+
 **I want to** be able to independently (or with help from my carers) view my statement of preferences whenever I wish to.
 
 **Commentary**
@@ -163,8 +169,10 @@ Commitments have been made that patients/carers will have access to their EoL pr
 
 ## 3.4.	Patient/carers can directly amend EoL preferences ##
 
-**In order to** ensure that my statement of preferences is completely up to date with my current wishes\
-**As a** patient or an authorised proxy of the patient\
+**In order to** ensure that my statement of preferences is completely up to date with my current wishes
+
+**As a** patient or an authorised proxy of the patient
+
 **I want to** be able to independently (or with help from my carers) update my statement of preferences whenever I wish to.
 
 **Commentary**
@@ -177,8 +185,10 @@ Commitments have been made that patients/carers will have access to their EoL pr
 
 ## 3.5.	Urgent and Emergency Care View Current EoL Data ##
 
-**In order that** the EoL patient receives the appropriate care for their current condition and wishes\
-**As an** urgent or emergency care user\
+**In order that** the EoL patient receives the appropriate care for their current condition and wishes
+
+**As an** urgent or emergency care user
+
 **I want to** quickly view the latest EoL information from the EPaCCS that supports this patient’s EoL care
 
 **Commentary**
@@ -192,8 +202,10 @@ Other urgent care systems may employ “click through” technology to access pa
 
 ## 3.6.	Update Urgent and Emergency Care with EoL Data ##
 
-**In order that** EoL patients receive the appropriate care for their current condition and wishes\
-**As an** urgent or emergency care user\
+**In order that** EoL patients receive the appropriate care for their current condition and wishes
+
+**As an** urgent or emergency care user
+
 **I want to** receive updates for changes of patient EoL information from source systems
 
 **Commentary**
@@ -206,8 +218,10 @@ Some local solutions require changes made to EPaCCS data to be transmitted direc
 
 ## 3.7.	Update GP Systems (and hence SCR) with EoL Data ##
 
-**In order that** EoL patients receive the appropriate care for their current condition and wishes\
-**As a** GP system user\
+**In order that** EoL patients receive the appropriate care for their current condition and wishes
+
+**As a** GP system user
+
 **I want to** receive updates for changes of patient EoL information from source systems
 
 **Commentary**
@@ -224,8 +238,10 @@ Receipt of EoL data in this standard format will make it easier for GP systems t
 
 ## 3.8.	Update EPaCCS with EoL Data ##
 
-**In order that** EoL patients receive the appropriate care for their current condition and wishes\
-**As an** EPaCCS system user\
+**In order that** EoL patients receive the appropriate care for their current condition and wishes
+
+**As an** EPaCCS system user
+
 **I want to** receive updates for changes of patient EoL information from source systems
 
 **Commentary**
@@ -244,8 +260,10 @@ The following stories may be supported by delivery of the EoL National Minimum D
 
 ## 4.1.	National Reporting – death in preferred place ##
 
-**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured\
-**As a** nationally-based EoL professional\
+**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured
+
+**As a** nationally-based EoL professional
+
 **I want** national reporting to show the incidence of people dying in their preferred place of death.
 
 **Acceptance Criteria**
@@ -257,8 +275,10 @@ The following stories may be supported by delivery of the EoL National Minimum D
 
 ## 4.2.	National Reporting – three or more emergency admissions in final 90 days of life ##
 
-**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured\
-**As a** nationally-based EoL professional\
+**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured
+
+**As a** nationally-based EoL professional
+
 **I want** national reporting to show the incidence of people with three or more emergency admissions in the last 90 days of life.
 
 **Commentary**
@@ -267,8 +287,10 @@ This is data that will be collected from other urgent and emergency care data co
 
 ## 4.3.	National Reporting – days in hospital in final 90 days of life ##
 
-**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured\
-**As a** nationally-based EoL professional\
+**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured
+
+**As a** nationally-based EoL professional
+
 **I want** national reporting to show data for number of days people are spending in hospital during their final 90 days of life.
 
 **Commentary**
@@ -277,8 +299,10 @@ This is data that will be collected from other urgent and emergency care data co
 
 ## 4.4.	National Reporting – when EoL care plan was recorded ##
 
-**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured\
-**As a** nationally-based EoL professional\
+**In order that** the benefits of integrated EPaCCS and the quality of EoL care can be better measured
+
+**As a** nationally-based EoL professional
+
 **I want** national reporting to show data for when an EoL care plan was recorded and whether the person consented to sharing of this data.
 
 **Commentary**
