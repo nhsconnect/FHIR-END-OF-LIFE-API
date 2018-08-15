@@ -56,7 +56,7 @@ entries:
       url: /api_eol_communication.html
       output: web  
     - title: Contacts
-      url: /explore.html
+      url: /api_eol_contacts.html
       output: web
     - title: Disabilities
       url: /explore.html

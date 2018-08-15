@@ -23,7 +23,7 @@ The following FHIR profiles are used to form the Advance Treatment Preferences A
 - [EOL-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1.xml)
 
 
-### Advance Treatment Preferences event data item mapping to FHIR profiles ###
+### Advance Treatment Preferences data item mapping to FHIR profiles ###
 
 The Advance Treatment Preferences data items are fulfilled by elements within the FHIR resources listed below:
 
