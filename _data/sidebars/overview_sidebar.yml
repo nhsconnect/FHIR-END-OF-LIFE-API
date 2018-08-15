@@ -40,7 +40,46 @@ entries:
           url: /engage_endoflife.html
           output: web
 
-
+  - title: Atomic Units
+    output: web,pdf
+    folderitems:
+    - title: Advance Treatment Preferences
+      url: /api_eol_atp.html
+      output: web
+    - title: CPR Status
+      url: /explore.html
+      output: web 
+    - title: Consent
+      url: /explore.html
+      output: web   
+    - title: Communication
+      url: /api_eol_communication.html
+      output: web  
+    - title: Contacts
+      url: /explore.html
+      output: web
+    - title: Disabilities
+      url: /explore.html
+      output: web  
+    - title: Demographics
+      url: /api_eol_demographics.html
+      output: web   
+    - title: End of Life Register
+      url: /explore.html
+      output: web    
+    - title: Functional Status
+      url: /api_eol_functionalstatus_questionnaireresponse.html
+      output: web
+    - title: Lasting Power of Attorney
+      url: /explore.html
+      output: web 
+    - title: Other Documents
+      url: /explore.html
+      output: web   
+    - title: Preferences
+      url: /explore.html
+      output: web  
+         
   - title: Resources
     output: web
     folderitems:
