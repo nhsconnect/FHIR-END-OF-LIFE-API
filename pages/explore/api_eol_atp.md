@@ -71,6 +71,7 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 
 ### Problem Header Example XML ###
 
+```xml
 <Condition>
 <id value="f74658b4-f667-4385-9b6f-7c4305b4f743"/>
 	<meta>
@@ -88,9 +89,11 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 		<reference value="urn:uuid:12692f55-56cf-4ddf-3ef5-e9ed13f6bd923"/>
 	</subject>
 </Condition>	
+```
 
 ### Care Plan Example XML ###
 
+```xml
 <CarePlan xmlns="http://hl7.org/fhir">
 <id value="f74658b4-f667-4385-9b6f-7c4305b4f743"/>
 	<meta>
@@ -111,5 +114,5 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 		</detail>	
 	</activity>
 </CarePlan>
-
+```
 
