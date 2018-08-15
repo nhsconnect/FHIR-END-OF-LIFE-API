@@ -15,11 +15,10 @@ toc: false
 The following FHIR profiles are used to form the contacts Atomic Unit:
 
 - [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
-- [EOL-RelatedPerson-1]
 
 ### Contact data item mapping to FHIR profiles ###
 
-The demoigraphics data items are fulfilled by elements within the FHIR resources listed below:
+The demographics data items are fulfilled by elements within the FHIR resources listed below:
 
 | DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|

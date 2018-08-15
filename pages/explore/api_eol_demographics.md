@@ -24,7 +24,7 @@ The demoigraphics data items are fulfilled by elements within the FHIR resources
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | NHS Number        		       | CareConnect-EOL-Patient-1.identifier.nhsNumber           | Mandatory                   |
 | Surname				  | CareConnect-EOL-Patient-1.name.family	| Mandatory |
-| Forename						  | CareConnect-EOL-Patient-1.name.forename  | Optional |
+| Forename						  | CareConnect-EOL-Patient-1.name.forename  | Mandatory |
 | Date of Birth			  | CareConnect-EOL-Patient-1.birthDate												| Mandatory |
 
 
