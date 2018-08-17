@@ -47,14 +47,14 @@ entries:
       url: /api_eol_atp.html
       output: web
     - title: CPR Status
-      url: /explore.html
+      url: /api_eol_cprstatus.html
       output: web 
-    - title: Consent
-      url: /explore.html
-      output: web   
     - title: Communication
       url: /api_eol_communication.html
-      output: web  
+      output: web 
+    - title: Consent
+      url: /api_eol_consent.html
+      output: web   
     - title: Contacts
       url: /api_eol_contacts.html
       output: web
@@ -79,7 +79,9 @@ entries:
     - title: Preferences
       url: /explore.html
       output: web  
-         
+    - title: Prognosis
+      url: /explore.html
+      output: web      
   - title: Resources
     output: web
     folderitems:
