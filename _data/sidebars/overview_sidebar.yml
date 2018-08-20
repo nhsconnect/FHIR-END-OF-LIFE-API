@@ -80,7 +80,7 @@ entries:
       url: /explore.html
       output: web  
     - title: Prognosis
-      url: /explore.html
+      url: /api_eol_prognosis.html
       output: web      
   - title: Resources
     output: web

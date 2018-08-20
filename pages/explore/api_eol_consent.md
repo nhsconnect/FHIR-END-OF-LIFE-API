@@ -22,11 +22,11 @@ The consent data item are fulfilled by elements within the FHIR resources listed
 
 | DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Consent Status        		       | EOL-CPRStatus-Flag-1.code           | Mandatory                   |
-| Consent Decision Details |
-| Date of change in consent status	|
-| Professionals recording this consent status	|
-| 
+| Consent Status        		       | EOL-Consent-1.status          | Mandatory                   |
+| Consent Decision Details | EOL-Consent-1.consentDecisionDetails (Extension) | Optional |
+| Consent Discussion Details | EOL-Consent-1.consentDiscussionDetails (Extension) |Optional |
+| Date of change in consent status	| EOL-Consent-1.dateTime | Mandatory |
+| Professionals recording this consent status	| EOL-Consent-1.actor |Mandatory |
 
 ### Consent ERD ###
 
@@ -35,31 +35,29 @@ The consent data item are fulfilled by elements within the FHIR resources listed
 ### Consent Example XML ###
 
 ```xml
-<Patient>
-	<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-		<meta>
-			profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1"/>
-		</meta>
-	<identifier>
-		<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
-			<valueCodeableConcept>
-				<coding>
-					<system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
-					<code value="01"/>
-					<display value="Number present and verified"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
-				<value value="9912003888"/>
-	</identifier>				
-	<name>
-		<use value="official"/>
-		<family value="DAWKINS"/>
-		<given value="Jack"/>
-	</name>
-	<birthDate value="2017-10-02"/>				
-</Patient>
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="981dbc45-9ff9-4570-836c-eb3e93763189"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Consent-1"/>
+	</meta>
+	<status value="active"/>
+	<patient>
+		<reference value="62b29d73-b405-44f0-8533-3a26a3ffce7d"/>
+	</patient>
+	<dateTime value="2018-08-20T15:00:00+00:00"/>
+	<actor>
+		<role>
+			<coding>
+				<system value="http://hl7.org/fhir/v3/ParticipationType"/>
+				<code value="PROV"/>
+				<display value="Healthcare Provider"/>
+			</coding>
+		</role>
+		<reference>
+				<reference value="urn:uuid:12692f55-56cf-4ddf-3ef5-e9ed13f6bd923"/>
+		</reference>
+	</actor>
+</Consent>
 ```
 
 

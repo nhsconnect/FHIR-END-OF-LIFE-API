@@ -33,33 +33,7 @@ The demographics data items are fulfilled by elements within the FHIR resources 
 
 ### Contact Example XML ###
 
-```xml
-<Patient>
-	<id value="7368c5fe-bbb4-4e9c-a585-234e06b84e82"/>
-		<meta>
-			profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1"/>
-		</meta>
-	<identifier>
-		<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
-			<valueCodeableConcept>
-				<coding>
-					<system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
-					<code value="01"/>
-					<display value="Number present and verified"/>
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
-				<value value="9912003888"/>
-	</identifier>				
-	<name>
-		<use value="official"/>
-		<family value="DAWKINS"/>
-		<given value="Jack"/>
-	</name>
-	<birthDate value="2017-10-02"/>				
-</Patient>
-```
+<script src="https://gist.github.com/IOPS-DEV/31ea699515e4ad684dc4961c848531d1.js"></script>
 
 
 
