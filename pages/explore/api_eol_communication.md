@@ -14,7 +14,7 @@ toc: false
 
 The following FHIR profiles are used to form the communication Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [Extension-EOL-NHSCommunication-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/Extension-EOL-NHSCommunication-1)
 
 
