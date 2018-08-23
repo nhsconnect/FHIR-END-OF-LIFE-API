@@ -14,20 +14,20 @@ toc: false
 
 The following FHIR profiles are used to form the contacts Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
 
 ### Contact data item mapping to FHIR profiles ###
 
-The demographics data items are fulfilled by elements within the FHIR resources listed below:
+The contact data item are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Contact Name				  | CareConnect-EOL-Patient-1.contact.name 							| Mandatory |
-| Contact Role				  | CareConnect-EOL-Patient-1.relationship.text												| Optional |
-| Contact Type				  | CareConnect-EOL-Patient-1.contact.telecom.system												| Optional |
-| Contact Detail			  | CareConnect-EOL-Patient-1.contact.telecom.value												| Mandatory |
-| Organisation Name			  | CareConnect-EOL-Patient-1.contact.organization									| Optional |
-| Additional Information About Contact	 | CareConnect-EOL-Patient-1.contact.additionalContactInformation (Extension)	    | Optional |
+| Contact Name				  | EOL-Patient-1.contact.name 							| Mandatory |
+| Contact Role				  | EOL-Patient-1.relationship.text												| Optional |
+| Contact Type				  | EOL-Patient-1.contact.telecom.system												| Optional |
+| Contact Detail			  | EOL-Patient-1.contact.telecom.value												| Mandatory |
+| Organisation Name			  | EOL-Patient-1.contact.organization									| Optional |
+| Additional Information About Contact	 | EOL-Patient-1.contact.additionalContactInformation (Extension)	    | Optional |
 
 
 

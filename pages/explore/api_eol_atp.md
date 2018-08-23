@@ -14,29 +14,31 @@ toc: false
 
 The following FHIR profiles are used to form the Advance Treatment Preferences Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/-EOL-Patient-1.xml)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [CareConnect-EOL-ProblemList-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-ProblemList-1.xml)
-- [CareConnect-EOL-ProblemHeader-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-ProblemHeader-Condition-1.xml)
-- [EOL-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1.xml)
+- [EOL-ATP-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-List-1.xml)
+- [EOL-ATP-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-Condition-1.xml)
+- [EOL-AdvanceTtreatmentpreferences-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-AdvanceTreatmentPreferences-CarePlan-1.xml)
 
 
 ### Advance Treatment Preferences data item mapping to FHIR profiles ###
 
 The Advance Treatment Preferences data items are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Date of Change in List			  | CareConnect-EOL-ATP-ProblemList.date				| Mandatory |
-| Problem or Condition                | CareConnect-EOL-ATP-ProblemHeader-Condition-1.code.text           | Mandatory                   |
+| Date of Change in List			  | EOL-ATP-List.date				| Mandatory |
+| Problem or Condition				  | EOL-ATP-List.entry.item.reference | Mandatory |
+| Details of Problem or Condition     | EOL-ATP-ProblemHeader-Condition-1.code.text           | Mandatory                   |
 | Treatment Level					  | EOL-ATP-CarePlan-1.activity.detail.code.text	| Optional |
 | Intervention						  | EOL-ATP-CarePlan-1.activity.detail.description  | Optional |
 | ReSPECT Care Priority  			  | 												| Mandatory |
 | 									  | Extension.respectPriorityScale.valueInteger		| Mandatory |
 |									  | Extension.respectPriorityScaleStatement.valueString			| Optional |
-| Professional recording changes to Problems and Interventions | CareConnect-EOL-ProblemList-1.date | Mandatory |
+| Professional recording changes to List of Problems and Interventions | EOL-ATP-List-1.source | Mandatory |
+
 
 ### Problem List Example XML ###
 

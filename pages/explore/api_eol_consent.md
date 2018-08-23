@@ -9,18 +9,20 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
+{% include custom/under.construction.html %}
+
 ### consent ###
 
 
 The following FHIR profiles are used to form the CPR Status Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
 
 ### consent data item mapping to FHIR profiles ###
 
 The consent data item are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | Consent Status        		       | EOL-Consent-1.status          | Mandatory                   |
 | Consent Decision Details | EOL-Consent-1.consentDecisionDetails (Extension) | Optional |

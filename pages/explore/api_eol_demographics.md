@@ -14,18 +14,18 @@ toc: false
 
 The following FHIR profiles are used to form the Demographics Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
 
 ### Demographics data item mapping to FHIR profiles ###
 
 The demographics data items are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| NHS Number        		       | CareConnect-EOL-Patient-1.identifier.nhsNumber           | Mandatory                   |
-| Surname				  | CareConnect-EOL-Patient-1.name.family	| Mandatory |
-| Forename						  | CareConnect-EOL-Patient-1.name.given  | Mandatory |
-| Date of Birth			  | CareConnect-EOL-Patient-1.birthDate												| Mandatory |
+| NHS Number        		       | EOL-Patient-1.identifier.nhsNumber           | Mandatory                   |
+| Surname				  | EOL-Patient-1.name.family	| Mandatory |
+| Forename						  | EOL-Patient-1.name.given  | Mandatory |
+| Date of Birth			  | EOL-Patient-1.birthDate												| Mandatory |
 
 
 ### Demographics Example XML ###

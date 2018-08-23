@@ -47,8 +47,8 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <td>CPR Status</td>
 <td>Flag<br/>Encounter<br/>Observation</td>
 <td><a href="api_eol_management_flag_cprstatus.html">EOL-CPRStatus-Flag-1</a><br/>
-<a href="api_eol_management_encounter_cprstatus.html">CareConnect-EOL-CPRStatus-Encounter-1</a><br/>
-<a href="api_eol_diagnostics_observation_cprstatus.html">CareConnect-EOL-CPRStatus-Observation-1</a></td>
+<a href="api_eol_management_encounter_cprstatus.html">EOL-CPRStatus-Encounter-1</a><br/>
+<a href="api_eol_diagnostics_observation_cprstatus.html">EOL-CPRStatus-Observation-1</a></td>
 </tr>
 <tr>
 <td>End of Life Register</td>
@@ -58,8 +58,8 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <tr>
 <td>Prognosis</td>
 <td>Encounter<br/>Observation</td>
-<td><a href="api_eol_management_encounter_prognosis.html">CareConnect-EOL-Prognosis-Encounter-1</a><br/>
-<a href="api_eol_diagnostics_observation_prognosis.html">CareConnect-EOL-Prognosis-Observation-1</a></td>
+<td><a href="api_eol_management_encounter_prognosis.html">EOL-Prognosis-Encounter-1</a><br/>
+<a href="api_eol_diagnostics_observation_prognosis.html">EOL-Prognosis-Observation-1</a></td>
 </tr>
 <tr>
 <td>Advance Treatment Preferences</td>

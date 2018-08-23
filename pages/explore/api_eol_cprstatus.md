@@ -9,18 +9,20 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
+{% include custom/under.construction.html %}
+
 ### CPR Status ###
 
 
 The following FHIR profiles are used to form the CPR Status Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
 
 ### CPR Status data item mapping to FHIR profiles ###
 
 The CPR Status data items are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | CPR Status        		       | EOL-CPRStatus-Flag-1.code           | Mandatory                   |
 | Reason for CPR status | EOL-CPRStatus-QuestionnaireResponse.reasonForCPRStatus | Mandatory |

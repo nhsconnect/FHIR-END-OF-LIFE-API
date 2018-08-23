@@ -9,19 +9,21 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
+{% include custom/under.construction.html %}
+
 ### consent ###
 
 
 The following FHIR profiles are used to form the prognosis Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
 - [EOL-Prognosis-ClinicalImpression-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1.xml)
 
 ### Prognosis data item mapping to FHIR profiles ###
 
 The prognosis data items are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | Prognosis Coded        		       | EOL-ClinicalImpression-Prognosis-1.prognosisCodeableConcept          | Optional                   |
 | Prognosis Textual | EOL-ClinicalImpression-Prognosis-1.prognosisCodeableConcept.text    | Mandatory |

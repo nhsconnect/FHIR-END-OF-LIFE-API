@@ -59,25 +59,25 @@ entries:
       url: /api_eol_contacts.html
       output: web
     - title: Disabilities
-      url: /explore.html
+      url: /api_eol_disabilities.html
       output: web  
     - title: Demographics
       url: /api_eol_demographics.html
       output: web   
     - title: End of Life Register
-      url: /explore.html
+      url: /api_eol_register.html
       output: web    
     - title: Functional Status
-      url: /api_eol_functionalstatus_questionnaireresponse.html
+      url: /api_eol_functionalstatus.html.html
       output: web
     - title: Lasting Power of Attorney
-      url: /explore.html
+      url: /api_eol_lastingpowerofattorney.html
       output: web 
     - title: Other Documents
-      url: /explore.html
+      url: /api_eol_otherdocuments.html
       output: web   
     - title: Preferences
-      url: /explore.html
+      url: /api_eol_preferences.html
       output: web  
     - title: Prognosis
       url: /api_eol_prognosis.html

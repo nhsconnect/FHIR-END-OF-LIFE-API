@@ -14,16 +14,17 @@ toc: false
 
 The following FHIR profiles are used to form the communication Atomic Unit:
 
-- [CareConnect-EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Patient-1.xml)
-- [Extension-CareConnect-EOL-NHSCommunication-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-EOL-NHSCommunication-1)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
+- [Extension-EOL-NHSCommunication-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-EOL-NHSCommunication-1)
+
 
 ### Communication data item mapping to FHIR profiles ###
 
 The demographics data items are fulfilled by elements within the FHIR resources listed below:
 
-| DCH Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Languages Spoken			  | CareConnect-EOL-Patient-1.nhsCommunication (Extension) 							| Optional |
+| Languages Spoken			  | EOL-Patient-1.nhsCommunication (Extension) 							| Optional |
 | Language Spoken Code		  | nhsCommunication.language.code  												| Optional |
 | Language Spoken Text		  | nhsCommunication.language.code.text												| Mandatory |
 | Language Comment 			  | nhsCommunication.languageComment												| Optional |
