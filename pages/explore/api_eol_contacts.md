@@ -14,7 +14,7 @@ toc: false
 
 The following FHIR profiles are used to form the contacts Atomic Unit:
 
-- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 
 ### Contact data item mapping to FHIR profiles ###
 
