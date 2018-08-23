@@ -14,13 +14,13 @@ toc: false
 
 The following FHIR profiles are used to form the Advance Treatment Preferences Atomic Unit:
 
-- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/-EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/-EOL-Patient-1.xml)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-ATP-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-List-1.xml)
-- [EOL-ATP-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-Condition-1.xml)
-- [EOL-AdvanceTtreatmentpreferences-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-AdvanceTreatmentPreferences-CarePlan-1.xml)
+- [EOL-ATP-List-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-ATP-List-1.xml)
+- [EOL-ATP-Condition-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-ATP-Condition-1.xml)
+- [EOL-AdvanceTreatmentPreferences-CarePlan-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-AdvanceTreatmentPreferences-CarePlan-1.xml)
 
 
 ### Advance Treatment Preferences data item mapping to FHIR profiles ###
