@@ -18,7 +18,7 @@ The following FHIR profiles are used to form the Preferences Atomic Unit:
 
 - [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [EOL-Practitioner-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Practitioner-1)
-- [EOL-Preferences-QuestionnaireResponse-1] (https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
+- [EOL-Preferences-QuestionnaireResponse-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
 
 ### Preferences data item mapping to FHIR profiles ###
 
