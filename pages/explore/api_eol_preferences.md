@@ -22,7 +22,7 @@ The following FHIR profiles are used to form the Preferences Atomic Unit:
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
 - [EOL-Preferences-QuestionnaireResponse-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
 
-<!- [EOL-Practitioner-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Practitioner-1) -->
+
 
 ### Preferences data item mapping to FHIR profiles ###
 
