@@ -9,25 +9,28 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/under.construction.html %}
-
-### Disabilities ###
+### Lasting Power of Attorney ###
 
 
-The following FHIR profiles are used to form the Disabilities Atomic Unit:
+The following FHIR profiles are used to form the Lasting Power of Attorney Atomic Unit:
 
 - [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
+- [EOL-LastingPowerOfAttorney-Contract-1] (https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LastingPowerOfAttorney-Contract-1)
 
-### Disabilities data item mapping to FHIR profiles ###
+### Lasting Power of Attorney data item mapping to FHIR profiles ###
 
-The disabilities data items are fulfilled by elements within the FHIR resources listed below:
+The Lasting Power of Attorney data items are fulfilled by elements within the FHIR resources listed below:
 
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
+| Lasting Power of Attorney For Health and Welfare | EOL-LastingPowerOfAttorney-Contract-1.type				    ||
+| Contact Name									| EOL-LPA-RelatedPerson-1.name									||
+| Contact Type									| EOL-LPA-RelatedPerson-1.telecom.use							||
+| Contact Detail 								| EOL-LPA-RelatedPerson-1.telecom.value							||
 
+### Lasting Power of Attorney Example XML ###
 
-### Disabilities Example XML ###
-
+<script src="https://gist.github.com/IOPS-DEV/2bba72ff566322ed463bd6ecf8ed7efe.js"></script>
 
 
 

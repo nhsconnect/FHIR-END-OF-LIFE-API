@@ -16,7 +16,9 @@ toc: false
 
 The following FHIR profiles are used to form the CPR Status Atomic Unit:
 
-- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [CareConnect-Practitioner-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- [EOL-CPRStatus-QuestionnaireResponse-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-QuestionnaireResponse-1)
 
 ### CPR Status data item mapping to FHIR profiles ###
 
@@ -25,15 +27,15 @@ The CPR Status data items are fulfilled by elements within the FHIR resources li
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | CPR Status        		       | EOL-CPRStatus-Flag-1.code           | Mandatory                   |
-| Reason for CPR status | EOL-CPRStatus-QuestionnaireResponse.reasonForCPRStatus | Mandatory |
-| CPR Status Mental Capacity | EOL-CPRStatus-QuestionnaireResponse.cPRStatusMentalCapacity |
+| Reason for CPR status | EOL-CPRStatus-QuestionnaireResponse-1.reasonForCPRStatus | Mandatory |
+| CPR Status Mental Capacity | EOL-CPRStatus-QuestionnaireResponse-1.cPRStatusMentalCapacity |
 | Date Time of CPR Status | EOL-CPRStatus-Flag-1.period.start|
 | Review Date | EOL-CPRStatus-Flag-1.period.end|
-| Persons Involved in Discussion | EOL-CPRStatus-QuestionnaireResponse.personsInvolvedInDiscussion (Extension)|
-| Persons or Organisations Made Aware of the Decision | EOL-CPRStatus-QuestionnaireResponse.awarenessOfDecision (Extension)|
-| Professionals Involved in Decision | EOL-CPRStatus-QuestionnaireResponse.professionalsInvolvedInDecision|
+| Persons Involved in Discussion | EOL-CPRStatus-QuestionnaireResponse-1.personsInvolvedInDiscussion (Extension)|
+| Persons or Organisations Made Aware of the Decision | EOL-CPRStatus-QuestionnaireResponse-1.awarenessOfDecision (Extension)|
+| Professionals Involved in Decision | EOL-CPRStatus-QuestionnaireResponse-1.professionalsInvolvedInDecision|
 | Professional Recording the CPR status | EOL-CPRStatus-Flag-1.author |
-| Professional Endorsing this CPR status | EOL-CPRStatus-QuestionnaireResponse.professionalEndorsingStatus |
+| Professional Endorsing this CPR status | EOL-CPRStatus-QuestionnaireResponse-1.professionalEndorsingStatus |
 
 ### CPR Status ERD ###
 

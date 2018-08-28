@@ -68,7 +68,7 @@ entries:
       url: /api_eol_register.html
       output: web    
     - title: Functional Status
-      url: /api_eol_functionalstatus.html.html
+      url: /api_eol_functionalstatus.html
       output: web
     - title: Lasting Power of Attorney
       url: /api_eol_lastingpowerofattorney.html
@@ -82,12 +82,6 @@ entries:
     - title: Prognosis
       url: /api_eol_prognosis.html
       output: web      
-  - title: Resources
-    output: web
-    folderitems:
-    - title: Overview
-      url: /explore.html
-      output: web
       subfolders:
       - title: API Guidance | FHIR&reg;
         output: web
@@ -104,6 +98,7 @@ entries:
         - title: Reference
           url: /resources_reference.html
           output: web
+      
   - title: Help & Support
     output: web
     folderitems:
