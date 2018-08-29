@@ -38,6 +38,15 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 
 ### Disabilities Example XML ###
 
+<script src="https://gist.github.com/IOPS-DEV/5648828bd8b611fa938b3562a5c3e162.js"></script>
+
+### Care Connect Profiles ###
+
+Where possible, Care Connect profiles have been used to develop the End of Life API. On this occasion it has not been possible to do this. The table below highlights the Care Connect profile(s) replaced with a bespoke version and the rationale behind this.
+
+| Care Connect Profile 	| Rationale for Change								     | New Component Required					 	   |
+|-----------------------|--------------------------------------------------------|-------------------------------------------------|
+| CareConnect-Condition-1 | Cardinality change									 | code.text requires 1:1 cardinality   		   |
 
 
-
+End of Life will engage with the healthcare community and INTEROPen in the future to propose these changes to the Care Connect profiles(s).

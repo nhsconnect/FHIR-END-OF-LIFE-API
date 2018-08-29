@@ -11,7 +11,7 @@ toc: false
 
 {% include custom/under.construction.html %}
 
-### consent ###
+### Consent ###
 
 
 The following FHIR profiles are used to form the prognosis Atomic Unit:
@@ -31,10 +31,6 @@ The prognosis data items are fulfilled by elements within the FHIR resources lis
 | Awareness of Prognosis | EOL-ClinicalImpression-Prognosis-1.awrenessOfPrognosis (Extension) | Optional |
 | Professional Recording Prognosis | EOL-ClinicalImpression-Prognosis-1.assessor | Mandatory |
 
-
-### Prognosis ERD ###
-
-<img src="images/erd/erd-prognosis.svg" style="width:80%;max-width: 80%;">
 
 ### Prognosis Example XML ###
 
