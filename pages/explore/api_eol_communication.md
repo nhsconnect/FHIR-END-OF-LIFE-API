@@ -15,7 +15,7 @@ toc: false
 
 The following FHIR profiles are used to form the communication Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1) (Derived from Care Connect Patient)
 - [Extension-EOL-NHSCommunication-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/Extension-EOL-NHSCommunication-1)
 
 
@@ -38,5 +38,14 @@ The demographics data items are fulfilled by elements within the FHIR resources 
 
 <script src="https://gist.github.com/IOPS-DEV/f973859cac9ffe23d2563494a948dce7.js"></script>
 
+### Care Connect Profiles ###
 
+Where possible, Care Connect profiles have been used to develop the End of Life API. On this occasion it has not been possible to do this. The table below highlights the Care Connect profile(s) replaced with a bespoke version and the rationale behind this.
 
+| Care Connect Profile 	 | Rationale for Change						    | New Component Required		  				   |
+|------------------------|----------------------------------------------|--------------------------------------------------|
+| CareConnect-Patient-1 | Addition to nhsCommunication complex extension		 | nhsCommunication.languageComment   |
+|						| Add extension to Contact element 			 		     | Contact.AdditionalContactInformation		       |
+|						| Additional code adding to LanguageAbilityMode valueste | Add code 'TSGN' and display of 'Tactile Signing' |
+
+End of Life will engage with the healthcare community and INTEROPen in the future to propose these changes to the Care Connect profiles(s).
