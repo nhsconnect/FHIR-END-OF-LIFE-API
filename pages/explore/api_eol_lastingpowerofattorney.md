@@ -14,8 +14,8 @@ toc: false
 
 The following FHIR profiles are used to form the Lasting Power of Attorney Atomic Unit:
 
-- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
-- [EOL-LastingPowerOfAttorney-Contract-1] (https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LastingPowerOfAttorney-Contract-1)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-LastingPowerOfAttorney-Contract-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LastingPowerOfAttorney-Contract-1)
 
 ### Lasting Power of Attorney data item mapping to FHIR profiles ###
 

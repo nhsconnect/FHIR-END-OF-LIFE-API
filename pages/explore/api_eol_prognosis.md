@@ -16,8 +16,8 @@ toc: false
 
 The following FHIR profiles are used to form the prognosis Atomic Unit:
 
-- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1.xml)
-- [EOL-Prognosis-ClinicalImpression-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1.xml)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Prognosis-ClinicalImpression-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1)
 
 ### Prognosis data item mapping to FHIR profiles ###
 

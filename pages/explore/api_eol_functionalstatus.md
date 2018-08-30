@@ -24,7 +24,7 @@ The Functional Status data items are fulfilled by elements within the FHIR resou
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-----------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | Functional Status Type			| EOL-FunctionalStatus-QuestionnaireResponse-1.item.text.functionalStatusType | Optional |
-| Functional Status Value			| EOL-FunctionalStatus-QuestionnaireResponse-1.item.text.functionalStatusValue | Optional |
+| Functional Status Value			| EOL-FunctionalStatus-QuestionnaireResponse-1.item.valueCoding.functionalStatusValue | Optional |
 | Functional Satus Text				| EOL-FunctionalStatus-QuestionnaireResponse-1.item.text.functionalStatusText | Mandatory |
 
 

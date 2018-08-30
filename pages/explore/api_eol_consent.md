@@ -30,7 +30,7 @@ The consent data item are fulfilled by elements within the FHIR resources listed
 | Consent Decision Details | EOL-Consent-1.consentDecisionDetails (Extension) | Optional |
 | Consent Discussion Details | EOL-Consent-1.consentDiscussionDetails (Extension) |Optional |
 | Date of change in consent status	| EOL-Consent-1.dateTime | Mandatory |
-| Professionals recording this consent status	| EOL-Consent-1.actor |Mandatory |
+| Professionals recording this consent status	| EOL-Consent-1.consentingParty |Mandatory |
 
 ### Consent ERD ###
 
