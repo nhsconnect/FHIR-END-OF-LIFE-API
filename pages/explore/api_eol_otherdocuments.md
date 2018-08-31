@@ -26,6 +26,10 @@ The Other Documents data items are fulfilled by elements within the FHIR resourc
 | Doument Location					  | EOL-OtherDocuments-QuestionnaireResponse-1.documentLocation				| Optional					  |
 | Document Source					  | EOL-OtherDocuments-QuestionnaireResponse-1.documentSource				| Optional					  |	
 
+### Other Documents ERD ###
+
+TODO
+
 ### Other Documents Example XML ###
 
 <script src="https://gist.github.com/IOPS-DEV/faa19f98c6d57bfe7d5fdf24511f33a9.js"></script>

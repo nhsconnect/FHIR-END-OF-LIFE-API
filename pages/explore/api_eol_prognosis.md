@@ -16,7 +16,10 @@ toc: false
 
 The following FHIR profiles are used to form the prognosis Atomic Unit:
 
-- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
 - [EOL-Prognosis-ClinicalImpression-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1)
 
 ### Prognosis data item mapping to FHIR profiles ###
@@ -31,6 +34,9 @@ The prognosis data items are fulfilled by elements within the FHIR resources lis
 | Awareness of Prognosis | EOL-Prognosis-ClinicalImpression-1-1.awrenessOfPrognosis (Extension) | Optional |
 | Professional Recording Prognosis | EOL-Prognosis-ClinicalImpression-1-1.assessor | Mandatory |
 
+### Prognosis ERD ###
+
+TODO
 
 ### Prognosis Example XML ###
 

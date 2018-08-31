@@ -40,6 +40,9 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 |									  | Extension.respectPriorityScaleStatement.valueString			| Optional |
 | Professional recording changes to List of Problems and Interventions | EOL-ATP-List-1.source | Mandatory |
 
+### Advance Treatment Preferences ERD ###
+
+TODO
 
 ### List Example XML ###
 

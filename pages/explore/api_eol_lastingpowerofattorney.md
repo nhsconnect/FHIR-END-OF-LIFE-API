@@ -30,6 +30,10 @@ The Lasting Power of Attorney data items are fulfilled by elements within the FH
 | Contact Type									| EOL-LPA-RelatedPerson-1.telecom.use							| Mandatory||
 | Contact Detail 								| EOL-LPA-RelatedPerson-1.telecom.value							| Mandatory||
 
+### Lasting Power of Attorney ERD ###
+
+TODO
+
 ### Business Rule ###
 
 The EOL-LPA-Flag-1 MUST exist where an EOL-LPA-RelatedPerson-1 instance exists. This flag MUST be created when a related person instance is created with LPA relationship types. 

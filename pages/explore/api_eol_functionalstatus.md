@@ -17,6 +17,12 @@ The patient’s functional status is recorded by clinicians during encounters wi
 
 The following FHIR profiles are used to form the Functional Status Atomic Unit:
 
+- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
+- [EOL-FunctionalStatus-QuestionnaireResponse-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-FunctionalStatus-QuestionnaireResponse-1)
+
 ### Functional Status event data item mapping to FHIR profiles ###
 
 The Functional Status data items are fulfilled by elements within the FHIR resources listed below:
@@ -27,6 +33,9 @@ The Functional Status data items are fulfilled by elements within the FHIR resou
 | Functional Status Value			| EOL-FunctionalStatus-QuestionnaireResponse-1.item.valueCoding.functionalStatusValue | Optional |
 | Functional Satus Text				| EOL-FunctionalStatus-QuestionnaireResponse-1.item.text.functionalStatusText | Mandatory |
 
+### Functional Status ERD ###
+
+TODO
 
 ### Example XML ###
 

@@ -36,6 +36,10 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 | Professional Recording Disabilities | CareConnect-ProblemHeader-Condition-1.asserter | Mandatory |
 | 
 
+Disabilities ERD ###
+
+TODO
+
 ### Disabilities Example XML ###
 
 <script src="https://gist.github.com/IOPS-DEV/5648828bd8b611fa938b3562a5c3e162.js"></script>

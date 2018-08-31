@@ -20,9 +20,7 @@ The following FHIR profiles are used to form the Preferences Atomic Unit:
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-Preferences-QuestionnaireResponse-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
-
-
+- [EOL-Preferences-QuestionnaireResponse-1] (https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
 
 ### Preferences data item mapping to FHIR profiles ###
 
@@ -37,6 +35,10 @@ The preferences data items are fulfilled by elements within the FHIR resources l
 | Domestic Access and Information	  | EOL-Preferences-QuestionnaireResponse-1.item.domesticAccessAndInformation | Optional |
 | Date of Preferences (create/update) | EOL-Preferences-QuestionnaireResponse-1.item.authored					| Mandatory |
 | Professional Recording Preferences  | EOL-Preferences-QuestionnaireResponse-1.item.author						| Mandatory |
+
+### Preferences ERD 
+
+TODO
 
 ### Preferences Example XML ###
 
