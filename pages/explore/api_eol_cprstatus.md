@@ -28,14 +28,14 @@ The CPR Status data items are fulfilled by elements within the FHIR resources li
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | CPR Status        		       | EOL-CPRStatus-Flag-1.code           | Mandatory                   |
 | Reason for CPR status | EOL-CPRStatus-QuestionnaireResponse-1.reasonForCPRStatus | Mandatory |
-| CPR Status Mental Capacity | EOL-CPRStatus-QuestionnaireResponse-1.cPRStatusMentalCapacity |
-| Date Time of CPR Status | EOL-CPRStatus-Flag-1.period.start|
-| Review Date | EOL-CPRStatus-Flag-1.period.end|
-| Persons Involved in Discussion | EOL-CPRStatus-QuestionnaireResponse-1.personsInvolvedInDiscussion (Extension)|
-| Persons or Organisations Made Aware of the Decision | EOL-CPRStatus-QuestionnaireResponse-1.awarenessOfDecision (Extension)|
-| Professionals Involved in Decision | EOL-CPRStatus-QuestionnaireResponse-1.professionalsInvolvedInDecision|
-| Professional Recording the CPR status | EOL-CPRStatus-Flag-1.author |
-| Professional Endorsing this CPR status | EOL-CPRStatus-QuestionnaireResponse-1.professionalEndorsingStatus |
+| CPR Status Mental Capacity | EOL-CPRStatus-QuestionnaireResponse-1.cPRStatusMentalCapacity | Optional
+| Date Time of CPR Status | EOL-CPRStatus-Flag-1.period.start| Mandatory
+| Review Date | EOL-CPRStatus-Flag-1.period.end| Optional
+| Persons Involved in Discussion | EOL-CPRStatus-QuestionnaireResponse-1.personsInvolvedInDiscussion (Extension)| Optional
+| Persons or Organisations Made Aware of the Decision | EOL-CPRStatus-QuestionnaireResponse-1.awarenessOfDecision (Extension)| Optional
+| Professionals Involved in Decision | EOL-CPRStatus-QuestionnaireResponse-1.professionalsInvolvedInDecision| Optional
+| Professional Recording the CPR status | EOL-CPRStatus-Flag-1.author | Mandatory
+| Professional Endorsing this CPR status | EOL-CPRStatus-QuestionnaireResponse-1.professionalEndorsingStatus | Optional
 
 ### CPR Status ERD ###
 
