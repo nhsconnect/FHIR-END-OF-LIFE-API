@@ -32,8 +32,8 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | List of Disabilities				  | CareConnect-ProblemList-1.entry.item											| Optional					|
 | Patient Disability Code				  | CareConnect-ProblemHeader-Condition-1.code | Optional |
-| Patient Disability Textual | CareConnect-Condition-1.code.text | Mandatory |
-| Professional Recording Disabilities | CareConnect-Condition-1.asserter | Mandatory |
+| Patient Disability Textual | CareConnect-ProblemHeader-Condition-1.code.text | Mandatory |
+| Professional Recording Disabilities | CareConnect-ProblemHeader-Condition-1.asserter | Mandatory |
 | 
 
 ### Disabilities Example XML ###
