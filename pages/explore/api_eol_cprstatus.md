@@ -20,6 +20,7 @@ The following FHIR profiles are used to form the CPR Status Atomic Unit:
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
+- [EOL-CPRStatus-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-Flag-1)
 - [EOL-CPRStatus-QuestionnaireResponse-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-QuestionnaireResponse-1)
 
 ### CPR Status data item mapping to FHIR profiles ###
