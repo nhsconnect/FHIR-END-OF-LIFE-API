@@ -11,11 +11,11 @@ summary: "User stories with links to profiles"
 
  
 ## 1.	Overview ##
-To support the End of Life National Minimum Dataset, this section explains the user stories and use cases that will (or possibly will) employ the FHIR resources that will be produced as part of delivery of this interoperability dataset.
+To support the End of Life (EoL) National Minimum Dataset, this section explains the user stories and use cases that will (or possibly will) employ the FHIR resources that will be produced as part of delivery of this interoperability dataset.
 The purpose of this document is to explain those user stories and use cases to those developing the FHIR resources and those technicians and clinicians that will be reviewing the FHIR resources as part of the INTEROPen curation process.
-The FHIR resources will be used to deliver both API “pull” of data from source systems and also messaging to “push” data to receiving systems.  The nature of the fragmented delivery of EPaCCS across the NHS in England means that the implementation of the resources will depend upon what solutions are being employed locally.
+The FHIR resources will be used to deliver both API “pull” of data from source systems and also messaging to “push” data to receiving systems.  The nature of the fragmented delivery of electronic palliative care co-ordination systems (EPaCCS) across the NHS in England means that the implementation of the resources will depend upon what solutions are being employed locally.
  
-The first of type (FoT) implementation will be by the **One London** LHCRE.  One London will offer U&EC users access to the data held with some London EPaCCS by using pointers stored within the London Health and Care Information Exchange (LHCIE).
+The first of type (FoT) implementation will be by the **One London** LHCRE.  One London will offer urgent and emergency care (U&EC) users access to the data held with some London EPaCCS by using pointers stored within the London Health and Care Information Exchange (LHCIE).
 
 ## 2.	Use Cases ##
 The required data flows are described as use cases.
@@ -48,7 +48,7 @@ Alternate flows are outside of the FoT scope.
 * Go to 3
 
 2b
-* Local U&EC system links directly to the patient’s SCR, which returns the SCR additional information. SCR additional information includes elements of the EoL dataset.
+* Local U&EC system links directly to the patient’s Summary Care Record (SCR), which returns the SCR additional information. SCR additional information includes elements of the EoL dataset.
 * Go to 3.
 
 2c
@@ -58,7 +58,7 @@ Alternate flows are outside of the FoT scope.
 * Go to 4
 
 10a
-* Patient is taken to Hospital if their planned treatment level indicates this, based on their current condition.
+* Patient is taken to hospital if their planned treatment level indicates this, based on their current condition.
 * End
 
 ## 2.2.	Patient agrees advance care plan and preferences with community palliative care team (GP update) ##
@@ -136,7 +136,7 @@ This broad user story explains the aim of the project from the patient’s persp
 
 **Acceptance Criteria**
 
-* Care professionals with access must include: Acute care professionals, community palliative care teams, general practice professionals, care home or hospice carers, 111 call handlers, paramedic control teams, paramedics, UTC clinicians.
+* Care professionals with access must include: Acute care professionals, community palliative care teams, general practice professionals, care home or hospice carers, 111 call handlers, paramedic control teams, paramedics, urggent treatment centre (UTC) clinicians.
 * EoL preferences to be viewed must, as a minimum, comply with the agreed End of Life National Minimum Dataset.
 * The care professional must only be able to amend those data items over which they have jurisdiction.
 * The care professional may be able to view the current EoL data and preferences via a viewer portal or embedded within their own native IT system.
