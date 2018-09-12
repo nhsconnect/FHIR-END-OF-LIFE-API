@@ -31,5 +31,5 @@ The End of Life Register data items are fulfilled by elements within the FHIR re
 
 <script src="https://gist.github.com/IOPS-DEV/bfb6dffd85e06a44b0c690f58d027407.js"></script>
 
-<script src="https://gist.github.com/IOPS-DEV/12043e84b33695a4554173a682a2208e.js"></script>
+
 

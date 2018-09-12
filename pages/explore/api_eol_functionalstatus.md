@@ -21,7 +21,7 @@ The following FHIR profiles are used to form the Functional Status Atomic Unit:
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-FunctionalStatus-QuestionnaireResponse-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-FunctionalStatus-QuestionnaireResponse-1)
+- [CareConnect-EOL-FunctionalStatus-Observation-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-FunctionalStatus-Observation-1)
 
 ### Functional Status event data item mapping to FHIR profiles ###
 
@@ -29,9 +29,10 @@ The Functional Status data items are fulfilled by elements within the FHIR resou
 
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-----------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Functional Status Type			| EOL-FunctionalStatus-QuestionnaireResponse-1.item.text.functionalStatusType | Optional |
-| Functional Status Value			| EOL-FunctionalStatus-QuestionnaireResponse-1.item.valueCoding.functionalStatusValue | Optional |
-| Functional Satus Text				| EOL-FunctionalStatus-QuestionnaireResponse-1.item.text.functionalStatusText | Mandatory |
+| Functional Status Type			| EOL-FunctionalStatus-Observation-1.code | Optional |
+| Functional Status Value			| EOL-FunctionalStatus-Observation-1.value or | Optional |
+|									| EOL-FunctionalStatus-Observation-1.component.value[x] | Optional |
+| Functional Satus Text				| EOL-FunctionalStatus-Observation-1.code.text | Mandatory |
 
 ### Functional Status ERD ###
 

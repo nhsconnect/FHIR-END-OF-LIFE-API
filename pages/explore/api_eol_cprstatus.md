@@ -20,7 +20,6 @@ The following FHIR profiles are used to form the CPR Status Atomic Unit:
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-CPRStatus-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-Flag-1)
 - [EOL-CPRStatus-QuestionnaireResponse-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-QuestionnaireResponse-1)
 
 ### CPR Status data item mapping to FHIR profiles ###
@@ -30,7 +29,7 @@ The CPR Status data items are fulfilled by elements within the FHIR resources li
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | CPR Status        		       | EOL-CPRStatus-Flag-1.code           | Mandatory                   |
-| Reason for CPR status | EOL-CPRStatus-QuestionnaireResponse-1.reasonForCPRStatus | Mandatory |
+| Reason for CPR status | EOL-CPRStatus-QuestionnaireResponse-1.reasonForCPRStatus | Optional |
 | CPR Status Mental Capacity | EOL-CPRStatus-QuestionnaireResponse-1.cPRStatusMentalCapacity | Optional
 | Date Time of CPR Status | EOL-CPRStatus-Flag-1.period.start| Mandatory
 | Review Date | EOL-CPRStatus-Flag-1.period.end| Optional

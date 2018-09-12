@@ -98,7 +98,7 @@
         </g>
         <g>
           <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,-220,-135)" stroke-linecap="butt">
-            <text x="256.3135" xml:space="preserve" y="204.0645" stroke="none">EOL-CPRStatus-Flag-1</text>
+            <text x="287.9893" xml:space="preserve" y="204.0645" stroke="none">EOL-Flag-1</text>
           </g>
         </g>
         <g>
@@ -111,7 +111,7 @@
         <g/>
         <g>
           <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,-220,-135)" stroke-linecap="butt">
-            <text x="257.665" xml:space="preserve" y="298.7139" stroke="none">Period.Start</text>
+            <text x="257.665" xml:space="preserve" y="298.7139" stroke="none">Period.start</text>
           </g>
         </g>
         <g>
@@ -124,7 +124,7 @@
         <g/>
         <g>
           <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,-220,-135)" stroke-linecap="butt">
-            <text x="257.665" xml:space="preserve" y="321.6739" stroke="none">Period.End</text>
+            <text x="257.665" xml:space="preserve" y="321.6739" stroke="none">Period.end</text>
           </g>
         </g>
         <g>

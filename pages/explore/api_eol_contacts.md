@@ -36,5 +36,16 @@ The contact data item are fulfilled by elements within the FHIR resources listed
 
 <script src="https://gist.github.com/IOPS-DEV/31ea699515e4ad684dc4961c848531d1.js"></script>
 
+### Care Connect Profiles ###
+
+Where possible, Care Connect profiles have been used to develop the End of Life API. On this occasion it has not been possible to do this. The table below highlights the Care Connect profile(s) replaced with a bespoke version and the rationale behind this.
+
+| Care Connect Profile 	| Rationale for Change								     | New Component Required					 	   |
+|-----------------------|--------------------------------------------------------|-------------------------------------------------|
+| CareConnect-Patient-1 | Addition to nhsCommunication complex extension		 | nhsCommunication.languageComment   			   |
+|						| Add extension to Contact element 			 		     | Contact.AdditionalContactInformation		       |
+|						| Additional code adding to LanguageAbilityMode valueste | Add code 'TSGN' and display of 'Tactile Signing'|
+
+End of Life will engage with the healthcare community and INTEROPen in the future to propose these changes to the Care Connect profiles(s).
 
 
