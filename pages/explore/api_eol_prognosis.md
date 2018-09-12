@@ -11,7 +11,10 @@ toc: false
 
 {% include custom/under.construction.html %}
 
-### Consent ###
+### Prognosis ###
+
+At any encounter with the patient, the professional offering care may re-assess the overarching life expectancy (prognosis) of the patient.  This prognosis is immensely useful to urgent and emergency care in helping them to decide the best course of action for the patient.
+Across England, there is not yet a standard in place for commonly SNOMED-coding the prognosis.  The ambition of all respondents was to standardise the SNOMED-coded part of the dataset to the four GSF values, however they all accepted that some localities were not using those values.  Therefore, the prognosis (coded) data item allows for a wider selection of SNOMED codes to be transmitted.  Additionally, the prognosis (textual) has been provided so that providers without any coding can still transmit the value in text.
 
 
 The following FHIR profiles are used to form the prognosis Atomic Unit:

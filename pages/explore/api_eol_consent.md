@@ -13,6 +13,9 @@ toc: false
 
 ### Consent ###
 
+When a patient has a record created on the EPaCCS they will discuss whether they consent to electronic record sharing.  Some systems do not record refusal to share as such, because if patients refuse to share then there is just no record created.  
+Other systems may not have a specific consent for sharing the EoL dataset bundle, this may be included in a wider discussion and decision with reference to information sharing.
+
 
 The following FHIR profiles are used to form the Consent Atomic Unit:
 

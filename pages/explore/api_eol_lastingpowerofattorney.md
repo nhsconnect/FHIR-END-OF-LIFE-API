@@ -11,6 +11,10 @@ toc: false
 
 ### Lasting Power of Attorney ###
 
+This group of data records and transmits the current, ruling LPA information for this patient.  This includes coded data to indicate the presence of LPA (or similar) for the patient and a list of those people to which the power has been conferred.
+This data could change at any time and updates will be recorded as a result of an encounter with, or communication from, the patient.
+It should be noted that this information only records the presence of an LPA on not whether that LPA has been exercised on any particular occasion.
+
 
 The following FHIR profiles are used to form the Lasting Power of Attorney Atomic Unit:
 

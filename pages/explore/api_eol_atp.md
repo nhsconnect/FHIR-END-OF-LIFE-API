@@ -31,11 +31,11 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | Date of Change in List			  | EOL-ATP-List.date				| Mandatory |
-| Problem or Condition				  | EOL-ATP-List.entry.item.reference | Mandatory |
+| Problem or Condition				  | EOL-ATP-List.entry.item.reference | Optional |
 | Details of Problem or Condition     | EOL-ATP-Condition-1.code.text           | Mandatory                   |
 | Treatment Level					  | EOL-ATP-CarePlan-1.activity.detail.code.text	| Optional |
 | Intervention						  | EOL-ATP-CarePlan-1.activity.detail.description  | Optional |
-| ReSPECT Care Priority  			  | 												| Mandatory |
+| ReSPECT Care Priority  			  | 												| Optional |
 | 									  | Extension.respectPriorityScale.valueInteger		| Mandatory |
 |									  | Extension.respectPriorityScaleStatement.valueString			| Optional |
 | Professional recording changes to List of Problems and Interventions | EOL-ATP-List-1.source | Mandatory |

@@ -13,6 +13,7 @@ toc: false
 
 ### Disabilities ###
 
+Where a patient has any known disabilities, these may be captured by a healthcare professional as part of the End of life Care Plan. There are no limitations to what disabilities may be recorded, with each disability SNOMED coded within the record.
 
 The following FHIR profiles are used to form the Disabilities Atomic Unit:
 

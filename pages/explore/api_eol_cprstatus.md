@@ -13,6 +13,8 @@ toc: false
 
 ### CPR Status ###
 
+The “CPR Status” collection of data is used to transmit the kind of data often recorded on DNACPR forms and also recorded as part of the ReSPECT form.  This collection of data reflects a clinical decision that has been made.  The decision may be made by one or more professionals in discussion with the patient and/or their representatives.  Once the decision is made, it can also be shared after the time of decision with other individuals that were not present for the discussion.
+
 
 The following FHIR profiles are used to form the CPR Status Atomic Unit:
 

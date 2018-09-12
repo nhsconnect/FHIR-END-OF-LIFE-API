@@ -27,6 +27,20 @@ The demographics data items are fulfilled by elements within the FHIR resources 
 | Surname				  | EOL-Patient-1.name.family	| Mandatory |
 | Forename						  | EOL-Patient-1.name.given  | Mandatory |
 | Date of Birth			  | EOL-Patient-1.birthDate												| Mandatory |
+| Contact Name				  | EOL-Patient-1.contact.name 							| Mandatory |
+| Contact Role				  | EOL-Patient-1.relationship.text												| Optional |
+| Contact Type				  | EOL-Patient-1.contact.telecom.system												| Optional |
+| Contact Detail			  | EOL-Patient-1.contact.telecom.value												| Mandatory |
+| Organisation Name			  | EOL-Patient-1.contact.organization									| Optional |
+| Additional Information About Contact	 | EOL-Patient-1.contact.additionalContactInformation (Extension)	    | Optional |
+| Languages Spoken			  | EOL-Patient-1.nhsCommunication (Extension) 							| Optional |
+| Language Spoken Code		  | nhsCommunication.language.code  												| Optional |
+| Language Spoken Text		  | nhsCommunication.language.code.text												| Mandatory |
+| Language Comment 			  | nhsCommunication.languageComment												| Optional |
+| Type of Interpretation Code | nhsCommunication.modeofCommunication.code 										| Optional |
+| Type of Interpretation Text | nhsCommunication.modeofCommunication.code.text 								    | Optional |
+| Interpreter Required        | nhsCommunication.interpreterRequired									        | Optional |
+
 
 
 ### Demographics Example XML ###

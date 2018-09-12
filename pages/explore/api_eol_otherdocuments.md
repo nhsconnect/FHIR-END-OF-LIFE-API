@@ -11,6 +11,9 @@ toc: false
 
 ### Other Documents ###
 
+The dataset design makes no attempt to try to embed other formal end of life or advance care planning documents into the transmission of data.  However, for urgent and emergency care it is useful to know of the presence of formal paper documents, who generated them, and the location where they can be found.
+The document list will be updated by care professionals as they produce the documents.
+
 
 The following FHIR profiles are used to form the Other Documents Atomic Unit:
 

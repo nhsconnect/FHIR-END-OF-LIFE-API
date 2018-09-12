@@ -13,6 +13,7 @@ toc: false
 
 ### End of Life Register ###
 
+A feature of primary care is a requirement for GPs to place the patient on an end of life register, where they adjudge the patient as being a person coming towards the end of their life.  There are several register formats, such as the QOF (Palliative Care) or GSF Palliative Care register.  As the specific type of register chosen varies, the national dataset has employed a simple SNOMED-coded marker that the patient has been recorded on an EoL register.
 
 The following FHIR profiles are used to form the Disabilities Atomic Unit:
 
