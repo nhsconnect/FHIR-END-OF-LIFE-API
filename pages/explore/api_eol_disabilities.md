@@ -9,8 +9,6 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/under.construction.html %}
-
 ### Disabilities ###
 
 Where a patient has any known disabilities, these may be captured by a healthcare professional as part of the End of life Care Plan. There are no limitations to what disabilities may be recorded, with each disability SNOMED coded within the record.
@@ -37,11 +35,13 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 | Professional Recording Disabilities | CareConnect-ProblemHeader-Condition-1.asserter | Mandatory |
 | 
 
-Disabilities ERD ###
+### Disabilities ERD ###
 
 TODO
 
 ### Disabilities Example XML ###
+
+<script src="https://gist.github.com/IOPS-DEV/e4740ee872d5bc5be5c254ce42c6dc7b.js"></script>
 
 <script src="https://gist.github.com/IOPS-DEV/5648828bd8b611fa938b3562a5c3e162.js"></script>
 

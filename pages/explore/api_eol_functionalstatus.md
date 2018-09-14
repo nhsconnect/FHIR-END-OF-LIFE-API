@@ -29,7 +29,7 @@ The Functional Status data items are fulfilled by elements within the FHIR resou
 
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-----------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Functional Status Type			| EOL-FunctionalStatus-Observation-1.code | Optional |
+| Functional Status Type			| EOL-FunctionalStatus-Observation-1.code | Mandatory |
 | Functional Status Value			| EOL-FunctionalStatus-Observation-1.value or | Optional |
 |									| EOL-FunctionalStatus-Observation-1.component.value[x] | Optional |
 | Functional Satus Text				| EOL-FunctionalStatus-Observation-1.code.text | Mandatory |
