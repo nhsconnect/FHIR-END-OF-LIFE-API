@@ -9,8 +9,6 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/under.construction.html %}
-
 ### Consent ###
 
 When a patient has a record created on the EPaCCS they will discuss whether they consent to electronic record sharing.  Some systems do not record refusal to share as such, because if patients refuse to share then there is just no record created.  
@@ -19,7 +17,7 @@ Other systems may not have a specific consent for sharing the EoL dataset bundle
 
 The following FHIR profiles are used to form the Consent Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)

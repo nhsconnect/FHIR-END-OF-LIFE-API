@@ -11,17 +11,15 @@ toc: false
 
 ### Advance Treatment Preferences ###
 
-### WARNING: EOL PROFILES POINTING TO TEST SERVER FHIR-TEST.NHS.UK ###
-
 The following FHIR profiles are used to form the Advance Treatment Preferences Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-ATP-List-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-ATP-List-1)
-- [EOL-ATP-Condition-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-ATP-Condition-1)
-- [EOL-AdvanceTreatmentpreferences-CarePlan-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-AdvanceTreatmentPreferences-CarePlan-1)
+- [EOL-ATPProblemList-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemList-List-1)
+- [EOL-ATPProblemHeader-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemHeader-Condition-1)
+- [EOL-ATP-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1)
 
 
 ### Advance Treatment Preferences data item mapping to FHIR profiles ###
@@ -31,8 +29,8 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
 | Date of Change in List			  | EOL-ATP-List.date				| Mandatory |
-| Problem or Condition				  | EOL-ATP-List.entry.item.reference | Optional |
-| Details of Problem or Condition     | EOL-ATP-Condition-1.code.text           | Mandatory                   |
+| Problem or Condition				  | EOL-ATPProblemList-List.entry.item.reference | Optional |
+| Details of Problem or Condition     | EOL-ATPProblemHeader-Condition-1.code.text           | Mandatory                   |
 | Treatment Level					  | EOL-ATP-CarePlan-1.activity.detail.code.text	| Optional |
 | Intervention						  | EOL-ATP-CarePlan-1.activity.detail.description  | Optional |
 | ReSPECT Care Priority  			  | 												| Optional |

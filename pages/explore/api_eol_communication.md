@@ -11,11 +11,11 @@ toc: false
 
 ### Communication ###
 
-### WARNING: EOL PROFILES POINTING TO TEST SERVER FHIR-TEST.NHS.UK ###
+
 
 The following FHIR profiles are used to form the communication Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1) (Derived from Care Connect Patient)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [Extension-EOL-NHSCommunication-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/Extension-EOL-NHSCommunication-1)
 
 

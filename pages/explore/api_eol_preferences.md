@@ -12,15 +12,13 @@ toc: false
 
 ### Preferences ###
 
-### WARNING: EOL PROFILES POINTING TO TEST SERVER FHIR-TEST.NHS.UK ###
-
 The following FHIR profiles are used to form the Preferences Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-Preferences-QuestionnaireResponse-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
+- [EOL-Preferences-QuestionnaireResponse-1] (https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Preferences-QuestionnaireResponse-1)
 
 ### Preferences data item mapping to FHIR profiles ###
 

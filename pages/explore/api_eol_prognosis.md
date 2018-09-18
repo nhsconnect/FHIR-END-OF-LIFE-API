@@ -9,8 +9,6 @@ toc: false
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/under.construction.html %}
-
 ### Prognosis ###
 
 At any encounter with the patient, the professional offering care may re-assess the overarching life expectancy (prognosis) of the patient.  This prognosis is immensely useful to urgent and emergency care in helping them to decide the best course of action for the patient.
@@ -19,7 +17,7 @@ Across England, there is not yet a standard in place for commonly SNOMED-coding 
 
 The following FHIR profiles are used to form the prognosis Atomic Unit:
 
-- [EOL-Patient-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
+- [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)

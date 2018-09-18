@@ -11,15 +11,13 @@ toc: false
 
 ### Other Documents ###
 
-### WARNING: EOL PROFILES POINTING TO TEST SERVER FHIR-TEST.NHS.UK ###
-
 The dataset design makes no attempt to try to embed other formal end of life or advance care planning documents into the transmission of data.  However, for urgent and emergency care it is useful to know of the presence of formal paper documents, who generated them, and the location where they can be found.
 The document list will be updated by care professionals as they produce the documents.
 
 
 The following FHIR profiles are used to form the Other Documents Atomic Unit:
 
-- [EOL-OtherDocuments-QuestionnaireResponse-1](https://fhir-test.nhs.uk/STU3/StructureDefinition/EOL-OtherDocuments-QuestionnaireResponse-1)
+- [EOL-OtherDocuments-QuestionnaireResponse-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-OtherDocuments-QuestionnaireResponse-1)
 
 ### Other Documents data item mapping to FHIR profiles ###
 
