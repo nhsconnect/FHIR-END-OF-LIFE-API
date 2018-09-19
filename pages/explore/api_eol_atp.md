@@ -28,7 +28,7 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Date of Change in List			  | EOL-ATP-List.date				| Mandatory |
+| Date of Change in List			  | EOL-ATP-ProblemList-List.date				| Mandatory |
 | Problem or Condition				  | EOL-ATPProblemList-List.entry.item.reference | Optional |
 | Details of Problem or Condition     | EOL-ATPProblemHeader-Condition-1.code.text           | Mandatory                   |
 | Treatment Level					  | EOL-ATP-CarePlan-1.activity.detail.code.text	| Optional |
@@ -36,11 +36,11 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 | ReSPECT Care Priority  			  | 												| Optional |
 | 									  | Extension.respectPriorityScale.valueInteger		| Mandatory |
 |									  | Extension.respectPriorityScaleStatement.valueString			| Optional |
-| Professional recording changes to List of Problems and Interventions | EOL-ATP-List-1.source | Mandatory |
+| Professional recording changes to List of Problems and Interventions | EOL-ATP-ProblemList-1.source | Mandatory |
 
 ### Advance Treatment Preferences ERD ###
 
-TODO
+<img src="images/erd/atp-erd.svg" style="width:80%;max-width: 80%;">
 
 ### List Example XML ###
 
@@ -62,7 +62,7 @@ Where possible, Care Connect profiles have been used to develop the End of Life 
 |---------------------------------------|------------------------------------------|----------------------------------------------------------|
 | CareConnect-List-1 and				| ReSPECT scale complex extension required | extension.resPECTScale   			 					  |
 | CareConnect-ProblemList-1	    		|  			 							   | 	     												  |
-| CareConnect-Condition-1 and			| Problem description is mandatory	       | Change of cardinality to 'code' element from 0:1 to 1:1  |
+| CareConnect-Condition-1 and			| Problem description is mandatory	       | Change of cardinality to 'code' element from 0..1 to 1..1  |
 | CareConnect-ProblemHeader-Condition-1 | 										   | 														  |
 
 End of Life will engage with the healthcare community and INTEROPen in the future to propose these changes to the Care Connect profiles(s).

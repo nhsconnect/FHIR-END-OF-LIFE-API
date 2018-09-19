@@ -36,16 +36,12 @@ The Lasting Power of Attorney data items are fulfilled by elements within the FH
 
 ### Lasting Power of Attorney ERD ###
 
-TODO
+<img src="images/erd/lpa-erd.svg" style="width:80%;max-width: 80%;">
 
 ### Business Rule ###
 
 The EOL-LPA-Flag-1 MUST exist where an EOL-LPA-RelatedPerson-1 instance exists. This flag MUST be created when a related person instance is created with LPA relationship types. 
 The flag indicates the presence of one or more RelatedPerson instances that may be used to identiofy person or persons who have the power to make critical decisions where the patient is unable to do so.
-
-### Lasting Power of Attorney ERD ###
-
-<img src="images/erd/lpa-erd.svg" style="width:80%;max-width: 80%;">
 
 ### Lasting Power of Attorney Example XML ###
 

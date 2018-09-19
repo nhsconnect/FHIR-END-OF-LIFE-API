@@ -25,8 +25,8 @@ The Other Documents data items are fulfilled by elements within the FHIR resourc
 
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Docuemnt Name						  | EOL-OtherDocuments-QuestionnaireResponse-1.documentName					| Optional					  |
-| Doument Location					  | EOL-OtherDocuments-QuestionnaireResponse-1.documentLocation				| Optional					  |
+| Document Name						  | EOL-OtherDocuments-QuestionnaireResponse-1.documentName					| Mandatory			  |
+| Document Location					  | EOL-OtherDocuments-QuestionnaireResponse-1.documentLocation				| Optional					  |
 | Document Source					  | EOL-OtherDocuments-QuestionnaireResponse-1.documentSource				| Optional					  |	
 
 ### Other Documents ERD ###

@@ -29,7 +29,6 @@ The contact data item are fulfilled by elements within the FHIR resources listed
 | Additional Information About Contact	 | EOL-Patient-1.contact.additionalContactInformation (Extension)	    | Optional |
 
 
-
 ### Contact Example XML ###
 
 <script src="https://gist.github.com/IOPS-DEV/31ea699515e4ad684dc4961c848531d1.js"></script>

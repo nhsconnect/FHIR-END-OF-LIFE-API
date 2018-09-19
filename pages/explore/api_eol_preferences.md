@@ -34,9 +34,6 @@ The preferences data items are fulfilled by elements within the FHIR resources l
 | Date of Preferences (create/update) | EOL-Preferences-QuestionnaireResponse-1.item.authored					| Mandatory |
 | Professional Recording Preferences  | EOL-Preferences-QuestionnaireResponse-1.item.author						| Mandatory |
 
-### Preferences ERD 
-
-TODO
 
 ### Preferences Example XML ###
 

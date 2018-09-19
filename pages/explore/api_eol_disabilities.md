@@ -35,9 +35,6 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 | Professional Recording Disabilities | CareConnect-ProblemList-1.source | Mandatory |
 | 
 
-### Disabilities ERD ###
-
-TODO
 
 ### Disabilities Example XML ###
 
