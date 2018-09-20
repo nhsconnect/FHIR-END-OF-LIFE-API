@@ -40,13 +40,43 @@ entries:
           url: /engage_endoflife.html
           output: web
 
-
-  - title: Resources
-    output: web
+  - title: Atomic Units
+    output: web,pdf
     folderitems:
-    - title: Overview
-      url: /explore.html
+    - title: Advance Treatment Preferences
+      url: /api_eol_atp.html
       output: web
+    - title: CPR Status
+      url: /api_eol_cprstatus.html
+      output: web 
+      output: web 
+    - title: Consent
+      url: /api_eol_consent.html
+      output: web   
+    - title: Disabilities
+      url: /api_eol_disabilities.html
+      output: web  
+    - title: Demographics
+      url: /api_eol_demographics.html
+      output: web   
+    - title: End of Life Register
+      url: /api_eol_register.html
+      output: web    
+    - title: Functional Status
+      url: /api_eol_functionalstatus.html
+      output: web
+    - title: Lasting Power of Attorney
+      url: /api_eol_lastingpowerofattorney.html
+      output: web 
+    - title: Other Documents
+      url: /api_eol_otherdocuments.html
+      output: web   
+    - title: Preferences
+      url: /api_eol_preferences.html
+      output: web  
+    - title: Prognosis
+      url: /api_eol_prognosis.html
+      output: web      
       subfolders:
       - title: API Guidance | FHIR&reg;
         output: web
@@ -63,9 +93,7 @@ entries:
         - title: Reference
           url: /resources_reference.html
           output: web
-        - title: Care Connect Versioning
-          url: /explore_cc_versioning.html
-          output: web
+      
   - title: Help & Support
     output: web
     folderitems:

@@ -11,7 +11,7 @@ summary: "Overview of the Resources section"
 
 ## 1. End of Life Recording ##
 
-This page provides an overview of the FHIR STU3 Resources that are required to build the required API messaging. Each link will take you to the resource page detail with a link to the Structure Defnitions of each resource.
+This page provides an overview of the FHIR STU3 Resources that are required to build the required API messaging. Each link will take you to the resource page detail with a link to the Structure Definitions of each resource.
 
 ## 2. End of Life Care API's ###
 
@@ -47,8 +47,8 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <td>CPR Status</td>
 <td>Flag<br/>Encounter<br/>Observation</td>
 <td><a href="api_eol_management_flag_cprstatus.html">EOL-CPRStatus-Flag-1</a><br/>
-<a href="api_eol_management_encounter_cprstatus.html">CareConnect-EOL-CPRStatus-Encounter-1</a><br/>
-<a href="api_eol_diagnostics_observation_cprstatus.html">CareConnect-EOL-CPRStatus-Observation-1</a></td>
+<a href="api_eol_management_encounter_cprstatus.html">EOL-CPRStatus-Encounter-1</a><br/>
+<a href="api_eol_diagnostics_observation_cprstatus.html">EOL-CPRStatus-Observation-1</a></td>
 </tr>
 <tr>
 <td>End of Life Register</td>
@@ -58,24 +58,25 @@ This page provides an overview of the FHIR STU3 Resources that are required to b
 <tr>
 <td>Prognosis</td>
 <td>Encounter<br/>Observation</td>
-<td><a href="api_eol_management_encounter_prognosis.html">CareConnect-EOL-Prognosis-Encounter-1</a><br/>
-<a href="api_eol_diagnostics_observation_prognosis.html">CareConnect-EOL-Prognosis-Observation-1</a></td>
+<td><a href="api_eol_management_encounter_prognosis.html">EOL-Prognosis-Encounter-1</a><br/>
+<a href="api_eol_diagnostics_observation_prognosis.html">EOL-Prognosis-Observation-1</a></td>
 </tr>
 <tr>
 <td>Advance Treatment Preferences</td>
-<td>Conditions (Problem)<br/>Conditions (Problem) List<br/>Questionnaire Response<br/>Practitioner<br/>Care Connect Practioner Role</td>
-<td><a href="api_eol_summary_atp_condition.html">CareConnect-EOL-AdvanceTreatmentPreferences-Condition-1</a><br/>
+<td>Condition<br/>List<br/>CarePlan<br/>Questionnaire Response<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_management_problemlist.html">CareConnect-ProblemList-1</a><br/>
+ <a href="api_eol_summary_problemheader_condition.html">CareConnect-ProblemHeader-Condition-1</a><br/>
+ <a href="api_eol_summary_atp_careplan.html">EOL-AdvanceTreatmentPreferences-CarePlan-1</a><br/>
  <a href="api_eol_advancetreatmentpreferences_questionnaireresponse.html">EOL-AdvanceTreatmentPreferences-QuestionnaireResponse-1</a><br/>
- <a href="api_eol_summary_problemlist.html">CareConnect-ProblemList-1</a><br/>
  <a href="api_eol_individuals_practitioner.html">CareConnect-Practitioner-1</a><br/>
  <a href="api_eol_individuals_practitionerrole.html">CareConnect-PractitionerRole-1</a></td>
 
 </tr>
 <tr>
 <td>Disability</td>
-<td>Conditions (Problem)<br/>List<br/>Practitioner<br/>Practioner Role</td>
-<td><a href="api_eol_summary_disability_condition.html">CareConnect-Disability-Condition-1</a><br/>
-<a href="api_eol_summary_disability_list.html">CareConnect-Disability-List-1</a><br/>
+<td>Condition (Problem)<br/>List<br/>Practitioner<br/>Practioner Role</td>
+<td><a href="api_eol_summary_disability_condition.html">CareConnect-ProblemHeader-Condition-1</a><br/>
+<a href="api_eol_summary_disability_list.html">CareConnect-ProblemList-1</a><br/>
 <a href="api_eol_individuals_practitioner.html">CareConnect-Practitioner-1</a><br/>
 <a href="api_eol_individuals_practitionerrole.html">CareConnect-PractitionerRole-1</a></td>
 </tr>

@@ -1,23 +1,25 @@
 ---
-title: Clinical | List
-keywords: getcarerecord, structured, rest, condition
-tags: [rest,fhir,condition,clinical,api]
-sidebar: accessrecord_rest_sidebar
-permalink: api_eol_summary_disability_list.html
-summary: Use to record detailed information about conditions, problems or diagnoses recognized by a clinician. There are many uses e.g. recording a diagnosis during an encounter; populating a problem list or a summary statement, such as a discharge summary.
+title: Management | Problem List
+keywords: usecase, condition, probem, care connect
+tags: [rest, fhir, management,api]
+sidebar: foundations_sidebar
+permalink: api_eol_management_problemlist.html
+summary: A list of the patient's conditions and/or problems.
 ---
 {% include custom/search.warnbanner.html %}
 
 {% include custom/fhir.STU3.reference.html resource="List" page="CareConnect-ProblemList-1" fhirname="List" fhirlink="list.html" content="User Stories" userlink="engage_endoflife.html" %}
 
-### Patient Scenario ###
-
-### Disability List ###
+## Patient Scenario ##
 
 
-{% include custom/under.construction.html %}
+### Problem List ###
 
-<List xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/stu3/list.xsd">
+The patient's problem list is made up of one or more conditions or problems that have been identified by a healthcare professional. The problem list is dynamic in nature, with conditions or problems being added or removed from the list over the lifetime of the patient. Any condition or problem is captured as a text value.
+
+
+```xml
+<List xmlns="http://hl7.org/fhir">
 	<id value="9fa0541c-67a2-4946-a7e3-ef3c4a8991f1"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProblemList-1"/>
@@ -44,3 +46,4 @@ summary: Use to record detailed information about conditions, problems or diagno
 		</item>
 	</entry>
 </List>
+```
