@@ -15,7 +15,7 @@ The following FHIR profiles are used to form the Advance Treatment Preferences A
 
 - [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
-- [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1) (EOL mandates name.text)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
 - [EOL-ATPProblemList-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemList-List-1)
 - [EOL-ATPProblemHeader-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemHeader-Condition-1)

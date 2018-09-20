@@ -18,7 +18,7 @@ The following FHIR profiles are used to form the Disabilities Atomic Unit:
 - [EOL-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1)
 - [CareConnect-ProblemList-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ATPProblemList-1)
 - [CareConnect-ProblemHeader-Condition-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ATPProblemHeader-Condition-1)
-- [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1) (EOL mandates name.text)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 
@@ -29,9 +29,9 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 
 | EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
 |-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| List of Disabilities				  | CareConnect-ATPProblemList-1.entry.item											| Optional					|
-| Patient Disability Code				  | CareConnect-ATPProblemHeader-Condition-1.code | Optional |
-| Patient Disability Textual | CareConnect-ATPProblemHeader-Condition-1.code.text | Mandatory |
+| List of Disabilities				  | CareConnect-ProblemList-1.entry.item											| Optional					|
+| Patient Disability Code				  | CareConnect-ProblemHeader-Condition-1.code | Optional |
+| Patient Disability Textual | CareConnect-ProblemHeader-Condition-1.code.text | Mandatory |
 | Professional Recording Disabilities | CareConnect-ProblemList-1.source | Mandatory |
 | 
 
