@@ -42,11 +42,11 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 
 <img src="images/erd/atp-erd.svg" style="width:80%;max-width: 80%;">
 
-### List Example XML ###
+### Problem List Example XML ###
 
 <script src="https://gist.github.com/IOPS-DEV/68d09895595b33dc1370560a8b287f39.js"></script>
 
-### Condition Example XML ###
+### Problem Header Condition Example XML ###
 
 <script src="https://gist.github.com/IOPS-DEV/16afab712dda04db1af18dfa1d9f722e.js"></script>
 

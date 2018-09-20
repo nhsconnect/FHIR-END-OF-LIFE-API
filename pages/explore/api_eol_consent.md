@@ -27,9 +27,9 @@ The following FHIR profiles are used to form the Consent Atomic Unit:
 
 The consent data item are fulfilled by elements within the FHIR resources listed below:
 
-| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |
-|-------------------------------------|-------------------------------------------------------------------------|-----------------------------|
-| Consent Status        		       | EOL-Consent-1.status          | Mandatory                   |
+| EOL Data Item                       | FHIR resource element                                                   | Mandatory/Required/Optional |Notes |
+|-------------------------------------|-------------------------------------------------------------------------|-----------------------------|------|
+| Consent Status        		       | EOL-Consent-1.status          | Mandatory                   | Active = Consent Given, Inactive = Consent Refused.|
 | Consent Decision Details | EOL-Consent-1.consentDecisionDetails (Extension) | Optional |
 | Consent Discussion Details | EOL-Consent-1.consentDiscussionDetails (Extension) |Optional |
 | Date of change in consent status	| EOL-Consent-1.dateTime | Mandatory |
