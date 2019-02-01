@@ -35,6 +35,21 @@ The consent data item are fulfilled by elements within the FHIR resources listed
 | Date of change in consent status	| EOL-Consent-1.dateTime | Mandatory |
 | Professionals recording this consent status	| EOL-Consent-1.consentingAuthor (Extension)|Mandatory |
 
+### EOL-Consent-1.consentDiscussionDetails Guidance ###
+
+Where the sending system supports a terminology system:
+
+* The condition.code element MUST be populated with:
+    * the terminology system (e.g. SNOMED-CT) 
+    * code
+	* display value
+* the condition.code.text field MUST be populated with the display value from the condition.code.display element e.g. ‘Asthma (disorder)’
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a terminology system:
+
+* the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
 
 ### Consent Example XML ###
 

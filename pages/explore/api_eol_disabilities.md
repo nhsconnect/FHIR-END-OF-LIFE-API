@@ -35,10 +35,22 @@ The disabilities data items are fulfilled by elements within the FHIR resources 
 | Professional Recording Disabilities | CareConnect-ProblemList-1.source | Mandatory |
 | 
 
-### Patient Disability Additional Notes Guidance ###
+### CareConnect-ProblemHeader-Condition-1.code Guidance ###
 
-- Where the sending system supports a terminology system e.g. SNOMED-CT, and no additional notes are required, the Patient Disability Additional Notes MUST contain the display value from of the concepts code in place of any notes e.g 195967001 MUST send 'Asthma (disorder)'. 
-- Where no terminology system is supported, the Patient Disability Additional Notes MUST contain a text description of the concept as a human readable narrative e.g 'Asthma'. Additional text MAY be inlcuded e.g 'Asthma. Patient uses blue inhaler to relieve symptoms'
+Where the sending system supports a disability code:
+
+* The condition.code element MUST be populated with:
+    * the terminology system (e.g. SNOMED-CT) 
+    * code
+	* display value
+* the condition.code.text field MUST be populated with the display value from the condition.code.display element e.g. ‘Asthma (disorder)’
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a disability code:
+
+* the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
 
 ### Disabilities Example XML ###
 

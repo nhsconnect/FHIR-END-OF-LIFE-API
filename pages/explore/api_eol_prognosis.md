@@ -35,6 +35,22 @@ The prognosis data items are fulfilled by elements within the FHIR resources lis
 | Awareness of Prognosis | EOL-Prognosis-ClinicalImpression-1-1.awrenessOfPrognosis (Extension) | Optional |
 | Professional Recording Prognosis | EOL-Prognosis-ClinicalImpression-1.assessor | Mandatory |
 
+### Prognosis Textual Guidance ###
+
+Where the sending system supports a terminology system:
+
+* The condition.code element MUST be populated with:
+    * the terminology system (e.g. SNOMED-CT) 
+    * code
+	* display value
+* the condition.code.text field MUST be populated with the display value from the condition.code.display element e.g. ‘Asthma (disorder)’
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a terminology system:
+
+* the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
 ### Prognosis Example XML ###
 
 <script src="https://gist.github.com/IOPS-DEV/22c1c28de21a1c341deff1145d113de0.js"></script>

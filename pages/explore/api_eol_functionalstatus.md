@@ -34,6 +34,22 @@ The Functional Status data items are fulfilled by elements within the FHIR resou
 |									| EOL-FunctionalStatus-Observation-1.component.value[x] | Optional |
 | Functional Satus Text				| EOL-FunctionalStatus-Observation-1.code.text | Mandatory |
 
+### Functional Satus Text Guidance ###
+
+Where the sending system supports a terminology system:
+
+* The condition.code element MUST be populated with:
+    * the terminology system (e.g. SNOMED-CT) 
+    * code
+	* display value
+* the condition.code.text field MUST be populated with the display value from the condition.code.display element e.g. ‘Asthma (disorder)’
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a terminology system:
+
+* the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
 ### Functional Status ERD ###
 
 TODO

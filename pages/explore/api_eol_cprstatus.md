@@ -40,6 +40,22 @@ The CPR Status data items are fulfilled by elements within the FHIR resources li
 | Professional Recording the CPR status | EOL-CPRStatus-Flag-1.author | Mandatory
 | Professional Endorsing this CPR status | EOL-CPRStatus-QuestionnaireResponse-1.professionalEndorsingStatus | Optional
 
+### Persons Involved in Discussion and Persons or Organisations Made Aware of the Decision Guidance ###
+
+Where the sending system supports a terminology system:
+
+* The condition.code element MUST be populated with:
+    * the terminology system (e.g. SNOMED-CT) 
+    * code
+	* display value
+* the condition.code.text field MUST be populated with the display value from the condition.code.display element e.g. ‘Asthma (disorder)’
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a terminology system:
+
+* the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
 ### CPR Status ERD ###
 
 <img src="images/erd/cpr-erd.svg" style="width:80%;max-width: 80%;">

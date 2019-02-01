@@ -17,12 +17,12 @@ The following FHIR profiles are used to form the Advance Treatment Preferences A
 - [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1) (EOL mandates name.text)
 - [CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)
-- [EOL-Procedure-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Procedure-1) **NOT BUILT. TBD**
-- [EOL-Location-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Location-1) **NOT BUILT. TBD**
+- [CareConnect-Location-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1)
+- [CareConnect-EOL-Procedure-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Procedure-1) 
 - [EOL-ATPProblemList-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemList-List-1)
 - [EOL-ATPProblemHeader-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemHeader-Condition-1)
 - [EOL-ATP-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1)
-- [EOL-ATP-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-Flag-1)
+- [EOL-ATP-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1)
 
 
 ### Advance Treatment Preferences data item mapping to FHIR profiles ###
@@ -40,13 +40,28 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 | 									  | Extension.respectPriorityScale.valueInteger		| Mandatory |
 |									  | Extension.respectPriorityScaleStatement.valueString			| Optional |
 | Professional recording changes to List of Problems and Interventions | EOL-ATP-ProblemList-1.source | Mandatory |
-| Advance Decision to Refuse Treatment Coded | EOL-ATP-Flag-1.code	| Optional |
-| Advance Decision to Refuse Treatment Additional Notes | EOL-ATP-Flag-1.code.text	| Optional |
-| Date of Advance Decision to Refuse Treatment | EOL-ATP-Flag-1.period.start | Mandatory |
-| Issue of Anticipatory Medicines Code		| EOL-Procedure-1.code | Optional |** TO BE BUILT **
-| Issue of Anticipatory Medicines Additional Note	| EOL-Procedure-1.code.text | Optional |** TO BE BUILT **
+| Advance Decision to Refuse Treatment Coded | EOL-ADRT-Flag-1.code	| Optional |
+| Advance Decision to Refuse Treatment Additional Notes | EOL-ADRT-Flag-1.code.text	| Mandatory |
+| Date of Advance Decision to Refuse Treatment | EOL-ADRT-Flag-1.period.start | Mandatory |
+| Issue of Anticipatory Medicines Code		| CareConnect-EOL-Procedure-1.code | Optional |
+| Issue of Anticipatory Medicines Additional Notes	| CareConnect-EOL-Procedure-1.code.text | Mandatory |
 | Location of Anticipatory Medicines	| CareConnect-Location-1.name | Optional |
 
+### EOL-ADRT-Flag-1.code and CareConnect-EOL-Procedure-1.code Guidance ###
+
+Where the sending system supports a terminology system:
+
+* The condition.code element MUST be populated with:
+    * the terminology system (e.g. SNOMED-CT) 
+    * code
+	* display value
+* the condition.code.text field MUST be populated with the display value from the condition.code.display element e.g. ‘Asthma (disorder)’
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a terminology system:
+
+* the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
+* the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
 
 ### Advance Treatment Preferences ERD ###
 

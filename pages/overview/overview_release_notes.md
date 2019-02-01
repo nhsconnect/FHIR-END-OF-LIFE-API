@@ -9,9 +9,21 @@ summary: Summary release notes of the versions released in End of Life API Imple
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the End of Life API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
+## 1.2.0-alpha ##
+
+Advance Treatment Preferences updated:
+
+- Advance Decision to refuse treatment data item added
+- Anticipatory medicines data item added
+
+Additional notes data can now be captured in code.coding.text data elements where the atomic unit supports this functionality
+
+https://fhir.nhs.uk/STU3/ValueSet/EOL-ConsentDecisionSnCT-1 Value Set updated. 
+
+
 ## 1.1.0-alpha ##
 
-Update to Advance Treatment Prefernces Atomic Unit to add the follwoing additional data items:
+Update to Advance Treatment Prefernces Atomic Unit to add the following additional data items:
 
 ## Profiles ##
 
@@ -40,9 +52,6 @@ The following value set has been added to the API to support new data items adde
 https://fhir.nhs.uk/STU3/ValueSet/EOL-AdvanceDecisionToRefuseTreatment-1"
 
 ## Extensions ##
-
-
-
 
 
 ## 1.0.0-alpha ##
