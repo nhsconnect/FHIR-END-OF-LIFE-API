@@ -22,7 +22,9 @@ The following FHIR profiles are used to form the Advance Treatment Preferences A
 - [EOL-ATPProblemList-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemList-List-1)
 - [EOL-ATPProblemHeader-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemHeader-Condition-1)
 - [EOL-ATP-CarePlan-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1)
-- [EOL-ATP-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1)
+- [EOL-ADRT-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1)
+
+<!-- [EOL-ATP-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1) -->
 
 
 ### Advance Treatment Preferences data item mapping to FHIR profiles ###
@@ -47,6 +49,24 @@ The Advance Treatment Preferences data items are fulfilled by elements within th
 | Issue of Anticipatory Medicines Additional Notes	| CareConnect-EOL-Procedure-1.code.text | Mandatory |
 | Location of Anticipatory Medicines	| CareConnect-Location-1.name | Optional |
 
+### EOL-ADRT-Flag-1.code and CareConnect-EOL-Procedure-1.code (codeableConcept) Guidance ###
+
+Where the sending system supports a terminology system:
+
+* The codeableConcept.coding element MUST be populated with:
+    * system: identity of the terminology system (e.g. SNOMED-CT) 
+    * code: symbol in syntax defined by the system
+	* display: representation defined by the system
+* the codeableConcept.text field MUST be populated with the display value from the codeableConcept.coding.display element e.g. ‘Asthma (disorder)’
+* the codeableConcept.text field MAY contain free text to capture more detail associated with the codeableConcept.coding.code e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+Where the sending system does not support a terminology system:
+
+* the codeableConcept.text field MUST be populated with a text description of the concept as a human readable narrative e.g ‘Asthma’. 
+* the codeableConcept.text field MAY contain free text to capture more detail associated with the concept e.g. ‘Patient uses blue inhaler to relieve symptoms’
+
+
+<!--
 ### EOL-ADRT-Flag-1.code and CareConnect-EOL-Procedure-1.code Guidance ###
 
 Where the sending system supports a terminology system:
@@ -62,6 +82,9 @@ Where the sending system does not support a terminology system:
 
 * the condition.code.text field MUST be populated with a text description of the condition as a human readable narrative e.g ‘Asthma’. 
 * the condition.code.text field MAY contain free text to capture more detail associated with the condition e.g. ‘Patient uses blue inhaler to relieve symptoms’
+-->
+
+
 
 ### Advance Treatment Preferences ERD ###
 
@@ -93,7 +116,10 @@ Where possible, Care Connect profiles have been used to develop the End of Life 
 | CareConnect-ProblemList-1	    		|  			 							   | 	     												  |
 | CareConnect-Condition-1 and			| Problem description is mandatory	       | Change of cardinality to 'code' element from 0..1 to 1..1  |
 | CareConnect-ProblemHeader-Condition-1 | 										   | 														  |
+
+
+<!--
 | CareConnect-Procedure-1				| Additional notes extension required	   | extension-EOL-Procedure-1									|
 | CareConnect-
-
+-->
 End of Life will engage with the healthcare community and INTEROPen in the future to propose these changes to the Care Connect profiles(s).
