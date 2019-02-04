@@ -29,12 +29,17 @@ The preferences data items are fulfilled by elements within the FHIR resources l
 | Preferred Place of Death			  |																			| Optional |
 | 									  | EOL-Preferences-QuestionnaireResponse-1.item.preferredPlaceOfDeathCoded | Optional |
 | 									  | EOL-Preferences-QuestionnaireResponse-1.item.preferredPlaceOfDeathText  | Mandatory |
-|									  | EOL-Preferences-QuestionnaireResponse-1.item.preferredPlaceOfDeathNotes | Optional |
 | Preferences and Wishes			  | EOL-Preferences-QuestionnaireResponse-1.item.preferencesAndWishes		| Optional |
 | Domestic Access and Information	  | EOL-Preferences-QuestionnaireResponse-1.item.domesticAccessAndInformation | Optional |
 | Date of Preferences (create/update) | EOL-Preferences-QuestionnaireResponse-1.item.authored					| Mandatory |
 | Professional Recording Preferences  | EOL-Preferences-QuestionnaireResponse-1.item.author						| Mandatory |
 
+
+<!--
+SWK REMOVED from table as not required 2019-02-04
+
+|									  | EOL-Preferences-QuestionnaireResponse-1.item.preferredPlaceOfDeathNotes | Optional |
+-->
 
 ### Preferences Example XML ###
 
