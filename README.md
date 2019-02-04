@@ -1,4 +1,4 @@
-# ODS FHIR API
+# End of Life FHIR API
 
 <p align="center">
   <a href="https://v4-alpha.getbootstrap.com">
@@ -40,7 +40,7 @@ Several quick start options are available:
 - Run Jekyll locally: `bundle exec jekyll serve`
 - Browse website [Browser](http://localhost:4005): `http://localhost:4005`
 
-Read the [Getting started page](#) for information on the ODS FHIR API contents, templates and examples, and more.
+Read the [Getting started page](#) for information on the FHIR-END-OF-LIFE-API contents, templates and examples, and more.
 
 ## What's included
 
@@ -61,7 +61,7 @@ Learn more about using Jekyll by reading its [documentation](https://jekyllrb.co
 
 ## Bugs and feature requests
 
-Have a bug or a feature request?  [Check for your issue](https://github.com/nhsconnect/FHIR-ODS-API/issues) on GitHub and if your problem or idea is not addressed yet, [please open a new issue](https://github.com/nhsconnect/FHIR-END-OF-LIFE-API/issues/new).
+Have a bug or a feature request?  [Check for your issue](https://github.com/nhsconnect/FHIR-END-OF-LIFE-API/issues) on GitHub and if your problem or idea is not addressed yet, [please open a new issue](https://github.com/nhsconnect/FHIR-END-OF-LIFE-API/issues/new).
 
 
 ### Documentation for previous releases
@@ -70,10 +70,12 @@ No previous release available.
 
 ## Versioning
 
-For transparency into our release cycle and in striving to maintain backward compatibility, ODS FHIR API is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we make mistakes, but we'll adhere to those rules whenever possible.
+For transparency into our release cycle and in striving to maintain backward compatibility, FHIR-END-OF-LIFE-API is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we make mistakes, but we'll adhere to those rules whenever possible.
 
-See [the Releases section of our GitHub project](https://github.com/nhsconnect/FHIR-END-OF-LIFE-API/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official FHIR-ODS-API blog](#) contain summaries of the most noteworthy changes made in each release.
+See [the Releases section of our GitHub project](https://github.com/nhsconnect/FHIR-END-OF-LIFE-API/releases) for changelogs for each release version of Bootstrap.
+
+<!--Release announcement posts on [the official FHIR-ODS-API blog](#) contain summaries of the most noteworthy changes made in each release.-->
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2017 the [CareConnect API Authors](#) and [NHS Digital](#) Code released under the [MIT License](#). Docs released under [Creative Commons](#).
+Code and documentation copyright 2011-2019 the <!--[CareConnect API Authors](#) and --> [NHS Digital API Authors](#) Code released under the [MIT License](#). Docs released under [Creative Commons](#).
