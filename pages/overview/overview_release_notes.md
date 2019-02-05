@@ -16,11 +16,11 @@ Changes to the API to reflect the EoL National Minimum Dataset v2.2 requirements
 
 - <b>Advance Treatment Preferences:</b> Profiles added to atomic unit:
   - EOL-ADRT-Flag-1: supports Advance Decision to refuse treatment data items
-    - Binds to [EOL-AdvanceDecisionToRefuseTreatment-1](https://fhir.nhs.uk/STU3/ValueSet/EOL-AdvanceDecisionToRefuseTreatment-1)
+    - Binds to EOL-AdvanceDecisionToRefuseTreatment-1 valueset
   - CareConnect-EOL-Procedure-1: supports Anticipatory medicines data items
-    - Binds to Procedure valueset [TBC]
+    - Binds to EOL-IssueOfAnticipatoryMedicines-1 valueset
   - CareConnect-Location-1: supports Location of anticipatory medicines/just in case box data item 
-- <b>Consent:</b> Extension-EOL-ConsentDecisionDetails-1: binding to [EOL-ConsentDecisionSnCT-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-EOL-ConsentDecisionDetails-1) valueSet changes to reflect v2.2 requirements.
+- <b>Consent:</b> consentDecisionDetails(extension): EOL-ConsentDecisionSnCT-1 valueSet changes to reflect v2.2 requirements.
 - <b>General:</b> Clearer guidance on how to implement the codeableConcept.coding element within End of Life API
 
 <!--

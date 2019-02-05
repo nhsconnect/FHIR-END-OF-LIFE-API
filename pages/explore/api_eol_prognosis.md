@@ -32,7 +32,7 @@ The prognosis data items are fulfilled by elements within the FHIR resources lis
 | Prognosis Coded        		       | EOL-ClinicalImpression-Prognosis-1.prognosisCodeableConcept          | Optional                   |
 | Prognosis Textual | EOL-Prognosis-ClinicalImpression-1.prognosisCodeableConcept.text    | Mandatory |
 | Date of Prognosis | EOL-Prognosis-ClinicalImpression-1.date    |Optional |
-| Awareness of Prognosis | EOL-Prognosis-ClinicalImpression-1-1.awrenessOfPrognosis (Extension) | Optional |
+| Awareness of Prognosis | EOL-Prognosis-ClinicalImpression-1-1.awarenessOfPrognosis (Extension) | Optional |
 | Professional Recording Prognosis | EOL-Prognosis-ClinicalImpression-1.assessor | Mandatory |
 
 
