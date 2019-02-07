@@ -1,7 +1,7 @@
 ---
-title: Care Connect | Reference
+title: End Of Life API| Reference
 keywords: development Reference
-tags: [development,fhir,profiles]
+tags: [fhir]
 sidebar: overview_sidebar
 permalink: resources_reference.html
 summary: "Developer Cheat Sheet shortcuts for the <br/>technical build of End of Life API."
