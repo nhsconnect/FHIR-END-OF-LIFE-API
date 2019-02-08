@@ -121,12 +121,6 @@ entries:
     - title: Introduction
       url: /tag_overview.html
       output: web
-    - title: FHIR&reg;
-      url: /tag_fhir.html
-      output: web
-   # - title: User Stories
-    #  url: /tag_user_stories.html
-     # output: web
     - title: Case Studies
       url: /tag_casestudies.html
       output: web
@@ -136,6 +130,12 @@ entries:
     - title: Development
       url: /tag_development.html
       output: web
+    - title: FHIR&reg;
+      url: /tag_fhir.html
+      output: web
+   # - title: User Stories
+    #  url: /tag_user_stories.html
+     # output: web
     - title: Support
       url: /tag_support.html
       output: web
