@@ -45,6 +45,7 @@ entries:
     folderitems:
     - title: Explore EoLC Resources
       url: /explore.html
+      output: web
     - title: Advance Treatment Preferences
       url: /api_eol_atp.html
       output: web
@@ -79,11 +80,10 @@ entries:
     - title: Prognosis
       url: /api_eol_prognosis.html
       output: web      
-      subfolders:
   
   - title: Design & Build (APIs)
     output: web
-    subfolderitems:
+    folderitems:
     - title: Overview
       url: /design_overview.html
       output: web
