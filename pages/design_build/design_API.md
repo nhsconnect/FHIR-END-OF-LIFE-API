@@ -17,9 +17,9 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 ## 2. API calls - ALL ##
 
 The simplified call to return an EoLC message follows a RESTful FHIR Request, which
-
+'''
 GET {BASE_URL}/QuestionnaireResponse?_id={id}&_include=*
-
+'''
 The Questionnaire gist (also known as the spreadsheet in FHIR format) returns:
 
 {% gist 5b15657ab584a5326c2e5fd84e2a68b8 %}
@@ -36,9 +36,11 @@ Go to [Gist link](https://gist.github.com/KevinMayfield/b0b68c2160c218a330996ff7
 
 The queries for the api can be:
 
+'''
 http://PROVIDER/ccri-fhir/STU3/QuestionnaireResponse?_id=28&_include=*
 
 http://PROVIDER/ccri-fhir/STU3/QuestionnaireResponse?patient=1210&questionnaire:identifier=https://fhir.nhs.uk/STU3/Questionnaire|CareConnect-EOLC-1&_include=*
+'''
 
 The supports the standard operations in https://www.hl7.org/fhir/stu3/questionnaire-operations.html
 
