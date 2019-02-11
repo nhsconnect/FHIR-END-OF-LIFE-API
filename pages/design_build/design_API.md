@@ -21,13 +21,18 @@ The simplified call to return an EoLC message follows a RESTful FHIR Request, wh
 GET {BASE_URL}/QuestionnaireResponse?_id={id}&_include=*
 
 The Questionnaire gist (also known as the spreadsheet in FHIR format) returns:
-https://gist.github.com/KevinMayfield/5b15657ab584a5326c2e5fd84e2a68b8
+
+{% gist 5b15657ab584a5326c2e5fd84e2a68b8 %}
+
+Go to [Gist link](https://gist.github.com/KevinMayfield/5b15657ab584a5326c2e5fd84e2a68b8)
 
 This simplifies building the payload+api while also putting rigid rules on the payload. The rules have been formed with the EoLC project team.
 
 UPDATE required - An example payload response (the payload conforms to the definition in the Questionnaire)
 
-https://gist.github.com/KevinMayfield/b0b68c2160c218a330996ff7318cf4d4
+{% gist b0b68c2160c218a330996ff7318cf4d4 %}
+
+Go to [Gist link](https://gist.github.com/KevinMayfield/b0b68c2160c218a330996ff7318cf4d4)
 
 The queries for the api can be:
 
