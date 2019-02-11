@@ -40,9 +40,11 @@ entries:
           url: /engage_endoflife.html
           output: web
 
-  - title: Atomic Units
+  - title: Resources
     output: web,pdf
     folderitems:
+    - title: Explore EoLC Resources
+      url: /explore.html
     - title: Advance Treatment Preferences
       url: /api_eol_atp.html
       output: web
@@ -78,21 +80,19 @@ entries:
       url: /api_eol_prognosis.html
       output: web      
       subfolders:
-      - title: API Guidance | FHIR&reg;
-        output: web
-        subfolderitems:
-        - title: API Codes
-          url: /resources_api_codes.html
-          output: web
-        - title: Search Parameters
-          url: /explore_search_parameters.html
-          output: web
-        - title: Open Source
-          url: /explore_fhir_open_source_guidance.html
-          output: web
-        - title: Reference
-          url: /resources_reference.html
-          output: web
+  - title: Design & Build (APIs)
+    output: web
+    subfolderitems:
+    - title: Overview
+      url: /design_overview.html
+      output: web
+    - title: API Guidance
+      url: /design_API.html
+      output: web
+    - title: Open Source
+      url: /design_fhir_open_source_guidance.html
+      output: web
+
       
   - title: Help & Support
     output: web
