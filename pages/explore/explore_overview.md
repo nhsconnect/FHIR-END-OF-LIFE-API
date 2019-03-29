@@ -13,6 +13,8 @@ summary: "Overview of the Resources section"
 
 This page provides an overview of the FHIR STU3 Resources that are required to build the required API messaging. Each link will take you to the resource page detail with a link to the Structure Definitions of each resource.
 
+The previous Atomic Units concept has been moved to the Design & Build section where the API is defined.
+
 ## 2. End of Life Care API's ###
 
 <table style="min-width:100%;width:100%">
