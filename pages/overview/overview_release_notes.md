@@ -16,7 +16,7 @@ summary: Summary release notes of the versions released in End of Life API Imple
 - Design & Build (APIs) section added to spec. Includes Overview, API Guidance and Open Source sub-sections:
   - Provides an overview of how the FHIR STU3 Resources that compose the EoLC message could be packaged together into an API
   - The Atomic Units concept has been represented as Questionnaire in a QuestionnaireResponse in the suggestion for an API.
-  - API Guidance provides overview of the FHIR STU3 Resources that are required to build the required API messaging usung the Questionnaire/ QuestionnaireResponse approach
+  - API Guidance provides overview of the FHIR STU3 Resources that are required to build the required API messaging using the Questionnaire/ QuestionnaireResponse approach
 
 ## 1.1.0-alpha ##
 
