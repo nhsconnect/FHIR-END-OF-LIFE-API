@@ -10,6 +10,14 @@ summary: Summary release notes of the versions released in End of Life API Imple
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the End of Life API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
 
+## 1.2.0-alpha ##
+
+- Atomic Units navigation section name changed to 'Resources' and API Guidance sub-section removed.
+- Design & Build (APIs) section added to spec. Includes Overview, API Guidance and Open Source sub-sections:
+  - Provides an overview of how the FHIR STU3 Resources that compose the EoLC message could be packaged together into an API
+  - The Atomic Units concept has been represented as Questionnaire in a QuestionnaireResponse in the suggestion for an API.
+  - API Guidance provides overview of the FHIR STU3 Resources that are required to build the required API messaging usung the Questionnaire/ QuestionnaireResponse approach
+
 ## 1.1.0-alpha ##
 
 Changes to the API to reflect the EoL National Minimum Dataset v2.2 requirements.
