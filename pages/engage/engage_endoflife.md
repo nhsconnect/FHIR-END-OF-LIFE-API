@@ -15,13 +15,13 @@ To support the End of Life (EoL) National Minimum Dataset, this section explains
 The purpose of this document is to explain those user stories and use cases to those developing the FHIR resources and those technicians and clinicians that will be reviewing the FHIR resources as part of the INTEROPen curation process.
 The FHIR resources will be used to deliver both API “pull” of data from source systems and also messaging to “push” data to receiving systems.  The nature of the fragmented delivery of electronic palliative care co-ordination systems (EPaCCS) across the NHS in England means that the implementation of the resources will depend upon what solutions are being employed locally.
  
-The first of type (FoT) implementation will be by the **One London** LHCRE.  One London will offer urgent and emergency care (U&EC) users access to the data held with some London EPaCCS by using pointers stored within the London Health and Care Information Exchange (LHCIE).
+The first of type (FoT) implementation will <!-- be by the **One London** LHCRE.  One London will offer urgent and emergency care (U&EC) users access to the data held with some London EPaCCS by using pointers stored within the London Health and Care Information Exchange (LHCIE).--> offer urgent and emergency care (U&EC) users access to the EoL records held within a local EPaCCS. 
 
 ## 2.	Use Cases ##
 The required data flows are described as use cases.
 
 ## 2.1.	111/999 Call Handler takes call for patient with EoL plans and preferences. ##
-This is the primary use case for the first of type (FoT) delivery by One London.  One London is developing a system that enables Londonwide users to access source systems such as Co-ordinate My Care (CMC) to provide EoL and other data.
+This is the primary use case for the first of type (FoT) delivery. <!-- by One London.  One London is developing a system that enables Londonwide users to access source systems such as Co-ordinate My Care (CMC) to provide EoL and other data. -->
 Alternate flows are outside of the FoT scope.
 
 **Trigger:** Call received – EoL patient is unwell or exhibiting changed status.
@@ -191,10 +191,13 @@ Commitments have been made that patients/carers will have access to their EoL pr
 
 **I want to** quickly view the latest EoL information from the EPaCCS that supports this patient’s EoL care
 
-**Commentary**
+<!--
 
-In the FoT solution to be delivered by the One London, the LHCIE brokerage will direct the urgent or emergency care user’s system to the correct source EPaCCS via pointers.\
+Commentary
+
+In the FoT solution to be delivered by the One London, the LHCIE brokerage will direct the urgent or emergency care user’s system to the correct source EPaCCS via pointers.
 Other urgent care systems may employ “click through” technology to access partner EPaCCS, using the national minimum dataset
+-->
 
 **Acceptance Criteria**
 
