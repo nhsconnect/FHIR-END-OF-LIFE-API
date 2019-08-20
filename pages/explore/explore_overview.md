@@ -26,12 +26,12 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 <tr>
 <td>Communication</td>
 <td>Patient</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">CareConnect-Patient-1</a><b>*</b></td>
+<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"><b>*</b>CareConnect-Patient-1</a></td>
 </tr>
 <tr>
 <td>Contacts</td>
 <td>Patient</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">CareConnect-Patient-1</a><b>*</b></td>
+<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"><b>*</b>CareConnect-Patient-1</a></td>
 </tr>
 <tr>
 <td><a href="api_eol_lastingpowerofattorney.html">Lasting Power of Attorney (LPA)</a></td>
@@ -86,18 +86,18 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 </tr>
 <tr>
 <td><a href="api_eol_atp.html">Advance Treatment Preferences</a></td>
-<td>Patient<br/>Organization<br/>Practitioner<br/>PractitionerRole<br/>Location</br>Procedure</br>List</br>Condition</br>CarePlan</br>Flag</td>
+<td>Patient<br/>Organization<br/>Practitioner<br/>PractitionerRole<br/>Location<br/>Procedure<br/>List<br/>Condition<br/>CarePlan<br/>Flag</td>
 <td>
 <a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1">EOL-Patient-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">CareConnect-Organization-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">CareConnect-Practitioner-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">CareConnect-PractitionerRole-1</a><br/>
-<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1">CareConnect-Location-1</a></br>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Procedure-1">CareConnect-EOL-Procedure-1</a></br>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemList-List-1">EOL-ATPProblemList-List-1</a></br>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemHeader-Condition-1">EOL-ATPProblemHeader-Condition-1</a></br>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1">EOL-ATP-CarePlan-1</a></br>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1">EOL-ADRT-Flag-1</a></br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1">CareConnect-Location-1</a><br/>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EOL-Procedure-1">CareConnect-EOL-Procedure-1</a><br/>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemList-List-1">EOL-ATPProblemList-List-1</a><br/>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATPProblemHeader-Condition-1">EOL-ATPProblemHeader-Condition-1</a><br/>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ATP-CarePlan-1">EOL-ATP-CarePlan-1</a><br/>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1">EOL-ADRT-Flag-1</a><br/>
 </td>
 </tr>
 <tr>
