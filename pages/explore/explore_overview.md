@@ -39,7 +39,7 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 <td>
 <a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Patient-1">EOL-Patient-1</a><br/>
 <a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LPA-Flag-1">EOL-LPA-Flag-1</a><br/>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LPA-RelatedPerson-1">EOL-LPARelatedPerson-1</a></br>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-LPA-RelatedPerson-1">EOL-LPARelatedPerson-1</a>
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">CareConnect-Organization-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">CareConnect-Practitioner-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">CareConnect-PractitionerRole-1</a><br/>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-Flag-1">EOL-CPRStatus-Flag-1</a></br>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-Flag-1">EOL-CPRStatus-Flag-1</a><br/>
 <a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-CPRStatus-QuestionnaireResponse-1">EOL-CPRStatus-QuestionnaireResponse-1</a>
 </td>
 </tr>
@@ -81,7 +81,7 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">CareConnect-Organization-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">CareConnect-Practitioner-1</a><br/>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">CareConnect-PractitionerRole-1</a><br/>
-<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1">EOL-Prognosis-ClinicalImpression-1</a></br>
+<a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-Prognosis-ClinicalImpression-1">EOL-Prognosis-ClinicalImpression-1</a>
 </td>
 </tr>
 <tr>
