@@ -24,16 +24,6 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 <th style="width:33%;">FHIR Profile(s)</th>
 </tr>
 <tr>
-<td>Communication</td>
-<td>Patient</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"><b>*</b>CareConnect-Patient-1</a></td>
-</tr>
-<tr>
-<td>Contacts</td>
-<td>Patient</td>
-<td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"><b>*</b>CareConnect-Patient-1</a></td>
-</tr>
-<tr>
 <td><a href="api_eol_lastingpowerofattorney.html">Lasting Power of Attorney (LPA)</a></td>
 <td>Patient<br/>Flag<br/>Related Person</td>
 <td>
