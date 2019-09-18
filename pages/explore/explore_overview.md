@@ -130,5 +130,3 @@ The previous Atomic Units concept has been moved to the Design & Build section w
 <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-OtherDocuments-QuestionnaireResponse-1">EOL-OtherDocuments-QuestionnaireResponse-1</a></td>
 </tr>
 </table>
-
-<b>*</b>Please note the implementation uses CareConnect-Patient-1 instead of the EOL-Patient-1.
